@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  /* background-color: white; */
 }
 .square {
   border-color: rgb(163, 154, 154);
@@ -48,10 +49,6 @@
   display: inline-block;
   font-size: 0.8rem;
 }
-      
-
-
-
 
 /* Add this to your stylesheet or in a style tag within your component */
 .calendar {

@@ -7,7 +7,7 @@ import Step3 from "./Step3";
 import Step4 from "./Step4";
 import Step5 from "./Step5";
 import axios from "axios";
-
+import Step6 from './Step6'
 const SignUp = ({ currentStep, onNextStep, onPrevStep }) => {
   const [formData, setFormData] = useState({
     firstName: "",
@@ -52,27 +52,37 @@ const SignUp = ({ currentStep, onNextStep, onPrevStep }) => {
     }));
   };
 
+
   return (
-    <div className="py-0 px-28 font-sans">
+    <div>
       <div className="bg-gray-200">
-        <div className="relative">
-          <img
-            src={waitinRoom}
-            alt="firstImage"
-            className="w-full h-80 object-cover mt-20"
-          />
-          <div className="absolute inset-0 flex items-center justify-center bg-black opacity-70">
-            <p className="text-white text-4xl font-semibold">
-              JOIN THE MEDSHOUSING COMMUNITY!
-            </p>
+        {currentStep !== 6 && (
+
+          <div className="py-0 px-50 font-sans mt-40 ">
+            <div className="">
+              <div className="relative">
+                <img
+                  src={waitinRoom}
+                  alt="firstImage"
+                  className="w-full h-80 object-cover mt-20"
+                />
+                <div className="absolute inset-0 flex items-center justify-center bg-black opacity-70">
+                  <p className="text-white text-4xl font-semibold">
+                    JOIN THE MEDSHOUSING COMMUNITY!
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-        <div className="px-40 ">
-          <StepIndicator
-            currentStep={currentStep}
-            onNext={onNextStep}
-            onBack={onPrevStep}
-          />
+        )}
+        <div className="px-40  ">
+          <div className={`${currentStep === 6 ? 'mt-44 ' : ''} `}>
+            <StepIndicator
+              currentStep={currentStep}
+              onNext={onNextStep}
+              onBack={onPrevStep}
+            />
+          </div>
           <div
             className={`registration-page ${currentStep === 1 ? "active" : ""}`}
             style={{ display: currentStep === 1 ? "block" : "none" }}
@@ -82,9 +92,9 @@ const SignUp = ({ currentStep, onNextStep, onPrevStep }) => {
                 Create your <span className="font-bold">landlord account</span>{" "}
                 here
               </h1>
-              <p className="mb-8 text-gray-800">
+              <p className="mb-8 text-gray-800 text-center">
                 MedsHousing.com is the premier website dedicated to helping
-                landlords reach out to five-star <br />
+                landlords reach out to five-star
                 tenants from the academic medical community. Complete the
                 landlord form below and start <br /> finding your tenants!
               </p>
@@ -357,78 +367,90 @@ const SignUp = ({ currentStep, onNextStep, onPrevStep }) => {
             </div>
           </div>
 
-          {currentStep === 2 && (
-            <>
-              <Step2
-                onNextStep={onNextStep}
-                onPrevStep={onPrevStep}
-                onNextStep={onNextStep}
-              />
-              <button
-                onClick={onNextStep}
-                className="mt-20 bg-blue-800 text-white text-left align-left px-12 py-2 rounded"
-              >
-                Next
-              </button>
-            </>
-          )}
-          {currentStep === 3 && (
-            // Step 3 content
-            <>
-              <Step3
-                onNextStep={onNextStep}
-                onPrevStep={onPrevStep}
-                onNextStep={onNextStep}
-              />
-              <button
-                onClick={onNextStep}
-                className="mt-20 bg-blue-800 text-white text-left align-left px-12 py-2 rounded"
-              >
-                Next
-              </button>
-            </>
-          )}
-          {currentStep === 4 && (
-            <>
-              <Step4
-                onNextStep={onNextStep}
-                onPrevStep={onPrevStep}
-                onNextStep={onNextStep}
-              />
-              <button
-                onClick={onNextStep}
-                className="mt-20 bg-blue-800 text-white text-left align-left px-12 py-2 rounded"
-              >
-                Skip
-              </button>
-            </>
-          )}
-          {currentStep === 5 && (
-            <>
-              <Step5
-                onNextStep={onNextStep}
-                onPrevStep={onPrevStep}
-                onNextStep={onNextStep}
-              />
-              <button
-                onClick={onNextStep}
-                className="mt-20 bg-blue-800 text-white text-left align-left px-12 py-2 rounded"
-              >
-                Next
-              </button>
-            </>
-          )}
-          {/* {currentStep === 6 && (
-                        <>
-                            <Step6 onNextStep={onNextStep} onPrevStep={onPrevStep} onNextStep={onNextStep} />
-                            <button onClick={onNextStep} className="mt-20 bg-blue-800 text-white text-left align-left px-12 py-2 rounded">Next</button>
+          {
+            currentStep === 2 && (
+              <>
+                <Step2
+                  onNextStep={onNextStep}
+                  onPrevStep={onPrevStep}
+                  onNextStep={onNextStep}
+                />
+                <button
+                  onClick={onNextStep}
+                  className="mt-20 bg-blue-800 text-white text-left align-left px-12 py-2 rounded"
+                >
+                  Next
+                </button>
+              </>
+            )
+          }
+          {
+            currentStep === 3 && (
+              // Step 3 content
+              <>
+                <Step3
+                  onNextStep={onNextStep}
+                  onPrevStep={onPrevStep}
+                  onNextStep={onNextStep}
+                />
+                <button
+                  onClick={onNextStep}
+                  className="mt-20 bg-blue-800 text-white text-left align-left px-12 py-2 rounded"
+                >
+                  Next
+                </button>
+              </>
+            )
+          }
+          {
+            currentStep === 4 && (
+              <>
+                <Step4
+                  onNextStep={onNextStep}
+                  onPrevStep={onPrevStep}
+                  onNextStep={onNextStep}
+                />
+                <button
+                  onClick={onNextStep}
+                  className="mt-20 bg-blue-800 text-white text-left align-left px-12 py-2 rounded"
+                >
+                  Skip
+                </button>
+              </>
+            )
+          }
+          {
+            currentStep === 5 && (
+              <>
+                <Step5
+                  onNextStep={onNextStep}
+                  onPrevStep={onPrevStep}
+                  onNextStep={onNextStep}
+                />
+                <button
+                  onClick={onNextStep}
+                  className="mt-20 bg-blue-800 text-white text-left align-left px-12 py-2 rounded"
+                >
+                  Next
+                </button>
+              </>
+            )
+          }
 
-                        </>
 
-                    )}
-                    */}
+
+
         </div>
+
       </div>
+      {currentStep === 6 && (
+        <>
+
+          <Step6 />
+
+        </>
+
+      )}
     </div>
   );
 };

@@ -19,6 +19,22 @@ const Step2 = ({ onNextBox, onPrevBox }) => {
     const handleButtonClick = () => {
         setButtonVisible(false);
     };
+    const [formData, setFormData] = useState({
+        listingTitle: "",
+        address: "",
+        city: "",
+        country: "",
+        province: "",
+        postalCode: "",
+        phoneNumber: "",
+    });
+    const [selectedFunction, setSelectedFunction] = useState("");
+    const handleChange = (e) => {
+        const { name, value, type, checked } = e.target;
+        setFormData((prevData) => ({
+            ...prevData,
+        }));
+    };
     return (
         <div className="registration-page " >
             <h1 className='text-center text-3xl mb-10 mt-20 font-normal'>Select your package</h1>
@@ -93,43 +109,75 @@ const Step2 = ({ onNextBox, onPrevBox }) => {
             </div>
             <h1 className='text-3xl text-center mb-10 mt-10 font-normal'>Housing information</h1>
             <form action="">
-                <div className="mb-8">
-                    <input type="text" className="outline-none mt-1 p-4 w-full border border-gray-300 rounded" placeholder=" Listing title" />
-                    <p>For listing, make it short and eye catching</p>
+                <div className="">
+                    <input
+                        type="text"
+                        name="lastName"
+                        value={formData.email}
+                        onChange={handleChange}
+                        className="outline-none mt-1 p-4 w-full border border-gray-300  rounded"
+                        placeholder="Listing Title"
+                        required
+
+                    />
                 </div>
-
-
+                <p className='mb-8'>For listing, make it short and eye catching
+                </p>
                 <div className="mb-8">
-                    <input type="text" className="outline-none mt-1 p-4 w-full border border-gray-300 rounded" placeholder=" Address" />
+                    <input
+                        type="text"
+                        name="lastName"
+                        value={formData.confirmEmail}
+                        onChange={handleChange}
+                        className="outline-none mt-1 p-4 w-full border border-gray-300  rounded"
+                        placeholder="Address"
+                        required
+                    />
                 </div>
-
-
-
-                {/* City */}
                 <div className="mb-8">
-                    <input type="text" className=" outline-none mt-1 p-4 w-full border border-gray-300 rounded" placeholder="City" />
+                    <input
+                        type="text"
+                        name="lastName"
+                        value={formData.address}
+                        onChange={handleChange}
+                        className="outline-none mt-1 p-4 w-full border border-gray-300  rounded"
+                        placeholder="City"
+                        required
+                    />
                 </div>
-
-
-
                 <CountrySelect />
-
-
-
-                {/* Province / State */}
                 <div className="mb-8">
-                    <input type="text" className="outline-none mt-1 p-4 w-full border border-gray-300 rounded" placeholder=" Province/state" />
+                    <input
+                        type="text"
+                        name="lastName"
+                        value={formData.city}
+                        onChange={handleChange}
+                        className="outline-none mt-1 p-4 w-full border border-gray-300  rounded"
+                        placeholder="Province/State"
+                        required
+                    />
                 </div>
-                {/* Postal Code */}
                 <div className="mb-8">
-                    <input type="text" className="outline-none mt-1 p-4 w-full border border-gray-300 rounded" placeholder="Postal code" />
+                    <input
+                        type="text"
+                        name="lastName"
+                        value={formData.city}
+                        onChange={handleChange}
+                        className="outline-none mt-1 p-4 w-full border border-gray-300  rounded"
+                        placeholder="Postal code"
+                        required
+                    />
                 </div>
-
-                {/* Phone */}
                 <div className="mb-8">
-                    <input type="tel" className="outline-none mt-1 p-4 w-full border border-gray-300 rounded" placeholder="cell phone number" />
-                    <p className='text-1xl'>Don't miss any tenant request! Add your cell number here to receive text messages <br />when a tenant reaches out!
-                    </p>
+                    <input
+                        type="text"
+                        name="lastName"
+                        value={formData.city}
+                        onChange={handleChange}
+                        className="outline-none mt-1 p-4 w-full border border-gray-300  rounded"
+                        placeholder="cell phonr number"
+                        required
+                    />
                 </div>
 
                 {setButton && <button onClick={() => setButtonVisible(false)} className='bg-blue-800 w-1/2 px-10 text-white rounded py-2 ' >Upgrade to MedsGold to access the feature</button>}
