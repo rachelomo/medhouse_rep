@@ -9,6 +9,9 @@ import Nav from "./Nav.jsx";
 import "./App.css";
 import BlogPath from "./links/BlogPath.jsx";
 import Purpular from "./links/Purpular.jsx";
+import Pricing from "./links/Pricing.jsx";
+import AboutPath from "./links/AboutPath.jsx";
+import Adding from "./links/Adding.jsx";
 
 function App() {
   const [currentStep, setCurrentStep] = useState(1);
@@ -56,6 +59,9 @@ function App() {
         />
         <Route path="/blogpath" element={<BlogPath />} />
         <Route path="/purpular" element={<Purpular />} />
+        <Route path="/pricing" element={<Pricing />} />
+        <Route path="/aboutpath" element={<AboutPath />} />
+        <Route path="/adding" element={<Adding />} />
       </Routes>
       <Medhouse />
       <Signing />

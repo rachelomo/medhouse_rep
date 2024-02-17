@@ -4,7 +4,7 @@ const Faq = () => {
   return (
     <div className="dp">
       <Link to="" className="Faq">
-        FAQ
+        <Link to="#"> FAQ</Link>
         <div
           className="arrow"
           // style={{ marginTop: "36px", marginLeft: "10px" }}
