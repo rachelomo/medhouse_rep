@@ -7,6 +7,8 @@ import CopyWrite from "./LandPage/CopyWrite.jsx";
 import Medhouse from "./LandPage/Medhouse.jsx";
 import Nav from "./Nav.jsx";
 import "./App.css";
+import BlogPath from "./links/BlogPath.jsx";
+import Purpular from "./links/Purpular.jsx";
 
 function App() {
   const [currentStep, setCurrentStep] = useState(1);
@@ -23,16 +25,17 @@ function App() {
   useEffect(() => {
     const handleScroll = () => {
       const top = window.scrollY;
-      if (top > 100) { // You can adjust this value based on your preference
+      if (top > 100) {
+        // You can adjust this value based on your preference
         setIsNavVisible(false);
       } else {
         setIsNavVisible(true);
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
@@ -51,6 +54,8 @@ function App() {
             />
           }
         />
+        <Route path="/blogpath" element={<BlogPath />} />
+        <Route path="/purpular" element={<Purpular />} />
       </Routes>
       <Medhouse />
       <Signing />

@@ -20,6 +20,48 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #f1f1f1;
 }
+@media (max-width: 768px) {
+  .nested-dropdown,
+  .Faq,
+  .price,
+  .blog,
+  .about,
+  .adds,
+  .fab {
+    display: none;
+  }
+  .button {
+    /* 
+     */
+    position: relative;
+    top: 10vh;
+    right: 50vw;
+  }
+  .img {
+    margin-left: 20vw;
+    font-size: xx-large;
+  }
+  .dp {
+    position: relative;
+    right: 19vw;
+    font-size: larger;
+    bottom: 1vh;
+  }
+}
+/* Dropdwon Menu */
+.submenu {
+  position: relative;
+  display: inline-block;
+}
+.submenu-arrow {
+  margin-top: 36px;
+  margin-left: 40px;
+  position: absolute;
+  display: none;
+}
+.submenu:hover .submenu-arrow {
+  display: block;
+}
 .MED {
   display: flex;
   justify-content: space-around;
@@ -78,6 +120,8 @@ body {
   width: 200px;
   box-shadow: 0px 8px 6px rgba(0, 0, 0, 0.2);
   z-index: 1;
+  /* top: 10vh; */
+  opacity: 0.7;
 }
 .dpc li {
   list-style-type: none;
@@ -132,14 +176,40 @@ body {
   z-index: 50;
   padding-left: 49px;
 }
+
+.dropdown-menu {
+  background-color: #000;
+  opacity: 0.5;
+  z-index: 10;
+  width: 120vw;
+  height: 70vh;
+  position: relative;
+  color: white;
+}
+
+.dropdown_cont {
+  display: flex; /* Change display to flex */
+  flex-direction: column;
+  padding: 8px 0;
+  z-index: 1;
+  margin-left: 85px;
+  position: absolute;
+}
+.dropdown:hover {
+  color: black;
+}
+.text {
+  cursor: pointer;
+}
 .Drop {
   font-size: smaller;
   display: flex;
   gap: 1.5em;
-  margin-left: 100px;
+  margin-left: 18vw;
   width: fit-content;
   margin-top: 5px;
   position: absolute;
+  color: #0c527b;
 }
 
 .hero-section {
@@ -242,8 +312,6 @@ input {
   flex-wrap: wrap;
   gap: 2em;
   margin-top: 20px;
-  /* margin-left: 110px; */
-  padding-left: 100px;
   padding-bottom: 90px;
 }
 

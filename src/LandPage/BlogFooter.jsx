@@ -29,7 +29,7 @@ const BlogFooter = () => {
       <h2>
         <strong style={{ color: "black" }}>Blog</strong>{" "}
       </h2>
-      <a href="BlogFooter" className="float-link" id="btn_map">
+      <a href="/blogpath" className="float-link" id="btn_map">
         See all →
       </a>
       <div className="Blog" style={{ position: "relative", left: "50px" }}>

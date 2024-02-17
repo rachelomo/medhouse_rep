@@ -18,13 +18,12 @@ const Navigation = () => {
         {" "}
         <Link to="/">
           <img
-            id="link"
+            className="img"
             src={logo}
             alt="Logo"
             style={{
-              width: "30%",
               height: "5.5vh",
-              marginRight: "390px",
+              marginRight: "22vw",
               cursor: "pointer",
             }}
           />
@@ -33,14 +32,14 @@ const Navigation = () => {
           <div className="social-icons">
             <Link
               to="https://www.facebook.com/MedsHousing/"
-              className="fab fa-facebook"
+              className="fab"
               target="blank"
             >
               <FaFacebook />
             </Link>
             <Link
               to="https://twitter.com/MedsHousing"
-              className="fab fa-twitter"
+              className="fab"
               target="blank"
             >
               <FaTwitter />
@@ -48,21 +47,21 @@ const Navigation = () => {
 
             <Link
               to="https://www.pinterest.ca/medshousing/_created/"
-              className="fab fa-pinterest-p"
+              className="fab"
               target="blank"
             >
               <FaPinterest />
             </Link>
             <Link
               to="https://www.instagram.com/medshousing/"
-              className="fab fa-instagram"
+              className="fab"
               target="blank"
             >
               <FaInstagram />
             </Link>
             <Link
               to="https://www.linkedin.com/company/medshousing/?viewAsMember=true"
-              className="fab fa-linkedin"
+              className="fab"
               target="blank"
             >
               <FaLinkedin />
@@ -85,9 +84,9 @@ const Navigation = () => {
                   <li>I am a landlord</li>
                 </a>
 
-                <li style={{ cursor: "pointer" }}>
-                  <Link to="/">I am a tenant</Link>
-                </li>
+                <Link to="/" style={{ cursor: "pointer" }}>
+                  <li> I am a tenant</li>
+                </Link>
               </div>
             </div>
           </div>

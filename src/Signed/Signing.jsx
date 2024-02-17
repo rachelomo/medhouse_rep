@@ -70,7 +70,8 @@ const Signing = () => {
             </strong>{" "}
             <br /> Add your Property Listing!
           </h2>
-          <button
+          <Link
+            to="/signup"
             type="submit"
             style={{
               backgroundColor: "#0C527B",
@@ -78,16 +79,15 @@ const Signing = () => {
               borderRadius: "5px",
               paddingLeft: "35px",
               paddingRight: "35px",
-              paddingTop: "3px",
+              paddingTop: "4px",
               paddingBottom: "6px",
-              marginTop: "24px",
+              position: "relative",
+              top: "5vh",
             }}
+            className="btn bg-#0C527B"
           >
-            {" "}
-            <Link to="/en/housing-subscription/" className="btn bg-#0C527B">
-              Sign Up
-            </Link>
-          </button>
+            Sign Up
+          </Link>
         </div>
         <MdEventBusy style={{ fontSize: "80px" }} />
         <div>
@@ -95,23 +95,24 @@ const Signing = () => {
             When life is too busy, <br />
             <strong>post a want ad</strong> and <br /> let landlords find you!
           </h2>
-          <button
+          <Link
+            to="#"
+            className="btn"
             type="submit"
             style={{
               backgroundColor: "#0C527B",
               color: "white",
               borderRadius: "5px",
-              paddingLeft: "30px",
-              paddingRight: "35px",
-              paddingTop: "5px",
-              paddingBottom: "5px",
-              marginTop: "15px",
+              paddingLeft: "20px",
+              paddingRight: "15px",
+              paddingTop: "10px",
+              paddingBottom: "10px",
+              position: "relative",
+              top: "5vh",
             }}
           >
-            <Link to="/en/registration-page/" className="btn">
-              Post a want ad now!
-            </Link>
-          </button>
+            Post a want ad now!
+          </Link>
         </div>
         <div>
           <div>

@@ -1,9 +1,16 @@
+// import { FaChevronUp } from "react-icons/fa";
 import { Link } from "react-router-dom";
 const Faq = () => {
   return (
     <div className="dp">
       <Link to="" className="Faq">
         FAQ
+        <div
+          className="arrow"
+          // style={{ marginTop: "36px", marginLeft: "10px" }}
+        >
+          {/* <FaChevronUp /> */}
+        </div>
       </Link>
       <div className="dpc_black">
         <li>

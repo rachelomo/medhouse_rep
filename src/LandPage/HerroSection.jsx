@@ -27,7 +27,7 @@ const medicalHousingData = [
   {
     id: 3,
     name: "Rustic Rowcliffe Studio Loft",
-    location: "Kelowna, British Columbia / Ad #04321",
+    location: "Kelowna, British / Ad #04321",
     price: "$1,9000.00",
     imageUrl:
       "https://www.medshousing.com/fichiersUploadOpt/370-252-2bfab8521878f906539af995df03520882bdc37f95c300b5b/20240130165825-img-6499-original.jpeg",
@@ -142,7 +142,7 @@ const FeaturedMedicalHousing = () => {
         }}
       > */}
       <Link
-        to="/map"
+        to="#"
         href="https://console.cloud.google.com/."
         className="float-link"
         id="btn_map"
@@ -154,56 +154,59 @@ const FeaturedMedicalHousing = () => {
       </h2>
       {/* </div> */}
 
-      <div className="Cards">
-        {medicalHousingData.map((housing) => (
-          <div key={housing.id} className="Card_split">
-            <img
-              src={housing.imageUrl}
-              alt={housing.name}
-              style={{
-                width: "21vw",
-                display: "inline-block",
-                verticalAlign: "middle",
-                maxWidth: "100%",
-                height: "auto",
-              }}
-            />
-            <div className="option">
-              <span style={{}}>
-                <strong
+      <div>
+        <Link to="/" className="Cards">
+          {medicalHousingData.map((housing) => (
+            <div key={housing.id} className="Card_split">
+              <img
+                src={housing.imageUrl}
+                alt={housing.name}
+                style={{
+                  width: "21vw",
+                  display: "inline-block",
+                  verticalAlign: "middle",
+                  maxWidth: "100%",
+                  height: "auto",
+                }}
+              />
+              <div className="option">
+                <span style={{}}>
+                  <strong
+                    style={{
+                      display: "flex",
+                      justifyContent: "center",
+                      width: "18vw",
+                      color: "#262626",
+                      textAlign: "center",
+                      marginLeft: "20px",
+                    }}
+                  >
+                    {housing.name}
+                  </strong>
+                </span>
+                <span style={{ textAlign: "center", marginLeft: "15px" }}>
+                  {housing.location}
+                </span>
+                <span
                   style={{
                     display: "flex",
-                    justifyContent: "center",
-                    width: "18vw",
-                    color: "#262626",
+                    gap: "1em",
                     textAlign: "center",
-                    marginLeft: "20px",
+                    marginLeft: "80px",
+                    fontSize: "11px",
                   }}
                 >
-                  {housing.name}
-                </strong>
-              </span>
-              <span style={{ textAlign: "center", marginLeft: "15px" }}>
-                {housing.location}
-              </span>
-              <span
-                style={{
-                  display: "flex",
-                  gap: "1em",
-                  textAlign: "center",
-                  marginLeft: "80px",
-                  fontSize: "11px",
-                }}
-              >
-                <RiHotelBedLine />1
-                <FaBath />1
-                <span style={{ color: "#1779ba" }}>{housing.price}</span>
-              </span>
-              {/* <img src={housing.mapImageUrl} alt={`Map for ${housing.name}`} /> */}
+                  <RiHotelBedLine />1
+                  <FaBath />1
+                  <span style={{ color: "#1779ba" }}>{housing.price}</span>
+                </span>
+                {/* <img src={housing.mapImageUrl} alt={`Map for ${housing.name}`} /> */}
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </Link>
       </div>
+
       {showMap && <div className="map-section">{/* Map section */}</div>}
     </div>
   );
