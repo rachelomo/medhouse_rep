@@ -9,4 +9,12 @@
 body {
   overflow-x: hidden;
 }
-
+.height {
+  height: 100%;
+}
+.function {
+  transition: background-color 0.3s ease-in;
+}
+.function:hover {
+  color: white;
+}
