@@ -303,12 +303,51 @@ const Pricing = () => {
           </div>
         </div>
       </div>
-      <div className="">
+      <div className="text-grey mt-10 text-black">
         <p>
-          And try our various options to increase the visibility of your listing
-          :
+          And try our various <strong className="text-black">options</strong> to
+          increase the visibility of your listing :
         </p>
+        <ul className="list-disc ml-5 mt-5">
+          <li>
+            <strong className="text-black"> MedsBoost</strong>: One-time boost
+            of your listing to the top of your category for $1 + tax.
+          </li>
+          <li>
+            Home Page <strong className="text-black"> MedsFeature</strong>:
+            Increase your visibility! Display your listing on the MedsHousing
+            Home Page for $15/month + tax.
+          </li>
+          <li>
+            Urgent! <strong className="text-black"> MedsFeature</strong>: Get
+            tenants faster. Show an Urgent! tag on your listing. Puts your ad to
+            the top of all listings for 7 days for a low price of $15 + tax.
+          </li>
+          <li>
+            Medschool <strong className="text-black"> MedsFeature</strong>: Move
+            your ad to the top of the Medical School page, within your category
+            (<strong className="text-black">MedsBasic</strong> or{" "}
+            <strong className="text-black">MedsGold</strong> ). Another way to
+            increase the visibility of your listing for a low $15/month + tax.
+          </li>
+        </ul>
+        <h3 className="mt-7 ml-1">
+          You own <strong className="text-black">multiple properties</strong>?
+          We offer special pricing to landlords with 5+ listings. Please contact
+          us at{" "}
+          <Link
+            to="mailto:info@medshousing.com"
+            className="text-blue-400 hover:underline text-black"
+          >
+            {" "}
+            info@medshousing.com.
+          </Link>
+        </h3>
       </div>
+      <h3 className="text-center text-black text-3xl mt-20">
+        Pay your package for 1 year, <strong>save money</strong> and access more
+        features!
+      </h3>
     </div>
   );
 };
