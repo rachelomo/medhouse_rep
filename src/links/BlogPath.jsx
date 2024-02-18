@@ -19,31 +19,80 @@ const BlogPath = () => {
         <img
           src={waitinRoom}
           alt="firstImage"
-          className="w-full h-80 object-cover"
-          style={{ marginTop: "8.8vw" }}
+          className="w-full h-80 object-cover mt-40"
         />
         <div className="absolute inset-0 flex items-center justify-center">
           <p className="text-white text-4xl">BLOG</p>
         </div>
       </div>
       <div>
-        <div className="scimg">
-          <img src={card_13} alt="card" />
-          <img src={card_14} alt="card" />
-          <img src={card_15} alt="card" />
-          <img src={card_16} alt="card" />
-          <img src={card_17} alt="card" />
-          <img src={card_18} alt="card" />
-          <img src={card_19} alt="card" />
-          <img src={card_20} alt="card" />
-          <img src={card_21} alt="card" />
-          <img src={card_22} alt="card" />
-          <img src={card_23} alt="card" />
-          <img src={card_24} alt="card" />
+        <div className="flex flex-wrap justify-center mt-5 gap-10">
+          <div className="border border-black bg-black">
+            <img src={card_13} alt="card" className="max-w-screen-md w-80" />
+            <p className="text-center p-2">Friday, Febuary 9, 2024</p>
+          </div>
+          <div className="border border-black bg-black">
+            <img src={card_14} alt="card" className="max-w-screen-md w-80" />
+            <p className="p-2 text-center">Thursday, Febuary , 2024</p>
+          </div>
+          <div className="border border-black bg-black">
+            <img src={card_15} alt="card" className="max-w-screen-md w-80" />
+            <p className="p-2 text-center">Thursday, January 25, 2024</p>
+          </div>
+          <div className="border border-black bg-black">
+            <img src={card_16} alt="card" className="max-w-screen-md w-80" />
+            <p className="text-center p-2">Monday, July 24, 2023</p>
+          </div>
+          <div className="border border-black bg-black">
+            <img src={card_17} alt="card" className="max-w-screen-md w-80" />
+            <p className="tet-center p-2">Thursday, June 1, 2023</p>
+          </div>
+          <div className="border border-black bg-black">
+            <img src={card_18} alt="card" className="max-w-screen-md w-80" />
+            <p className="p-2 text-center">Thursday, Match 16, 2023</p>
+          </div>
+          <div className="border border-black bg-black">
+            <img src={card_19} alt="card" className="max-w-screen-md w-80" />
+            <p className="text-center p-2">Saturday, Match 11, 2023</p>
+          </div>
+          <div className="border border-black bg-black">
+            <img src={card_20} alt="card" className="max-w-screen-md w-80" />
+            <p className="text-center p-2">Sunday, Match 5, 2023</p>
+          </div>
+          <div className="border border-black bg-black">
+            <img src={card_21} alt="card" className="max-w-screen-md w-80" />
+            <p className="text-center p-2">Tuesday, February 14, 2023</p>
+          </div>
+          <div className="border border-black bg-black">
+            {" "}
+            <img src={card_22} alt="card" className="max-w-screen-md w-80" />
+            <p className="text-center p-2">Tuesday, February 14, 2023</p>
+          </div>
+          <div className="border border-black bg-black">
+            <img src={card_23} alt="card" className="max-w-screen-md w-80" />
+            <p className="text-center p-2">Tuesday, January 24, 2023</p>
+          </div>
+          <div className="border border-black bg-black">
+            <img src={card_24} alt="card" className="max-w-screen-md w-80" />
+            <p className="text-center p-2">Thursday, January 12, 2023</p>
+          </div>
         </div>
-        <div style={{ display: "flex", gap: "0.6em", cursor: "pointer" }}>
+        <div
+          style={{
+            display: "flex",
+            gap: "0.6em",
+            cursor: "pointer",
+            justifyContent: "center",
+            marginTop: "100px",
+          }}
+        >
           <Link to="/card/1">«</Link>
-          <Link to="/card/1">1</Link>
+          <Link
+            to="/card/1"
+            className="bg-black rounded pl-2 pr-2 text-white font-semibold"
+          >
+            1
+          </Link>
           <Link to="/card/2">2</Link>
           <Link to="/card/3">3</Link>
           <Link to="/card/last">»</Link>
