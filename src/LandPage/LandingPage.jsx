@@ -62,7 +62,7 @@ const LandingPage = () => {
             onClick={toggleOptions}
           >
             <span className="ml-2">
-              {selectedOption ? selectedOption : "Select an option"}
+              {selectedOption ? selectedOption : "Where?"}
             </span>
             <FaArrowDown className="text-gray-500 ml-2" />
           </div>
