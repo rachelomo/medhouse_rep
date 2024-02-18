@@ -12,6 +12,8 @@ import Purpular from "./links/Purpular.jsx";
 import Pricing from "./links/Pricing.jsx";
 import AboutPath from "./links/AboutPath.jsx";
 import Adding from "./links/Adding.jsx";
+import Cardsec from "./links/Cardsec.jsx";
+import Cardthd from "./links/Cardthd.jsx";
 
 function App() {
   const [currentStep, setCurrentStep] = useState(1);
@@ -58,6 +60,8 @@ function App() {
           }
         />
         <Route path="/blogpath" element={<BlogPath />} />
+        <Route path="/card/2" element={<Cardsec />} />
+        <Route path="/card/3" element={<Cardthd />} />
         <Route path="/purpular" element={<Purpular />} />
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/aboutpath" element={<AboutPath />} />

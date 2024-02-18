@@ -1,63 +1,48 @@
 // import "./land.css";
-import { FaArrowDown, FaSearch } from "react-icons/fa";
+import { FaSearch, FaArrowDown } from "react-icons/fa";
 import { IoArrowForward } from "react-icons/io5";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { Link } from "react-router-dom";
-
-// "Hamilton, ON, CA",
-// "Calgary, AB, CA",
-// "Toronto, ON, CA",
-// "Saint-John's, NL, CA",
-// "Chapel hill, NC, US",
-// "North york, ON, CA",
-// "Edmonton, AB, CA",
-// "London, ON, CA",
-// "Wanguri, AU",
-// "Ottawa, ON, CA",
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
+import { FaCalendarAlt } from "react-icons/fa";
 const LandingPage = () => {
-  const [showSearch, setShowSearch] = useState(false);
-  const [searchQuery, setSearchQuery] = useState("");
-  const [selectedCity, setSelectedCity] = useState(null);
+  const [selectedDate, setSelectedDate] = useState(null);
 
-  const cities = [
+  const [showOptions, setShowOptions] = useState(false);
+  const [selectedOption, setSelectedOption] = useState("");
+  const [searchTerm, setSearchTerm] = useState("");
+  const options = [
     "New York",
     "Los Angeles",
     "Chicago",
     "San Francisco",
+    "Miami",
     "Seattle",
     "Boston",
     "Houston",
     "Atlanta",
-    "Miami",
+
     "Denver",
   ];
+  const scrollContainerRef = useRef(null);
 
-  const handleInputChange = (event) => {
-    setSearchQuery(event.target.value);
+  const toggleOptions = () => {
+    setShowOptions(!showOptions);
   };
 
-  const handleCitySelect = (city) => {
-    setSelectedCity(city);
-    setShowSearch(false);
-    setSearchQuery("");
+  const handleOptionClick = (option) => {
+    setSelectedOption(option);
+    setShowOptions(false);
   };
 
-  // const [isExpanded, setIsExpanded] = useState(false);
-  // const [searchTerm, setSearchTerm] = useState("");
-  // const [searchResults, setSearchResults] = useState([]);
+  const handleSearchChange = (event) => {
+    setSearchTerm(event.target.value);
+  };
 
-  // const handleToggleExpand = () => {
-  //   setIsExpanded(!isExpanded);
-  // };
-
-  // const handleSearch = () => {
-  //   const results = CitySearch.filter((city) =>
-  //     city.toLowerCase().includes(searchTerm.toLowerCase())
-  //   );
-  //   setSearchResults(results);
-  // };
-
-  // const [date, setDate] = useState(new Date());
+  const filteredOptions = options.filter((option) =>
+    option.toLowerCase().includes(searchTerm.toLowerCase())
+  );
   return (
     <div className="land">
       <h1>
@@ -69,67 +54,70 @@ const LandingPage = () => {
           display: "flex",
           justifyContent: "center",
           marginTop: "30px",
-          marginRight: "80px",
         }}
       >
-        {!showSearch && (
+        <div className="relative inline-block">
           <div
-            className="flex items-center cursor-pointer"
-            onClick={() => setShowSearch(true)}
+            className="flex items-center bg-gray-200 py-2 px-4 rounded-md border border-gray-300 cursor-pointer relative"
+            onClick={toggleOptions}
           >
-            <input
-              type="text"
-              placeholder="Where?"
-              readOnly
-              className="w-50 outline-none"
-            />
-            <FaArrowDown className="relative right-10" />
+            <span className="ml-2">
+              {selectedOption ? selectedOption : "Select an option"}
+            </span>
+            <FaArrowDown className="text-gray-500 ml-2" />
           </div>
-        )}
-        {showSearch && (
-          <div className="rounded">
-            <div className="flex items-center border-b-none outline-b-none">
-              <input
-                type="text"
-                placeholder="Search for a city..."
-                className=" outline-none"
-                onChange={handleInputChange}
-                value={searchQuery}
-              />
-              <FaSearch className="relative right-10 bg-white cursor-pointer" />
-            </div>
+          {showOptions && (
             <div
-              className="
-            "
+              className="absolute mt-1 bg-white rounded-md border border-gray-300 w-full max-h-40 overflow-y-auto"
+              ref={scrollContainerRef}
             >
-              {cities
-                .filter((city) =>
-                  city.toLowerCase().includes(searchQuery.toLowerCase())
-                )
-                .map((city, index) => (
+              <div className="flex items-center border-b border-gray-300 p-2 sticky top-0 bg-white z-10">
+                <input
+                  type="text"
+                  placeholder="Where?"
+                  className="border border-gray-300 p-2 w-full"
+                  value={searchTerm}
+                  onChange={handleSearchChange}
+                />
+                <FaSearch className="ml-2 text-gray-500" />
+              </div>
+              <div className="overflow-y-auto max-h-40">
+                {filteredOptions.map((option, index) => (
                   <div
                     key={index}
-                    className=" cursor-pointer bg-white mr-4 overflow-y-auto max-h-40 hover:bg-gray-100"
-                    onClick={() => handleCitySelect(city)}
+                    className="py-2 px-4 cursor-pointer hover:bg-gray-100"
+                    onClick={() => handleOptionClick(option)}
                   >
-                    {city}
+                    {option}
                   </div>
                 ))}
+              </div>
             </div>
-          </div>
-        )}
-        {selectedCity && (
-          <div className="mt-2">Selected City: {selectedCity}</div>
-        )}
-
-        <input
-          type="date"
-          name=""
-          id=""
-          placeholder="When?"
-          style={{ cursor: "pointer", height: "40px" }}
-        />
-        <button type="submit" className="default-link ml-3 mt-0.5">
+          )}
+        </div>
+        {/* date picker */}
+        <div className="relative inline-block ml-1">
+          <FaCalendarAlt
+            selected={selectedDate}
+            onChange={(date) => setSelectedDate(date)}
+            className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400"
+            style={{ zIndex: "10" }}
+          />
+          <DatePicker
+            selected={selectedDate}
+            onChange={(date) => setSelectedDate(date)}
+            placeholderText="When?"
+            dateFormat="MMMM d, yyyy"
+            className="border border-gray-300 rounded-md px-4 py-2 focus:outline-none"
+            popperPlacement="top-end"
+          />
+          {selectedDate && (
+            <div className="absolute mt-1 bg-white rounded-md border border-gray-300 px-4 py-2">
+              {selectedDate.toLocaleDateString()}
+            </div>
+          )}
+        </div>
+        <button type="submit" className="default-link ml-1 mt-0.5">
           <Link to="/">
             {" "}
             <IoArrowForward className="ml-2.5" />

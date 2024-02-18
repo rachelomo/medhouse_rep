@@ -5,8 +5,14 @@ export default {
     extend: {
       colors: {
         customBlue: "#0c527b",
-        brown: "#8B4513",
-        deepFade: '#4F4F4F', 
+        brown: "#262626",
+        deepFade: "#554728",
+        red: "#FF0000",
+        blur: "#1096E5",
+        gry: "#666666",
+        b: "#3E7696",
+        r: "#6E6B66",
+        o:"#212121"
       },
     },
   },

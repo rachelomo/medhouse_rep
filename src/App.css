@@ -18,3 +18,7 @@ body {
 .function:hover {
   color: white;
 }
+.hover:hover{
+  background-color: #333333;
+}
+/* #33333370 */

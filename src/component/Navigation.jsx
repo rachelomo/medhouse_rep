@@ -81,11 +81,11 @@ const Navigation = () => {
               </Link>
               <div className="dpc">
                 <a href="SignUp">
-                  <li>I am a landlord</li>
+                  <li className="li">I am a landlord</li>
                 </a>
 
                 <Link to="/" style={{ cursor: "pointer" }}>
-                  <li> I am a tenant</li>
+                  <li className="li"> I am a tenant</li>
                 </Link>
               </div>
             </div>

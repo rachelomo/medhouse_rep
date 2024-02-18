@@ -1,4 +1,4 @@
-import waitinRoom from "../images/slider_1.jpg";
+import waitinRoom from "../assets/slider_1.jpg";
 import pricing_1 from "../assets/pricing_1.png";
 import pricing_2 from "../assets/pricing_2.png";
 import pricing_3 from "../assets/pricing_3.png";
@@ -14,7 +14,7 @@ const Pricing = () => {
           src={waitinRoom}
           alt="firstImage"
           className="w-full h-80 object-cover"
-          style={{ marginTop: "8.8vw" }}
+          style={{ marginTop: "10vw" }}
         />
         <div className="absolute inset-0 flex items-center justify-center">
           <p className="text-white text-4xl">PRICING</p>
@@ -48,7 +48,7 @@ const Pricing = () => {
         </ul>
         <div className="bg-customBlue text-center p-10 w-90 mt-10">
           <h3 className="text-white text-2xl">Have more than 1 property?</h3>
-          <p className="text-red-600 text-2xl mt-2">
+          <p className="text-red text-2xl mt-2">
             We offer 50% off additional listings in the same category!
           </p>
         </div>
@@ -265,7 +265,7 @@ const Pricing = () => {
               </Link>
             </div>
           </div>
-          <div className="bg-blue-300 w-[70vw]">
+          <div className="bg-blur w-[70vw]">
             <div className="flex justify-center mt-10">
               <img src={pricing_4} alt="pricing image" />
             </div>

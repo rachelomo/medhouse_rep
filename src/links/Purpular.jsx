@@ -1,4 +1,4 @@
-import waitinRoom from "../images/slider_1.jpg";
+import waitinRoom from "../assets/slider_1.jpg";
 const Purpular = () => {
   return (
     <div className="purpular">
