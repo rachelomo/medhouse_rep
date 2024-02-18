@@ -13,10 +13,10 @@ const Faq = () => {
         </div>
       </Link>
       <div className="dpc_black">
-        <li>
+        <li className="li">
           <Link to="/SignUP">FAQ for landlord</Link>
         </li>
-        <li>
+        <li className="li">
           <Link to="">FAQ for tenant</Link>
         </li>
       </div>
