@@ -18,7 +18,27 @@ body {
 .function:hover {
   color: white;
 }
-.hover:hover{
+.hover:hover {
   background-color: #333333;
 }
 /* #33333370 */
+.message {
+  width: 60px;
+  height: 60px;
+  background-color: #0c527b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 60px;
+  cursor: pointer;
+  color: white;
+}
+.element {
+  border-radius: 50%;
+  bottom: 28.5px;
+  height: px;
+  position: fixed;
+  right: 65px;
+  width: 15px;
+  z-index: 2147483646;
+}

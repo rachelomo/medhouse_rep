@@ -15,6 +15,7 @@ import Adding from "./links/Adding.jsx";
 import Cardsec from "./links/Cardsec.jsx";
 import Cardthd from "./links/Cardthd.jsx";
 import Addingft from "./links/Addingft.jsx";
+import Messageme from "./Message/Messageme.jsx";
 
 function App() {
   const [currentStep, setCurrentStep] = useState(1);
@@ -48,6 +49,7 @@ function App() {
   return (
     <BrowserRouter>
       {isNavVisible && <Nav className="nav" />}
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route
@@ -60,6 +62,7 @@ function App() {
             />
           }
         />
+
         <Route path="/blogpath" element={<BlogPath />} />
         <Route path="/card/2" element={<Cardsec />} />
         <Route path="/card/3" element={<Cardthd />} />
@@ -69,9 +72,11 @@ function App() {
         <Route path="/adding" element={<Adding />} />
         <Route path="/addingft" element={<Addingft />} />
       </Routes>
+
       <Medhouse />
       <Signing />
       <CopyWrite />
+      <Messageme />
     </BrowserRouter>
   );
 }
