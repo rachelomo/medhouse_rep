@@ -91,171 +91,403 @@ const Adding = () => {
             borderBottom: "grey",
           }}
         >
-          <div>
-            <div
-              className="bg-o w-60 text-center text-white mt-10 pt-5"
-              style={{ height: "25vh" }}
-            >
-              <h3 className="text-2xl font-semibold">Looking for something?</h3>
-              <div className="mt-5 ">
-                <Link
-                  to=""
-                  className="bg-blur pl-10 pr-10 pt-2 pb-2"
-                  style={{ borderRadius: "5px" }}
-                >
-                  Post a want ad!
-                </Link>
-              </div>
-            </div>
-            <div className="flex flex-col w-60 gap-3 bg-white mt-5">
-              <div className="relative inline-block mt-10">
-                <div
-                  // style={{ width: "15vw" }}
-                  className="flex items-center border border-black cursor-pointer relative mr-10"
-                  onClick={toggleOptions}
-                >
-                  <span className="">
-                    {selectedOption ? selectedOption : "School of Nigeria"}
-                  </span>
-                  <FaArrowDown className="text-black-500 ml-10" />
-                </div>
-                {showOptions && (
-                  <div
-                    style={{
-                      zIndex: "10",
-                    }}
-                    className="absolute mt-1 bg-white rounded-md border border-black-300 w-full max-h-40 overflow-y-auto"
-                    ref={scrollContainerRef}
-                  >
-                    <div className="flex items-center border-b border-black-300 p-2 sticky top-0 bg-white z-10">
-                      <input
-                        type="text"
-                        placeholder="Search..."
-                        className="border border-black-300 p-2 w-full"
-                        value={searchTerm}
-                        onChange={handleSearchChange}
-                      />
-                      <FaSearch className="ml-2 text-black-500" />
-                    </div>
-                    <div className="overflow-y-auto max-h-40">
-                      {filteredOptions.map((option, index) => (
-                        <div
-                          key={index}
-                          className="py-2 px-4 cursor-pointer hover:text-white hover:bg-blur "
-                          onClick={() => handleOptionClick(option)}
-                        >
-                          {option}
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                )}
-              </div>
-              <Addingsec />
-              <Addingthd />
-              {/* checkbox */}
-              <div>
-                <label>
-                  <input
-                    type="checkbox"
-                    checked={isChecked1}
-                    onChange={handleCheckboxChange1}
-                    className={isChecked1 ? "text-gray" : ""}
-                  />
-                  Short term rental
-                </label>
-                <br />
-                <label>
-                  <input
-                    type="checkbox"
-                    checked={isChecked2}
-                    onChange={handleCheckboxChange2}
-                    className={isChecked2 ? "text-gray" : ""}
-                  />
-                  Long term rental
-                </label>
-              </div>
-              {/* date picker */}
+          <div className="flex">
+            <div className="ml-10">
               <div
-                className="relative inline-block ml-1"
-                style={{ width: "15vw" }}
+                className="bg-o w-60 text-center text-white mt-10 pt-5"
+                style={{ height: "25vh" }}
               >
-                <FaCalendarAlt
-                  selected={selectedDate}
-                  onChange={(date) => setSelectedDate(date)}
-                  className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400 "
-                  style={{ zIndex: "10" }}
-                />
-                <DatePicker
-                  selected={selectedDate}
-                  onChange={(date) => setSelectedDate(date)}
-                  placeholderText="When?"
-                  dateFormat="MMMM d, yyyy"
-                  className="border border-gray-300 rounded-md focus:outline-none "
-                  popperPlacement="top-end"
-                />
-                {selectedDate && (
-                  <div className="absolute mt-1 bg-white rounded-md border border-gray-300 px-4 py-2">
-                    {selectedDate.toLocaleDateString()}
+                <h3 className="text-2xl font-semibold">
+                  Looking for something?
+                </h3>
+                <div className="mt-5 ">
+                  <Link
+                    to=""
+                    className="bg-blur pl-10 pr-10 pt-2 pb-2"
+                    style={{ borderRadius: "5px" }}
+                  >
+                    Post a want ad!
+                  </Link>
+                </div>
+              </div>
+
+              <div className="flex flex-col w-60 gap-3 bg-white">
+                <div className="relative inline-block mt-10">
+                  <div
+                    // style={{ width: "15vw" }}
+                    className="flex items-center border border-black cursor-pointer relative mr-10"
+                    onClick={toggleOptions}
+                  >
+                    <span className="">
+                      {selectedOption ? selectedOption : "School of Nigeria"}
+                    </span>
+                    <FaArrowDown className="text-black-500 ml-10" />
                   </div>
-                )}
-              </div>
-              {/* checkbox */}
-              <div>
-                <label>
-                  <input type="checkbox" />
-                  Furnished
-                </label>
-                <br />
-                <label>
-                  <input type="checkbox" />
-                  Unfurnisheds
-                </label>
-              </div>
-              <div className="mt-5">
-                <Link
-                  to=""
-                  className="bg-customBlue pl-20 pr-20 pt-2 pb-2 text-white"
-                  style={{ borderRadius: "5px" }}
+                  {showOptions && (
+                    <div
+                      style={{
+                        zIndex: "10",
+                      }}
+                      className="absolute mt-1 bg-white rounded-md border border-black-300 w-full max-h-40 overflow-y-auto"
+                      ref={scrollContainerRef}
+                    >
+                      <div className="flex items-center border-b border-black-300 p-2 sticky top-0 bg-white z-10">
+                        <input
+                          type="text"
+                          placeholder="Search..."
+                          className="border border-black-300 p-2 w-full"
+                          value={searchTerm}
+                          onChange={handleSearchChange}
+                        />
+                        <FaSearch className="ml-2 text-black-500" />
+                      </div>
+                      <div className="overflow-y-auto max-h-40">
+                        {filteredOptions.map((option, index) => (
+                          <div
+                            key={index}
+                            className="py-2 px-4 cursor-pointer hover:text-white hover:bg-blur "
+                            onClick={() => handleOptionClick(option)}
+                          >
+                            {option}
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+                </div>
+                <Addingsec />
+                <Addingthd />
+                {/* checkbox */}
+                <div>
+                  <label>
+                    <input
+                      type="checkbox"
+                      checked={isChecked1}
+                      onChange={handleCheckboxChange1}
+                      className={isChecked1 ? "text-gray" : ""}
+                    />
+                    Short term rental
+                  </label>
+                  <br />
+                  <label>
+                    <input
+                      type="checkbox"
+                      checked={isChecked2}
+                      onChange={handleCheckboxChange2}
+                      className={isChecked2 ? "text-gray" : ""}
+                    />
+                    Long term rental
+                  </label>
+                </div>
+                {/* date picker */}
+                <div
+                  className="relative inline-block ml-1"
+                  style={{ width: "15vw" }}
                 >
-                  Search
-                </Link>
+                  <FaCalendarAlt
+                    selected={selectedDate}
+                    onChange={(date) => setSelectedDate(date)}
+                    className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400 "
+                    style={{ zIndex: "10" }}
+                  />
+                  <DatePicker
+                    selected={selectedDate}
+                    onChange={(date) => setSelectedDate(date)}
+                    placeholderText="When?"
+                    dateFormat="MMMM d, yyyy"
+                    className="border border-gray-300 rounded-md focus:outline-none "
+                    popperPlacement="top-end"
+                  />
+                  {selectedDate && (
+                    <div className="absolute mt-1 bg-white rounded-md border border-gray-300 px-4 py-2">
+                      {selectedDate.toLocaleDateString()}
+                    </div>
+                  )}
+                </div>
+                {/* checkbox */}
+                <div>
+                  <label>
+                    <input type="checkbox" />
+                    Furnished
+                  </label>
+                  <br />
+                  <label>
+                    <input type="checkbox" />
+                    Unfurnisheds
+                  </label>
+                </div>
+                <div className="mt-5">
+                  <Link
+                    to=""
+                    className="bg-customBlue pl-20 pr-20 pt-2 pb-2 text-white"
+                    style={{ borderRadius: "5px" }}
+                  >
+                    Search
+                  </Link>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
-        <div>
-          <h3>Bracebridge, Ontario (Canada) </h3>
-          <p>Start date : April 1, 2024</p>
-          <p>
-            South Muskoka Memorial Hospital Site - Muskoka Algonquin Healthcare{" "}
-          </p>
-          <div>
-            <span>Furnished/Unfurnished </span>
-            <Link to="">More info</Link>
-            <span>Ad #791 Posted on 2024-01-11 11:51:05</span>
-          </div>
-          <div>
-            <h3>Bracebridge, Ontario (Canada) </h3>
-            <p>Start date : March 1, 2024</p>
-            <p>
-              South Muskoka Memorial Hospital Site - Muskoka Algonquin
-              Healthcare
-            </p>
-            <div>
-              <span>Furnished/Unfurnished </span>
-              <Link to="">More info</Link>
-            </div>
-            <div>
-              <h3>Bracebridge, Ontario (Canada) </h3>
-              <p>Start date : March 1, 2024</p>
-              <p>
-                South Muskoka Memorial Hospital Site - Muskoka Algonquin
-                Healthcare
-              </p>
-              <div>
-                <span>Furnished/Unfurnished </span>
-                <Link to="">More info</Link>
+            <div className="flex flex-col ml-20 mt-10">
+              <div className="">
+                <h3 className="text-blue-500 text-3xl font-semibold">
+                  Bracebridge, Ontario (Canada){" "}
+                </h3>
+                <p>Start date : April 1, 2024</p>
+                <p className="font-semibold text-black">
+                  South Muskoka Memorial Hospital Site - Muskoka Algonquin
+                  Healthcare{" "}
+                </p>
+                <div className="flex justify-between">
+                  <span className="text-blue-500">Furnished/Unfurnished </span>
+                  <Link
+                    to=""
+                    className="bg-customBlue pl-10 pr-10 pt-2 pb-2 text-white"
+                  >
+                    More info
+                  </Link>
+                </div>
+                <p>Ad #791 Posted on 2024-01-11 11:51:05</p>
+              </div>
+              <div className="">
+                <h3 className="text-blue-500 text-3xl font-semibold">
+                  Bracebridge, Ontario (Canada){" "}
+                </h3>
+                <p>Start date : April 1, 2024</p>
+                <p className="font-semibold text-black">
+                  South Muskoka Memorial Hospital Site - Muskoka Algonquin
+                  Healthcare{" "}
+                </p>
+                <div className="flex justify-between">
+                  <span className="text-blue-500">Furnished/Unfurnished </span>
+                  <Link
+                    to=""
+                    className="bg-customBlue pl-10 pr-10 pt-2 pb-2 text-white"
+                  >
+                    More info
+                  </Link>
+                </div>
+                <p>Ad #791 Posted on 2024-01-11 11:51:05</p>
+              </div>
+              <div className="">
+                <h3 className="text-blue-500 text-3xl font-semibold">
+                  Bracebridge, Ontario (Canada){" "}
+                </h3>
+                <p>Start date : April 1, 2024</p>
+                <p className="font-semibold text-black">
+                  South Muskoka Memorial Hospital Site - Muskoka Algonquin
+                  Healthcare{" "}
+                </p>
+                <div className="flex justify-between">
+                  <span className="text-blue-500">Furnished/Unfurnished </span>
+                  <Link
+                    to=""
+                    className="bg-customBlue pl-10 pr-10 pt-2 pb-2 text-white"
+                  >
+                    More info
+                  </Link>
+                </div>
+                <p>Ad #791 Posted on 2024-01-11 11:51:05</p>
+              </div>
+              <div className="">
+                <h3 className="text-blue-500 text-3xl font-semibold">
+                  Bracebridge, Ontario (Canada){" "}
+                </h3>
+                <p>Start date : April 1, 2024</p>
+                <p className="font-semibold text-black">
+                  South Muskoka Memorial Hospital Site - Muskoka Algonquin
+                  Healthcare{" "}
+                </p>
+                <div className="flex justify-between">
+                  <span className="text-blue-500">Furnished/Unfurnished </span>
+                  <Link
+                    to=""
+                    className="bg-customBlue pl-10 pr-10 pt-2 pb-2 text-white"
+                  >
+                    More info
+                  </Link>
+                </div>
+                <p>Ad #791 Posted on 2024-01-11 11:51:05</p>
+              </div>
+              <div className="">
+                <h3 className="text-blue-500 text-3xl font-semibold">
+                  Bracebridge, Ontario (Canada){" "}
+                </h3>
+                <p>Start date : April 1, 2024</p>
+                <p className="font-semibold text-black">
+                  South Muskoka Memorial Hospital Site - Muskoka Algonquin
+                  Healthcare{" "}
+                </p>
+                <div className="flex justify-between">
+                  <span className="text-blue-500">Furnished/Unfurnished </span>
+                  <Link
+                    to=""
+                    className="bg-customBlue pl-10 pr-10 pt-2 pb-2 text-white"
+                  >
+                    More info
+                  </Link>
+                </div>
+                <p>Ad #791 Posted on 2024-01-11 11:51:05</p>
+              </div>
+              <div className="">
+                <h3 className="text-blue-500 text-3xl font-semibold">
+                  Bracebridge, Ontario (Canada){" "}
+                </h3>
+                <p>Start date : April 1, 2024</p>
+                <p className="font-semibold text-black">
+                  South Muskoka Memorial Hospital Site - Muskoka Algonquin
+                  Healthcare{" "}
+                </p>
+                <div className="flex justify-between">
+                  <span className="text-blue-500">Furnished/Unfurnished </span>
+                  <Link
+                    to=""
+                    className="bg-customBlue pl-10 pr-10 pt-2 pb-2 text-white"
+                  >
+                    More info
+                  </Link>
+                </div>
+                <p>Ad #791 Posted on 2024-01-11 11:51:05</p>
+              </div>
+              <div className="">
+                <h3 className="text-blue-500 text-3xl font-semibold">
+                  Bracebridge, Ontario (Canada){" "}
+                </h3>
+                <p>Start date : April 1, 2024</p>
+                <p className="font-semibold text-black">
+                  South Muskoka Memorial Hospital Site - Muskoka Algonquin
+                  Healthcare{" "}
+                </p>
+                <div className="flex justify-between">
+                  <span className="text-blue-500">Furnished/Unfurnished </span>
+                  <Link
+                    to=""
+                    className="bg-customBlue pl-10 pr-10 pt-2 pb-2 text-white"
+                  >
+                    More info
+                  </Link>
+                </div>
+                <p>Ad #791 Posted on 2024-01-11 11:51:05</p>
+              </div>
+              <div className="">
+                <h3 className="text-blue-500 text-3xl font-semibold">
+                  Bracebridge, Ontario (Canada){" "}
+                </h3>
+                <p>Start date : April 1, 2024</p>
+                <p className="font-semibold text-black">
+                  South Muskoka Memorial Hospital Site - Muskoka Algonquin
+                  Healthcare{" "}
+                </p>
+                <div className="flex justify-between">
+                  <span className="text-blue-500">Furnished/Unfurnished </span>
+                  <Link
+                    to=""
+                    className="bg-customBlue pl-10 pr-10 pt-2 pb-2 text-white"
+                  >
+                    More info
+                  </Link>
+                </div>
+                <p>Ad #791 Posted on 2024-01-11 11:51:05</p>
+              </div>
+              <div className="">
+                <h3 className="text-blue-500 text-3xl font-semibold">
+                  Bracebridge, Ontario (Canada){" "}
+                </h3>
+                <p>Start date : April 1, 2024</p>
+                <p className="font-semibold text-black">
+                  South Muskoka Memorial Hospital Site - Muskoka Algonquin
+                  Healthcare{" "}
+                </p>
+                <div className="flex justify-between">
+                  <span className="text-blue-500">Furnished/Unfurnished </span>
+                  <Link
+                    to=""
+                    className="bg-customBlue pl-10 pr-10 pt-2 pb-2 text-white"
+                  >
+                    More info
+                  </Link>
+                </div>
+                <p>Ad #791 Posted on 2024-01-11 11:51:05</p>
+              </div>
+              <div className="">
+                <h3 className="text-blue-500 text-3xl font-semibold">
+                  Bracebridge, Ontario (Canada){" "}
+                </h3>
+                <p>Start date : April 1, 2024</p>
+                <p className="font-semibold text-black">
+                  South Muskoka Memorial Hospital Site - Muskoka Algonquin
+                  Healthcare{" "}
+                </p>
+                <div className="flex justify-between">
+                  <span className="text-blue-500">Furnished/Unfurnished </span>
+                  <Link
+                    to=""
+                    className="bg-customBlue pl-10 pr-10 pt-2 pb-2 text-white"
+                  >
+                    More info
+                  </Link>
+                </div>
+                <p>Ad #791 Posted on 2024-01-11 11:51:05</p>
+              </div>
+              <div className="">
+                <h3 className="text-blue-500 text-3xl font-semibold">
+                  Bracebridge, Ontario (Canada){" "}
+                </h3>
+                <p>Start date : April 1, 2024</p>
+                <p className="font-semibold text-black">
+                  South Muskoka Memorial Hospital Site - Muskoka Algonquin
+                  Healthcare{" "}
+                </p>
+
+                <div className="flex justify-between">
+                  <span className="text-blue-500">Furnished/Unfurnished </span>
+                  <Link
+                    to=""
+                    className="bg-customBlue pl-10 pr-10 pt-2 pb-2 text-white"
+                  >
+                    More info
+                  </Link>
+                </div>
+                <p>Ad #791 Posted on 2024-01-11 11:51:05</p>
+              </div>
+              <div className="">
+                <h3 className="text-blue-500 text-3xl font-semibold">
+                  Bracebridge, Ontario (Canada){" "}
+                </h3>
+                <p>Start date : April 1, 2024</p>
+                <p className="font-semibold text-black">
+                  South Muskoka Memorial Hospital Site - Muskoka Algonquin
+                  Healthcare{" "}
+                </p>
+                <div className="flex justify-between">
+                  <span className="text-blue-500">Furnished/Unfurnished </span>
+                  <Link
+                    to=""
+                    className="bg-customBlue pl-10 pr-10 pt-2 pb-2 text-white"
+                  >
+                    More info
+                  </Link>
+                </div>
+                <p>Ad #791 Posted on 2024-01-11 11:51:05</p>
+              </div>
+              <div className="">
+                <h3 className="text-blue-500 text-3xl font-semibold">
+                  Bracebridge, Ontario (Canada){" "}
+                </h3>
+                <p>Start date : April 1, 2024</p>
+                <p className="font-semibold text-black">
+                  South Muskoka Memorial Hospital Site - Muskoka Algonquin
+                  Healthcare{" "}
+                </p>
+                <div className="flex justify-between">
+                  <span className="text-blue-500">Furnished/Unfurnished </span>
+                  <Link
+                    to=""
+                    className="bg-customBlue pl-10 pr-10 pt-2 pb-2 text-white"
+                  >
+                    More info
+                  </Link>
+                </div>
+                <p>Ad #791 Posted on 2024-01-11 11:51:05</p>
               </div>
             </div>
           </div>
