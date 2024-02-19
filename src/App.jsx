@@ -14,6 +14,7 @@ import AboutPath from "./links/AboutPath.jsx";
 import Adding from "./links/Adding.jsx";
 import Cardsec from "./links/Cardsec.jsx";
 import Cardthd from "./links/Cardthd.jsx";
+import Addingft from "./links/Addingft.jsx";
 
 function App() {
   const [currentStep, setCurrentStep] = useState(1);
@@ -66,6 +67,7 @@ function App() {
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/aboutpath" element={<AboutPath />} />
         <Route path="/adding" element={<Adding />} />
+        <Route path="/addingft" element={<Addingft />} />
       </Routes>
       <Medhouse />
       <Signing />

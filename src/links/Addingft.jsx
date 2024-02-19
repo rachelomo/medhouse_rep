@@ -8,10 +8,10 @@ import { FaCalendarAlt } from "react-icons/fa";
 import { useState, useRef } from "react";
 import Addingsec from "./Addingsec";
 import Addingthd from "./Addingthd";
-import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import { FaChevronLeft } from "react-icons/fa";
 // import { IoIosArrowDown } from "react-icons/io";
 
-const Adding = () => {
+const Addingft = () => {
   const [selectedDate, setSelectedDate] = useState(null);
 
   const [isChecked1, setIsChecked1] = useState(false);
@@ -804,40 +804,34 @@ const Adding = () => {
             }}
           >
             <Link
-              to=""
+              to="/adding"
               className="bg-customBlue rounded pl-2 pr-2 text-white font-semibold"
             >
               <FaChevronLeft className="mt-1" />
             </Link>
             <Link
-              to="#"
+              to="adding"
               className="bg-gry rounded pl-2 pr-2 text-white font-semibold"
             >
               1
             </Link>
             <Link
-              to=""
+              to="adding"
               className="bg-customBlue rounded pl-2 pr-2 text-white font-semibold"
             >
               2
             </Link>
             <Link
-              to=""
+              to="adding"
               className="bg-customBlue rounded pl-2 pr-2 text-white font-semibold"
             >
               3
             </Link>
             <Link
-              to=""
+              to="/addingft"
               className="bg-customBlue rounded pl-2 pr-2 text-white font-semibold"
             >
               4
-            </Link>
-            <Link
-              to=""
-              className="bg-customBlue rounded pl-2 pr-2 text-white font-semibold"
-            >
-              <FaChevronRight className="mt-1" />
             </Link>
           </div>
         </div>
@@ -846,4 +840,4 @@ const Adding = () => {
   );
 };
 
-export default Adding;
+export default Addingft;
