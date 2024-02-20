@@ -5,6 +5,7 @@ import BlogFooter from "./LandPage/BlogFooter";
 import MarketFooter from "./LandPage/MarketFooter";
 import { Route, Routes } from "react-router-dom"; // Import Routes from 'react-router-dom'
 
+
 const images = [
   "https://via.placeholder.com/500",
   "https://via.placeholder.com/500",
@@ -12,12 +13,14 @@ const images = [
 ];
 
 const Home = () => {
-
   return (
     <>
       <LandingPage />
-    <Routes>       <Route path="/" element={<HeroSection />} />
+      <Routes>
+        {" "}
+        <Route path="/" element={<HeroSection />} />
       </Routes>
+        
       <HerroSecond images={images} />
       <BlogFooter />
       <MarketFooter />

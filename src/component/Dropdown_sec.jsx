@@ -170,7 +170,7 @@ const Dropdown_sec = () => {
               className="submenu-arrow"
               style={{ backgroundImage: `url(${submenuArrow})` }}
             >
-              <FaChevronUp />
+              <FaChevronUp className="text-5xl" />
             </div>
           </a>
           {firstDropdownVisible && (

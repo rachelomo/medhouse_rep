@@ -205,7 +205,7 @@ const Dropdown_Thrd = () => {
               className="submenu-arrow"
               style={{ backgroundImage: `url(${submenuArrow})` }}
             >
-              <FaChevronUp />
+              <FaChevronUp className="text-5xl" />
             </div>
           </a>
 

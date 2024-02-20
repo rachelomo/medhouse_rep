@@ -141,12 +141,7 @@ const FeaturedMedicalHousing = () => {
           alignItems: "center",
         }}
       > */}
-      <Link
-        to="#"
-        href="https://console.cloud.google.com/."
-        className="float-link"
-        id="btn_map"
-      >
+      <Link to="/map" className="float-link" id="btn_map">
         View on map →
       </Link>
       <h2>

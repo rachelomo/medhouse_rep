@@ -205,11 +205,8 @@ const Dropdown = () => {
         <div className="submenu">
           <a href="#">
             Medical Schools
-            <div
-              className="submenu-arrow"
-              style={{ backgroundImage: `url(${submenuArrow})` }}
-            >
-              <FaChevronUp />
+            <div className="submenu-arrow">
+              <FaChevronUp className="text-5xl" />
             </div>
           </a>
 

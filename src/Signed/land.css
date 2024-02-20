@@ -54,7 +54,7 @@ body {
   display: inline-block;
 }
 .submenu-arrow {
-  margin-top: 36px;
+  margin-top: 16px;
   margin-left: 40px;
   position: absolute;
   display: none;
@@ -178,11 +178,11 @@ body {
 }
 
 .dropdown-menu {
-  background-color: #000;
-  opacity: 0.5;
+  background-color: rgba(0, 0, 0, 0.808);
+  /* opacity: 0.5; */
   z-index: 10;
   width: 120vw;
-  height: 70vh;
+  height: 60vh;
   position: relative;
   color: white;
 }
