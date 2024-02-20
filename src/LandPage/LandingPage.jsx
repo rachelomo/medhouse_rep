@@ -118,7 +118,7 @@ const LandingPage = () => {
           )}
         </div>
         <button type="submit" className="default-link ml-1 mt-0.5">
-          <Link to="/">
+          <Link to="/Listing">
             {" "}
             <IoArrowForward className="ml-2.5" />
           </Link>

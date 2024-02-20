@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import submenuArrow from "../assets/submenu-arrow.png";
+import arrow from "../assets/submenu-arrow.gif";
 const Dropdown_sec = () => {
   const [firstDropdownVisible, setFirstDropdownVisible] = useState(false);
   const [secondDropdownVisible, setSecondDropdownVisible] = useState(false);
@@ -166,11 +166,16 @@ const Dropdown_sec = () => {
         <div className="submenu" style={{ position: "fixed", left: "20vw" }}>
           <a href="#">
             Hospital
-            <div
-              className="submenu-arrow"
-              style={{ backgroundImage: `url(${submenuArrow})` }}
-            >
-              <FaChevronUp className="text-5xl" />
+            <div className="submenu-arrow ml-1">
+              <img
+                src={arrow}
+                alt="arrow"
+                className="mt-6"
+                style={{
+                  width: "22px",
+                  height: "10px",
+                }}
+              />
             </div>
           </a>
           {firstDropdownVisible && (
@@ -181,7 +186,7 @@ const Dropdown_sec = () => {
                 gap: "3em",
                 right: "25vw",
                 paddingLeft: "130px",
-                marginTop: " 7.3vh",
+                marginTop: " 5.3vh",
               }}
             >
               <ul>
@@ -193,11 +198,23 @@ const Dropdown_sec = () => {
                 className="dropdown-item relative top-10"
                 onClick={() => setSecondDropdownVisible(!secondDropdownVisible)}
               >
-                <Link to="#"> Canada</Link>
+                <Link
+                  to="#"
+                  className="hover:text-blue-500 hover:transition-colors hover:duration-150"
+                >
+                  {" "}
+                  Canada
+                </Link>
                 {secondDropdownVisible ? (
-                  <FaChevronUp style={{ marginTop: "6px" }} />
+                  <FaChevronUp
+                    style={{ marginTop: "6px", color: "blue" }}
+                    className="hover:text-blue-500 hover:transition-colors hover:duration-150"
+                  />
                 ) : (
-                  <FaChevronUp style={{ marginTop: "6px" }} />
+                  <FaChevronUp
+                    style={{ marginTop: "6px", color: "blue" }}
+                    className="hover:text-blue-500 hover:transition-colors hover:duration-150"
+                  />
                 )}
               </div>
               {secondDropdownVisible && (
@@ -206,7 +223,7 @@ const Dropdown_sec = () => {
                   style={{ position: "absolute", left: "39vw", top: "60px" }}
                 >
                   <div
-                    className="dropdown-item"
+                    className=" dropdown-item hover:text-blue-500 hover:transition-colors hover:duration-150"
                     style={{ display: "flex", flexDirection: "row" }}
                     onClick={() =>
                       setThirdDropdownVisible(!thirdDropdownVisible)
@@ -214,9 +231,15 @@ const Dropdown_sec = () => {
                   >
                     Alberta
                     {thirdDropdownVisible ? (
-                      <FaChevronUp style={{ marginTop: "6px" }} />
+                      <FaChevronUp
+                        style={{ marginTop: "6px", color: "blue" }}
+                        className="hover:text-blue-500 hover:transition-colors hover:duration-150"
+                      />
                     ) : (
-                      <FaChevronDown style={{ marginTop: "6px" }} />
+                      <FaChevronDown
+                        style={{ marginTop: "6px", color: "blue" }}
+                        className="hover:text-blue-500 hover:transition-colors hover:duration-150"
+                      />
                     )}
                   </div>
                   {thirdDropdownVisible && (
@@ -236,16 +259,22 @@ const Dropdown_sec = () => {
               <div className="text-dropdown  relative top-10">
                 {" "}
                 <div
-                  className="text ml-20"
+                  className="text ml-20 hover:text-blue-500 hover:transition-colors hover:duration-150"
                   onClick={toggleDropdown}
                   style={{ display: "flex", flexDirection: "row" }}
                 >
                   {" "}
                   United State{" "}
                   {isOpen ? (
-                    <FaChevronUp style={{ marginTop: "6px" }} />
+                    <FaChevronUp
+                      style={{ marginTop: "6px", color: "blue" }}
+                      className="hover:text-blue-500 hover:transition-colors hover:duration-150"
+                    />
                   ) : (
-                    <FaChevronDown style={{ marginTop: "6px" }} />
+                    <FaChevronDown
+                      style={{ marginTop: "6px", color: "blue" }}
+                      className="hover:text-blue-500 hover:transition-colors hover:duration-150"
+                    />
                   )}
                 </div>
                 {isOpen && (

@@ -112,7 +112,7 @@ const Adding = () => {
                 </div>
               </div>
 
-              <div className="flex flex-col w-60 gap-3 bg-white">
+              <div className="pl-3 flex flex-col w-60 gap-3 bg-white pb-5">
                 <div className="relative inline-block mt-10">
                   <div
                     // style={{ width: "15vw" }}

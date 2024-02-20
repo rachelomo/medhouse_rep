@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import submenuArrow from "../assets/submenu-arrow.png";
+import arrow from "../assets/submenu-arrow.gif";
 const Dropdown_Thrd = () => {
   const [firstDropdownVisible, setFirstDropdownVisible] = useState(false);
   const [secondDropdownVisible, setSecondDropdownVisible] = useState(false);
@@ -201,11 +201,16 @@ const Dropdown_Thrd = () => {
         <div className="submenu" style={{ position: "fixed", left: "25vw" }}>
           <a href="#">
             Search Location
-            <div
-              className="submenu-arrow"
-              style={{ backgroundImage: `url(${submenuArrow})` }}
-            >
-              <FaChevronUp className="text-5xl" />
+            <div className="submenu-arrow ml-8">
+              <img
+                src={arrow}
+                alt="arrow"
+                className="mt-6"
+                style={{
+                  width: "22px",
+                  height: "10px",
+                }}
+              />
             </div>
           </a>
 
@@ -217,57 +222,117 @@ const Dropdown_Thrd = () => {
                 gap: "3em",
                 right: "25vw",
                 paddingLeft: "130px",
-                marginTop: " 7.3vh",
+                marginTop: " 5.3vh",
               }}
             >
-              <ul>
+              <ul className="flex flex-col gap-2 ">
                 <li style={{ fontSize: "2em" }}>Search by medical school</li>
                 <li>
                   {" "}
-                  <Link to="#">Popular Locations</Link>
+                  <Link
+                    style={{ fontSize: "15px" }}
+                    to="#"
+                    className="hover:text-blue-500 hover:transition-colors hover:duration-150"
+                  >
+                    Popular Locations
+                  </Link>
                 </li>
                 <li>
-                  <Link to="#">University of Toronto</Link>
+                  <Link
+                    to="#"
+                    className="hover:text-blue-500 hover:transition-colors hover:duration-150"
+                  >
+                    University of Toronto
+                  </Link>
                   <li>
-                    <Link to="#"> University of British Columbia</Link>
+                    <Link
+                      to="#"
+                      className="hover:text-blue-500 hover:transition-colors hover:duration-150"
+                    >
+                      {" "}
+                      University of British Columbia
+                    </Link>
                   </li>{" "}
                   <li>
-                    <Link to="#">
+                    <Link
+                      to="#"
+                      className="hover:text-blue-500 hover:transition-colors hover:duration-150"
+                    >
                       Western University Schulich School of Medicine
                     </Link>
                   </li>{" "}
                   <li>
-                    <Link to="#">Mc Master University</Link>
+                    <Link
+                      to="#"
+                      className="hover:text-blue-500 hover:transition-colors hover:duration-150"
+                    >
+                      Mc Master University
+                    </Link>
                   </li>
                   <li>
-                    <Link to="#">University of Ottawa</Link>
+                    <Link
+                      to="#"
+                      className="hover:text-blue-500 hover:transition-colors hover:duration-150"
+                    >
+                      University of Ottawa
+                    </Link>
                   </li>{" "}
                   <li>
-                    <Link to="#">University of Calgary</Link>
+                    <Link
+                      to="#"
+                      className="hover:text-blue-500 hover:transition-colors hover:duration-150"
+                    >
+                      University of Calgary
+                    </Link>
                   </li>{" "}
                   <li>
-                    <Link to="#">McGill University </Link>
+                    <Link
+                      to="#"
+                      className="hover:text-blue-500 hover:transition-colors hover:duration-150"
+                    >
+                      McGill University{" "}
+                    </Link>
                   </li>
                   <li>
-                    <Link to="#"> University of Alberta</Link>
+                    <Link
+                      to="#"
+                      className="hover:text-blue-500 hover:transition-colors hover:duration-150"
+                    >
+                      {" "}
+                      University of Alberta
+                    </Link>
                   </li>{" "}
                   <li>
-                    <Link to="#">University of Manitoba</Link>
+                    <Link
+                      to="#"
+                      className="hover:text-blue-500 hover:transition-colors hover:duration-150"
+                    >
+                      University of Manitoba
+                    </Link>
                   </li>{" "}
                   <li>
-                    <Link to="#">
+                    <Link
+                      to="#"
+                      className="hover:text-blue-500 hover:transition-colors hover:duration-150"
+                    >
                       {" "}
                       SUNY State University of New York Downstate <br /> Medical
                       Center College of Medicine
                     </Link>
                   </li>{" "}
                   <li>
-                    <Link to="#">
+                    <Link
+                      to="#"
+                      className="hover:text-blue-500 hover:transition-colors hover:duration-150"
+                    >
                       NOSM University (Northern Ontario School of Medicine){" "}
                     </Link>
                   </li>
                   <li>
-                    <Link to="#">
+                    <Link
+                      to="#"
+                      className="hover:text-blue-500 hover:transition-colors hover:duration-150"
+                    >
                       {" "}
                       Dalhousie Medical School-Halifax and New Brunswick Campus
                     </Link>
@@ -280,11 +345,23 @@ const Dropdown_Thrd = () => {
                 className="dropdown-item relative top-10"
                 onClick={() => setSecondDropdownVisible(!secondDropdownVisible)}
               >
-                <Link to="#"> Canada</Link>
+                <Link
+                  to="#"
+                  className="hover:text-blue-500 hover:transition-colors hover:duration-150"
+                >
+                  {" "}
+                  Canada
+                </Link>
                 {secondDropdownVisible ? (
-                  <FaChevronUp style={{ marginTop: "6px" }} />
+                  <FaChevronUp
+                    style={{ marginTop: "6px", color: "blue" }}
+                    className="hover:text-blue-500 hover:transition-colors hover:duration-150"
+                  />
                 ) : (
-                  <FaChevronUp style={{ marginTop: "6px" }} />
+                  <FaChevronUp
+                    style={{ marginTop: "6px", color: "blue" }}
+                    className="hover:text-blue-500 hover:transition-colors hover:duration-150"
+                  />
                 )}
               </div>
               {secondDropdownVisible && (
@@ -301,9 +378,15 @@ const Dropdown_Thrd = () => {
                   >
                     Alberta
                     {thirdDropdownVisible ? (
-                      <FaChevronUp style={{ marginTop: "6px" }} />
+                      <FaChevronUp
+                        style={{ marginTop: "6px", color: "blue" }}
+                        className="hover:text-blue-500 hover:transition-colors hover:duration-150"
+                      />
                     ) : (
-                      <FaChevronDown style={{ marginTop: "6px" }} />
+                      <FaChevronDown
+                        style={{ marginTop: "6px", color: "blue" }}
+                        className="hover:text-blue-500 hover:transition-colors hover:duration-150"
+                      />
                     )}
                   </div>
                   {thirdDropdownVisible && (
@@ -323,20 +406,26 @@ const Dropdown_Thrd = () => {
               <div className="text-dropdown  relative top-10">
                 {" "}
                 <div
-                  className="text ml-20"
+                  className="text ml-20 hover:text-blue-500 hover:transition-colors hover:duration-150"
                   onClick={toggleDropdown}
                   style={{ display: "flex", flexDirection: "row" }}
                 >
                   {" "}
                   United State{" "}
                   {isOpen ? (
-                    <FaChevronUp style={{ marginTop: "6px" }} />
+                    <FaChevronUp
+                      style={{ marginTop: "6px", color: "blue" }}
+                      className="hover:text-blue-500 hover:transition-colors hover:duration-150"
+                    />
                   ) : (
-                    <FaChevronDown style={{ marginTop: "6px" }} />
+                    <FaChevronDown
+                      style={{ marginTop: "6px", color: "blue" }}
+                      className="hover:text-blue-500 hover:transition-colors hover:duration-150"
+                    />
                   )}
                 </div>
                 {isOpen && (
-                  <div className="dropdown_cont">
+                  <div className="dropdown_cont cursor-pointer">
                     {dropdownItems.map((item) => (
                       <div key={item.id} onClick={() => onItemClick(item.id)}>
                         <div
@@ -381,49 +470,70 @@ const Dropdown_Thrd = () => {
                     bottom: "25px",
                   }}
                 >
-                  <Link to="#">Europe</Link>
+                  <Link
+                    to="#"
+                    className="hover:text-blue-500 hover:transition-colors hover:duration-150"
+                  >
+                    Europe
+                  </Link>
                   <div
                     onClick={toggleDropdown1}
                     style={{ display: "flex", flexDirection: "row" }}
                   >
                     Oceania{" "}
                     {isOpen1 ? (
-                      <FaChevronUp style={{ marginTop: "6px" }} />
+                      <FaChevronUp
+                        style={{ marginTop: "6px", color: "blue" }}
+                        className="hover:text-blue-500 hover:transition-colors hover:duration-150"
+                      />
                     ) : (
-                      <FaChevronDown style={{ marginTop: "6px" }} />
+                      <FaChevronDown
+                        style={{ marginTop: "6px", color: "blue" }}
+                        className="hover:text-blue-500 hover:transition-colors hover:duration-150"
+                      />
                     )}
                   </div>
                   {isOpen1 && (
                     <div>
-                      Dropdown 1 Content
+                      California
                       <div
                         onClick={toggleDropdown2}
                         style={{ display: "flex", flexDirection: "row" }}
                       >
-                        Nested Dropdown 1{" "}
+                        Pennsylvania{" "}
                         {isOpen2 ? (
-                          <FaChevronUp style={{ marginTop: "6px" }} />
+                          <FaChevronUp
+                            style={{ marginTop: "6px", color: "blue" }}
+                            className="hover:text-blue-500 hover:transition-colors hover:duration-150"
+                          />
                         ) : (
-                          <FaChevronDown style={{ marginTop: "6px" }} />
+                          <FaChevronDown
+                            style={{ marginTop: "6px", color: "blue" }}
+                            className="hover:text-blue-500 hover:transition-colors hover:duration-150"
+                          />
                         )}
                       </div>
                       {isOpen2 && (
                         <div>
-                          Nested Dropdown 1 Content
+                          New York
                           <div
                             onClick={toggleDropdown3}
                             style={{ display: "flex", flexDirection: "row" }}
                           >
-                            Nested Nested Dropdown 1{" "}
+                            South Carolina{" "}
                             {isOpen3 ? (
-                              <FaChevronUp style={{ marginTop: "6px" }} />
+                              <FaChevronUp
+                                style={{ marginTop: "6px", color: "blue" }}
+                                className="hover:text-blue-500 hover:transition-colors hover:duration-150"
+                              />
                             ) : (
-                              <FaChevronDown style={{ marginTop: "6px" }} />
+                              <FaChevronDown
+                                style={{ marginTop: "6px", color: "blue" }}
+                                className="hover:text-blue-500 hover:transition-colors hover:duration-150"
+                              />
                             )}
                           </div>
-                          {isOpen3 && (
-                            <div>Nested Nested Dropdown 1 Content</div>
-                          )}
+                          {isOpen3 && <div>South Africa</div>}
                         </div>
                       )}
                     </div>
@@ -432,16 +542,27 @@ const Dropdown_Thrd = () => {
                     onClick={toggleDropdown2}
                     style={{ display: "flex", flexDirection: "row" }}
                   >
-                    Dropdown 2{" "}
+                    Hawaii{" "}
                     {isOpen2 ? (
-                      <FaChevronUp style={{ marginTop: "6px" }} />
+                      <FaChevronUp
+                        style={{ marginTop: "6px", color: "blue" }}
+                        className="hover:text-blue-500 hover:transition-colors hover:duration-150"
+                      />
                     ) : (
-                      <FaChevronDown style={{ marginTop: "6px" }} />
+                      <FaChevronDown
+                        style={{ marginTop: "6px", color: "blue" }}
+                        className="hover:text-blue-500 hover:transition-colors hover:duration-150"
+                      />
                     )}
                   </div>
                   {isOpen2 && <div>Caribbean</div>}
                   <div>
-                    <Link to="">Other Countries</Link>
+                    <Link
+                      to=""
+                      className="hover:text-blue-500 hover:transition-colors hover:duration-150"
+                    >
+                      Other Countries
+                    </Link>
                   </div>
                 </div>
               </div>

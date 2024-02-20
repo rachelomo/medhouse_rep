@@ -1,27 +1,66 @@
-// import { FaChevronUp } from "react-icons/fa";
+import { useState } from "react";
+import arrow from "../assets/submenu-arrow.gif";
 import { Link } from "react-router-dom";
-const Faq = () => {
+const FAQ = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
-    <div className="dp">
-      <Link to="" className="Faq">
-        <Link to="#"> FAQ</Link>
-        <div
-          className="arrow"
-          // style={{ marginTop: "36px", marginLeft: "10px" }}
-        >
-          {/* <FaChevronUp /> */}
-        </div>
-      </Link>
-      <div className="dpc_black">
-        <li className="li">
-          <Link to="/SignUP">FAQ for landlord</Link>
-        </li>
-        <li className="li">
-          <Link to="">FAQ for tenant</Link>
-        </li>
+    <div className="faq-container">
+      <div
+        className="faq-question"
+        onMouseEnter={toggleDropdown}
+        onMouseLeave={toggleDropdown}
+      >
+        <p>Faq</p>
+
+        {isOpen && (
+          <div
+            style={{
+              display: "block",
+              position: "absolute",
+              minWidth: "200px",
+            }}
+          >
+            <img
+              src={arrow}
+              alt="arrow"
+              className="mt-6"
+              style={{
+                width: "22px",
+                height: "10px",
+              }}
+            />
+            <div className="bg-black opacity-60 text-white w-100 relative right-20">
+              <ul className="p-5">
+                <li>
+                  <Link
+                    to="/signup"
+                    className="hover:text-blue-500"
+                    style={{ fontSize: "15px" }}
+                  >
+                    Faq for landlord
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/"
+                    className="hover:text-blue-500"
+                    style={{ fontSize: "15px" }}
+                  >
+                    Faq for tenants
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );
 };
 
-export default Faq;
+export default FAQ;
