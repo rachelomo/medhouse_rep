@@ -6,6 +6,7 @@ import Signing from "./Signed/Signing.jsx";
 import CopyWrite from "./LandPage/CopyWrite.jsx";
 import Medhouse from "./LandPage/Medhouse.jsx";
 import Nav from "./Nav.jsx";
+import Login from "./login/Login.jsx"
 import "./App.css";
 
 function App() {
@@ -41,6 +42,8 @@ function App() {
       {isNavVisible && <Nav className="nav" />}
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+
         <Route
           path="/signup"
           element={
