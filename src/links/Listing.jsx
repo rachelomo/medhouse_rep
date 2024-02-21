@@ -1,6 +1,6 @@
 import waitinRoom from "../assets/slider_1.jpg";
 import maker_1 from "../assets/marker_1.png";
-import { FaArrowCircleDown } from "react-icons/fa";
+import { FaArrowDown } from "react-icons/fa";
 const Listing = () => {
   return (
     <div>
@@ -31,7 +31,7 @@ const Listing = () => {
           </span>
           <div className="text-customBlue flex justify-between w-60 bg-customBlue text-white h-8 p-1">
             order now
-            <FaArrowCircleDown className="mt-1" />
+            <FaArrowDown className="mt-1" />
           </div>
         </div>
       </div>

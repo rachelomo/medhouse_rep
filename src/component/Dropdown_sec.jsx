@@ -170,7 +170,7 @@ const Dropdown_sec = () => {
               <img
                 src={arrow}
                 alt="arrow"
-                className="mt-6"
+                className="mt-7"
                 style={{
                   width: "22px",
                   height: "10px",
@@ -186,7 +186,7 @@ const Dropdown_sec = () => {
                 gap: "3em",
                 right: "25vw",
                 paddingLeft: "130px",
-                marginTop: " 5.3vh",
+                marginTop: " 6.5vh",
               }}
             >
               <ul>
