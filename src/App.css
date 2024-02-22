@@ -45,3 +45,45 @@ body {
 }
 
 /* loading circle */
+.faqfst {
+  position: relative;
+}
+
+.faqsec {
+  cursor: pointer;
+  /* padding: 10px; */
+  border: 1px solid #ccc;
+  border-radius: 1px;
+  display: flex;
+  align-items: center;
+}
+
+.faqList {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-top: none;
+  border-radius: 0 0 5px 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 5;
+  display: none;
+}
+
+.faqList ul {
+  list-style-type: none;
+  /* padding: 0;
+  margin: 0; */
+}
+
+.faqList ul li {
+}
+
+.faqfst.open .faqList {
+  display: block;
+}
+img {
+  display: inline-block;
+  max-width: 100%;
+}

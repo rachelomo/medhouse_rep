@@ -10,10 +10,10 @@ const AboutPath = () => {
           src={waitinRoom}
           alt="firstImage"
           className="w-full h-80 object-cover"
-          style={{ marginTop: "8.8vw" }}
+          style={{ marginTop: "10vw" }}
         />
         <div className="absolute inset-0 flex items-center justify-center">
-          <p className="text-white text-4xl mb-20 ">ABOUT US</p>
+          <p className="text-white text-4xl mb-20">ABOUT US</p>
         </div>
       </div>
       <div className="mt-10">

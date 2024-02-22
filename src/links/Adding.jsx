@@ -63,7 +63,7 @@ const Adding = () => {
           src={waitinRoom}
           alt="firstImage"
           className="w-full h-80 object-cover"
-          style={{ marginTop: "8.8vw" }}
+          style={{ marginTop: "10vw" }}
         />
         <div className="absolute inset-0 flex items-center justify-center">
           <p className="text-white text-4xl mb-20 mr-10">TENANT WANT ADS</p>

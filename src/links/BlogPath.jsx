@@ -20,24 +20,31 @@ const BlogPath = () => {
           src={waitinRoom}
           alt="firstImage"
           className="w-full h-80 object-cover mt-40"
+          style={{ marginTop: "10vw" }}
         />
         <div className="absolute inset-0 flex items-center justify-center">
-          <p className="text-white text-4xl">BLOG</p>
+          <p className="text-white text-4xl mb-20">BLOG</p>
         </div>
       </div>
       <div>
         <div className="flex flex-wrap justify-center mt-5 gap-10">
           <div className="border border-black bg-black">
             <img src={card_13} alt="card" className="max-w-screen-md w-80" />
-            <p className="text-center p-2 text-white">Friday, Febuary 9, 2024</p>
+            <p className="text-center p-2 text-white">
+              Friday, Febuary 9, 2024
+            </p>
           </div>
           <div className="border border-black bg-black">
             <img src={card_14} alt="card" className="max-w-screen-md w-80" />
-            <p className="p-2 text-center text-white">Thursday, Febuary , 2024</p>
+            <p className="p-2 text-center text-white">
+              Thursday, Febuary , 2024
+            </p>
           </div>
           <div className="border border-black bg-black">
             <img src={card_15} alt="card" className="max-w-screen-md w-80" />
-            <p className="p-2 text-center text-white">Thursday, January 25, 2024</p>
+            <p className="p-2 text-center text-white">
+              Thursday, January 25, 2024
+            </p>
           </div>
           <div className="border border-black bg-black">
             <img src={card_16} alt="card" className="max-w-screen-md w-80" />
@@ -49,11 +56,15 @@ const BlogPath = () => {
           </div>
           <div className="border border-black bg-black">
             <img src={card_18} alt="card" className="max-w-screen-md w-80" />
-            <p className="p-2 text-center text-white">Thursday, Match 16, 2023</p>
+            <p className="p-2 text-center text-white">
+              Thursday, Match 16, 2023
+            </p>
           </div>
           <div className="border border-black bg-black">
             <img src={card_19} alt="card" className="max-w-screen-md w-80" />
-            <p className="text-center p-2 text-white">Saturday, Match 11, 2023</p>
+            <p className="text-center p-2 text-white">
+              Saturday, Match 11, 2023
+            </p>
           </div>
           <div className="border border-black bg-black">
             <img src={card_20} alt="card" className="max-w-screen-md w-80" />
@@ -61,20 +72,28 @@ const BlogPath = () => {
           </div>
           <div className="border border-black bg-black">
             <img src={card_21} alt="card" className="max-w-screen-md w-80" />
-            <p className="text-center p-2 text-white">Tuesday, February 14, 2023</p>
+            <p className="text-center p-2 text-white">
+              Tuesday, February 14, 2023
+            </p>
           </div>
           <div className="border border-black bg-black">
             {" "}
             <img src={card_22} alt="card" className="max-w-screen-md w-80" />
-            <p className="text-center p-2 text-white">Tuesday, February 14, 2023</p>
+            <p className="text-center p-2 text-white">
+              Tuesday, February 14, 2023
+            </p>
           </div>
           <div className="border border-black bg-black">
             <img src={card_23} alt="card" className="max-w-screen-md w-80" />
-            <p className="text-center p-2 text-white">Tuesday, January 24, 2023</p>
+            <p className="text-center p-2 text-white">
+              Tuesday, January 24, 2023
+            </p>
           </div>
           <div className="border border-black bg-black">
             <img src={card_24} alt="card" className="max-w-screen-md w-80" />
-            <p className="text-center p-2 text-white">Thursday, January 12, 2023</p>
+            <p className="text-center p-2 text-white">
+              Thursday, January 12, 2023
+            </p>
           </div>
         </div>
         <div

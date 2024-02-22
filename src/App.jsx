@@ -18,6 +18,9 @@ import Addingft from "./links/Addingft.jsx";
 import Messageme from "./Message/Messageme.jsx";
 import Mapapi from "./LandPage/Mapapi.jsx";
 import Listing from "./links/Listing.jsx";
+import FaqPath from "./links/FaqPath.jsx";
+import FaqPathsec from "./links/FaqPathsec.jsx";
+import FaqTenant from "./links/FaqTenant.jsx";
 
 function App() {
   const [currentStep, setCurrentStep] = useState(1);
@@ -75,6 +78,9 @@ function App() {
         <Route path="/adding" element={<Adding />} />
         <Route path="/addingft" element={<Addingft />} />
         <Route path="/Listing" element={<Listing />} />
+        <Route path="/faqpath" element={<FaqPath />} />
+        <Route path="/FaqPathsec" element={<FaqPathsec />} />
+        <Route path="/faqtenant" element={<FaqTenant/>} />
       </Routes>
 
       <Medhouse />

@@ -22,7 +22,6 @@ const LandingPage = () => {
     "Boston",
     "Houston",
     "Atlanta",
-
     "Denver",
   ];
   const scrollContainerRef = useRef(null);

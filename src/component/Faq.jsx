@@ -15,7 +15,7 @@ const FAQ = () => {
         onMouseEnter={toggleDropdown}
         onMouseLeave={toggleDropdown}
       >
-        <p>Faq</p>
+        <Link to="/faqpath">Faq</Link>
 
         {isOpen && (
           <div
@@ -38,7 +38,7 @@ const FAQ = () => {
               <ul className="p-5">
                 <li>
                   <Link
-                    to="/signup"
+                    to="/FaqPathsec"
                     className="hover:text-blue-500"
                     style={{ fontSize: "15px" }}
                   >
@@ -47,7 +47,7 @@ const FAQ = () => {
                 </li>
                 <li>
                   <Link
-                    to="/"
+                    to="/faqtenant"
                     className="hover:text-blue-500"
                     style={{ fontSize: "15px" }}
                   >
