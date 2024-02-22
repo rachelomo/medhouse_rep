@@ -454,5 +454,4 @@ const SignUp = ({ currentStep, onNextStep, onPrevStep }) => {
     </div>
   );
 };
-
 export default SignUp;

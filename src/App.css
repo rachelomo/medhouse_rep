@@ -2,10 +2,47 @@
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #fff;
+  background-color: #ffffffc0;
   z-index: 1000;
+  font-family: "Montserrat", Arial;
 }
 
 body {
   overflow-x: hidden;
+}
+.height {
+  height: 100%;
+}
+.function {
+  transition: background-color 0.3s ease-in;
+}
+.function:hover {
+  color: white;
+}
+.hover:hover {
+  background-color: #333333;
+}
+/* #33333370 */
+@media (max-width: 768px) {
+  .MEDS,
+  .f,
+  .Drop {
+    display: none;
+  }
+  .land {
+    margin-top: 20vh;
+  }
+  .MenuIcon {
+    display: "block";
+  }
+  .bg-or:focus {
+  }
+  .land {
+    margin-top: 25vh;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .MenuIcon {
+    display: none;
+  }
 }

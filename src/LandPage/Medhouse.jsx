@@ -26,7 +26,7 @@ const medicalHousingData = [
 ];
 const Medhouse = () => {
   return (
-    <div className="Medhousing">
+    <div className="Medhousing mt-20">
       <div style={{ textAlign: "center" }}>
         <h2>
           <strong

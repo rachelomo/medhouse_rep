@@ -82,11 +82,7 @@ const HerroSecond = () => {
       <h2 style={{ color: "black" }}>
         Popular Medical <strong>Schools</strong>{" "}
       </h2>
-      <Link
-        href="https://console.cloud.google.com/."
-        className="float-link"
-        id="btn_map"
-      >
+      <Link to="/purpular" className="float-link">
         See all →
       </Link>
       {/* </div> */}

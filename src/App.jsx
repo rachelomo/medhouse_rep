@@ -8,7 +8,20 @@ import Medhouse from "./LandPage/Medhouse.jsx";
 import Nav from "./Nav.jsx";
 import Login from "./login/Login.jsx"
 import "./App.css";
-
+import BlogPath from "./links/BlogPath.jsx";
+import Purpular from "./links/Purpular.jsx";
+import Pricing from "./links/Pricing.jsx";
+import AboutPath from "./links/AboutPath.jsx";
+import Adding from "./links/Adding.jsx";
+import Cardsec from "./links/Cardsec.jsx";
+import Cardthd from "./links/Cardthd.jsx";
+import Addingft from "./links/Addingft.jsx";
+import Messageme from "./Message/Messageme.jsx";
+import Mapapi from "./LandPage/Mapapi.jsx";
+import Listing from "./links/Listing.jsx";
+import FaqPath from "./links/FaqPath.jsx";
+import FaqPathsec from "./links/FaqPathsec.jsx";
+import FaqTenant from "./links/FaqTenant.jsx";
 function App() {
   const [currentStep, setCurrentStep] = useState(1);
   const [isNavVisible, setIsNavVisible] = useState(true);
@@ -24,16 +37,17 @@ function App() {
   useEffect(() => {
     const handleScroll = () => {
       const top = window.scrollY;
-      if (top > 100) { // You can adjust this value based on your preference
+      if (top > 100) {
+        // You can adjust this value based on your preference
         setIsNavVisible(false);
       } else {
         setIsNavVisible(true);
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
@@ -42,7 +56,11 @@ function App() {
       {isNavVisible && <Nav className="nav" />}
       <Routes>
         <Route path="/" element={<Home />} />
+
         <Route path="/login" element={<Login />} />
+
+
+        <Route path="/map" element={<Mapapi />} />
 
         <Route
           path="/signup"
@@ -54,10 +72,25 @@ function App() {
             />
           }
         />
+
+        <Route path="/blogpath" element={<BlogPath />} />
+        <Route path="/card/2" element={<Cardsec />} />
+        <Route path="/card/3" element={<Cardthd />} />
+        <Route path="/purpular" element={<Purpular />} />
+        <Route path="/pricing" element={<Pricing />} />
+        <Route path="/aboutpath" element={<AboutPath />} />
+        <Route path="/adding" element={<Adding />} />
+        <Route path="/addingft" element={<Addingft />} />
+        <Route path="/Listing" element={<Listing />} />
+        <Route path="/faqpath" element={<FaqPath />} />
+        <Route path="/FaqPathsec" element={<FaqPathsec />} />
+        <Route path="/faqtenant" element={<FaqTenant />} />
       </Routes>
+
       <Medhouse />
       <Signing />
       <CopyWrite />
+      <Messageme />
     </BrowserRouter>
   );
 }

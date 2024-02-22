@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import { Link } from "react-router-dom";
 
 const Price = () => {
   return (
-    <div>Pricing</div>
-  )
-}
+    <div className="price ">
+      <Link to="/pricing">Pricing</Link>
+    </div>
+  );
+};
 
-export default Price
+export default Price;
