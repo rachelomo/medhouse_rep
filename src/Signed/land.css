@@ -62,7 +62,9 @@ body {
   width: 100%;
 }
 .btn-register {
-  padding: 0.3vw 0.9vw;
+  padding: 6px;
+  padding-left: 10px;
+  padding-right: 10px;
   font-family: "Montserrat", Arial;
   font-size: 0.781vw;
   font-weight: 400;

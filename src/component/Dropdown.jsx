@@ -210,10 +210,10 @@ const Dropdown = () => {
               <img
                 src={arrow}
                 alt="arrow"
-                className="mt-7"
                 style={{
                   width: "22px",
                   height: "10px",
+                  marginTop: "4vh",
                 }}
               />
             </div>
@@ -227,7 +227,7 @@ const Dropdown = () => {
                 gap: "3em",
                 right: "12vw",
                 paddingLeft: "80px",
-                marginTop: " 6.5vh",
+                marginTop: " 5.5vh",
               }}
             >
               <ul className="flex flex-col gap-2 ">

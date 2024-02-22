@@ -22,7 +22,7 @@ const MenuIcon = () => {
 
   return (
     <div className="MenuIcon">
-      <div className="text-center">
+      <div className="">
         <Link to="/">
           <img
             src={logo}

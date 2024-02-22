@@ -28,10 +28,10 @@ const FAQ = () => {
             <img
               src={arrow}
               alt="arrow"
-              className="mt-6"
               style={{
                 width: "22px",
                 height: "10px",
+                marginTop: "4vh",
               }}
             />
             <div className="bg-black opacity-60 text-white w-100 relative right-20">
