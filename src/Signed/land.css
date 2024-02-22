@@ -44,7 +44,6 @@ body {
 }
 .med {
   display: flex;
-  padding-right: 30px;
   align-items: center;
   gap: 10px;
 }
@@ -53,18 +52,17 @@ body {
   gap: 1em;
   color: rgba(128, 128, 128, 0.384);
 }
-.button {
+/* .button {
   margin-left: 200px;
-  display: flex;
+ 
   gap: 1em;
-}
+} */
 .Cards > Link > img {
   width: 100%;
 }
 .btn-register {
   padding: 6px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 5px;
   font-family: "Montserrat", Arial;
   font-size: 0.781vw;
   font-weight: 400;
@@ -145,8 +143,8 @@ body {
 }
 .Drop_app {
   position: fixed;
-  top: 0;
   width: 85%;
+  top: 0;
   background-color: rgba(255, 255, 255, 0.979);
   padding: 30px;
   box-shadow: inset;

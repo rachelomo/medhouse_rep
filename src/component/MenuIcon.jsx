@@ -70,7 +70,7 @@ const MenuIcon = () => {
           </div>
           {menuOpen && (
             <div
-              className="bg-w menu-overlay text-white flex flex-col pl-4 text-semibold pt-5"
+              className="bg-w menu-overlay text-white flex flex-col pl-20 text-semibold pt-5"
               style={{
                 width: "120vw",
                 height: "70vh",

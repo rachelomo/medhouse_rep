@@ -13,7 +13,7 @@ import {
 
 const Navigation = () => {
   return (
-    <nav className="MEDS ml-3">
+    <nav className="MEDS">
       <div className="MED">
         {" "}
         <Link to="/">
@@ -24,7 +24,7 @@ const Navigation = () => {
             style={{
               height: "10vh",
               width: "14vw",
-              marginRight: "22vw",
+              marginRight: "30vw",
               cursor: "pointer",
             }}
           />
@@ -69,14 +69,14 @@ const Navigation = () => {
             </Link>
           </div>
           <div className="button">
-            <span className="dropdown-account">
-              <Link to="" className="gray index">
+            <span className="dropdown-account ">
+              <Link to="" className="gray index ml-20">
                 {" "}
                 Login
               </Link>
             </span>
 
-            <div className="dp">
+            <div className="dp pl-5">
               <Link to="" className="btn-register">
                 Join us
               </Link>
