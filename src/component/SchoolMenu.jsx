@@ -2,7 +2,7 @@ import { useState } from "react";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import arrow from "../assets/submenu-arrow.gif";
-const Dropdown_Thrd = () => {
+const SchoolMenu = () => {
   const [firstDropdownVisible, setFirstDropdownVisible] = useState(false);
   const [secondDropdownVisible, setSecondDropdownVisible] = useState(false);
   const [thirdDropdownVisible, setThirdDropdownVisible] = useState(false);
@@ -11,6 +11,7 @@ const Dropdown_Thrd = () => {
   const [activeItem, setActiveItem] = useState(null);
   const [isOpen1, setIsOpen1] = useState(false);
   const [isOpen2, setIsOpen2] = useState(false);
+  const [isOpen3, setIsOpen3] = useState(false);
 
   const toggleDropdown1 = () => {
     setIsOpen1(!isOpen1);
@@ -18,6 +19,9 @@ const Dropdown_Thrd = () => {
 
   const toggleDropdown2 = () => {
     setIsOpen2(!isOpen2);
+  };
+  const toggleDropdown3 = () => {
+    setIsOpen2(!isOpen3);
   };
 
   const dropdownItems = [
@@ -194,44 +198,30 @@ const Dropdown_Thrd = () => {
   return (
     <div className="nested-dropdown">
       <div
-        className="dropdown"
+        className=""
         onMouseEnter={() => setFirstDropdownVisible(true)}
         onMouseLeave={() => setFirstDropdownVisible(false)}
       >
-        <div className="submenu" style={{ position: "fixed", left: "25vw" }}>
-          <a href="#">
-            Search Location
-            <div className="submenu-arrow ml-8">
-              <img
-                src={arrow}
-                alt="arrow"
-                className="mt-7"
-                style={{
-                  width: "22px",
-                  height: "10px",
-                }}
-              />
-            </div>
-          </a>
-
+        <div className="">
+          <a href="#">Medical Schools</a>
           {firstDropdownVisible && (
             <div
               className="dropdown-menu"
               style={{
                 display: "flex",
                 gap: "3em",
-                right: "25vw",
-                paddingLeft: "130px",
+                right: "12vw",
+                paddingLeft: "80px",
                 marginTop: " 6.5vh",
               }}
             >
               <ul className="flex flex-col gap-2 ">
-                <li style={{ fontSize: "2em" }}>Search by medical school</li>
+                <li >Search by medical school</li>
                 <li>
                   {" "}
                   <Link
-                    style={{ fontSize: "15px" }}
                     to="#"
+                  
                     className="hover:text-blue-500 hover:transition-colors hover:duration-150"
                   >
                     Popular Locations
@@ -406,7 +396,7 @@ const Dropdown_Thrd = () => {
               <div className="text-dropdown  relative top-10">
                 {" "}
                 <div
-                  className="text ml-20 hover:text-blue-500 hover:transition-colors hover:duration-150"
+                  className="text ml-20"
                   onClick={toggleDropdown}
                   style={{ display: "flex", flexDirection: "row" }}
                 >
@@ -425,7 +415,7 @@ const Dropdown_Thrd = () => {
                   )}
                 </div>
                 {isOpen && (
-                  <div className="dropdown_cont cursor-pointer">
+                  <div className="dropdown_cont">
                     {dropdownItems.map((item) => (
                       <div key={item.id} onClick={() => onItemClick(item.id)}>
                         <div
@@ -495,12 +485,12 @@ const Dropdown_Thrd = () => {
                   </div>
                   {isOpen1 && (
                     <div>
-                      California
+                      Dropdown 1 Content
                       <div
                         onClick={toggleDropdown2}
                         style={{ display: "flex", flexDirection: "row" }}
                       >
-                        Pennsylvania{" "}
+                        Nested Dropdown 1{" "}
                         {isOpen2 ? (
                           <FaChevronUp
                             style={{ marginTop: "6px", color: "blue" }}
@@ -515,12 +505,12 @@ const Dropdown_Thrd = () => {
                       </div>
                       {isOpen2 && (
                         <div>
-                          New York
+                          Nested Dropdown 1 Content
                           <div
                             onClick={toggleDropdown3}
                             style={{ display: "flex", flexDirection: "row" }}
                           >
-                            South Carolina{" "}
+                            Nested Nested Dropdown 1{" "}
                             {isOpen3 ? (
                               <FaChevronUp
                                 style={{ marginTop: "6px", color: "blue" }}
@@ -533,7 +523,9 @@ const Dropdown_Thrd = () => {
                               />
                             )}
                           </div>
-                          {isOpen3 && <div>South Africa</div>}
+                          {isOpen3 && (
+                            <div>Nested Nested Dropdown 1 Content</div>
+                          )}
                         </div>
                       )}
                     </div>
@@ -542,7 +534,7 @@ const Dropdown_Thrd = () => {
                     onClick={toggleDropdown2}
                     style={{ display: "flex", flexDirection: "row" }}
                   >
-                    Hawaii{" "}
+                    Dropdown 2{" "}
                     {isOpen2 ? (
                       <FaChevronUp
                         style={{ marginTop: "6px", color: "blue" }}
@@ -574,4 +566,4 @@ const Dropdown_Thrd = () => {
   );
 };
 
-export default Dropdown_Thrd;
+export default SchoolMenu;

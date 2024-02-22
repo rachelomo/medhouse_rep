@@ -10,11 +10,13 @@ import Adds from "./component/Adds.jsx";
 
 import Faq from "./component/Faq.jsx";
 import Dropdown from "./component/Dropdown.jsx";
+import MenuIcon from "./component/MenuIcon.jsx";
 const Nav = () => {
   return (
     <>
       <div className="Drop_app">
         <Navigation />
+        <MenuIcon />
         <div className="Drop">
           <Dropdown />
           <Dropdown_sec />

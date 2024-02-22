@@ -74,7 +74,7 @@ const LandingPage = () => {
                 <input
                   type="text"
                   placeholder="Where?"
-                  className="border border-gray-300 p-2 w-full"
+                  className=" border border-gray-300 p-2 w-full"
                   value={searchTerm}
                   onChange={handleSearchChange}
                 />
@@ -95,11 +95,11 @@ const LandingPage = () => {
           )}
         </div>
         {/* date picker */}
-        <div className="relative inline-block ml-1">
+        <div className="relative inline-block w-60">
           <FaCalendarAlt
             selected={selectedDate}
             onChange={(date) => setSelectedDate(date)}
-            className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400"
+            className="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400"
             style={{ zIndex: "10" }}
           />
           <DatePicker
@@ -116,12 +116,16 @@ const LandingPage = () => {
             </div>
           )}
         </div>
-        <button type="submit" className="default-link ml-1 mt-0.5">
-          <Link to="/Listing">
-            {" "}
-            <IoArrowForward className="ml-2.5" />
-          </Link>
-        </button>
+        <Link
+          to="/Listing"
+          className="onPh default-link bg-customBlue pt-3 pr-2"
+        >
+          {" "}
+          <IoArrowForward className="ml-2.5" />
+        </Link>
+        {/* <button type="submit" className="default-link ml-1 mt-0.5">
+         
+        </button> */}
       </div>
     </div>
   );

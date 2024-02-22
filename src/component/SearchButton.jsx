@@ -9,7 +9,7 @@ const SearchButton = () => {
   };
 
   return (
-    <div className="flex justify-end mr-24">
+    <div className="f flex justify-end mr-24">
       {" "}
       {/* Added flex container with justify-end */}
       <div className="">

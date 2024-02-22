@@ -22,7 +22,8 @@ const Navigation = () => {
             src={logo}
             alt="Logo"
             style={{
-              height: "5.5vh",
+              height: "10vh",
+              width: "14vw",
               marginRight: "22vw",
               cursor: "pointer",
             }}

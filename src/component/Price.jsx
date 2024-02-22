@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Price = () => {
   return (
-    <div className="price">
+    <div className="price ">
       <Link to="/pricing">Pricing</Link>
     </div>
   );

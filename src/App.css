@@ -2,7 +2,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #fff;
+  background-color: #ffffffc0;
   z-index: 1000;
   font-family: "Montserrat", Arial;
 }
@@ -23,67 +23,26 @@ body {
   background-color: #333333;
 }
 /* #33333370 */
-.message {
-  width: 60px;
-  height: 60px;
-  background-color: #0c527b;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 60px;
-  cursor: pointer;
-  color: white;
+@media (max-width: 768px) {
+  .MEDS,
+  .f,
+  .Drop {
+    display: none;
+  }
+  .land {
+    margin-top: 20vh;
+  }
+  .MenuIcon {
+    display: "block";
+  }
+  .bg-or:focus {
+  }
+  .land {
+    margin-top: 25vh;
+  }
 }
-.element {
-  border-radius: 50%;
-  bottom: 28.5px;
-  height: px;
-  position: fixed;
-  right: 65px;
-  width: 15px;
-  z-index: 2147483646;
-}
-
-/* loading circle */
-.faqfst {
-  position: relative;
-}
-
-.faqsec {
-  cursor: pointer;
-  /* padding: 10px; */
-  border: 1px solid #ccc;
-  border-radius: 1px;
-  display: flex;
-  align-items: center;
-}
-
-.faqList {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: #fff;
-  border: 1px solid #ccc;
-  border-top: none;
-  border-radius: 0 0 5px 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  z-index: 5;
-  display: none;
-}
-
-.faqList ul {
-  list-style-type: none;
-  /* padding: 0;
-  margin: 0; */
-}
-
-.faqList ul li {
-}
-
-.faqfst.open .faqList {
-  display: block;
-}
-img {
-  display: inline-block;
-  max-width: 100%;
+@media only screen and (min-width: 768px) {
+  .MenuIcon {
+    display: none;
+  }
 }

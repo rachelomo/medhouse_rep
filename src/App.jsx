@@ -21,7 +21,6 @@ import Listing from "./links/Listing.jsx";
 import FaqPath from "./links/FaqPath.jsx";
 import FaqPathsec from "./links/FaqPathsec.jsx";
 import FaqTenant from "./links/FaqTenant.jsx";
-
 function App() {
   const [currentStep, setCurrentStep] = useState(1);
   const [isNavVisible, setIsNavVisible] = useState(true);
@@ -54,7 +53,6 @@ function App() {
   return (
     <BrowserRouter>
       {isNavVisible && <Nav className="nav" />}
-
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/map" element={<Mapapi />} />
@@ -80,7 +78,7 @@ function App() {
         <Route path="/Listing" element={<Listing />} />
         <Route path="/faqpath" element={<FaqPath />} />
         <Route path="/FaqPathsec" element={<FaqPathsec />} />
-        <Route path="/faqtenant" element={<FaqTenant/>} />
+        <Route path="/faqtenant" element={<FaqTenant />} />
       </Routes>
 
       <Medhouse />

@@ -2,7 +2,7 @@ import { useState } from "react";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import arrow from "../assets/submenu-arrow.gif";
-const Dropdown_Thrd = () => {
+const TenantNenu = () => {
   const [firstDropdownVisible, setFirstDropdownVisible] = useState(false);
   const [secondDropdownVisible, setSecondDropdownVisible] = useState(false);
   const [thirdDropdownVisible, setThirdDropdownVisible] = useState(false);
@@ -194,25 +194,12 @@ const Dropdown_Thrd = () => {
   return (
     <div className="nested-dropdown">
       <div
-        className="dropdown"
+        className=""
         onMouseEnter={() => setFirstDropdownVisible(true)}
         onMouseLeave={() => setFirstDropdownVisible(false)}
       >
-        <div className="submenu" style={{ position: "fixed", left: "25vw" }}>
-          <a href="#">
-            Search Location
-            <div className="submenu-arrow ml-8">
-              <img
-                src={arrow}
-                alt="arrow"
-                className="mt-7"
-                style={{
-                  width: "22px",
-                  height: "10px",
-                }}
-              />
-            </div>
-          </a>
+        <div className="">
+          <a href="#">Search Location</a>
 
           {firstDropdownVisible && (
             <div
@@ -226,11 +213,10 @@ const Dropdown_Thrd = () => {
               }}
             >
               <ul className="flex flex-col gap-2 ">
-                <li style={{ fontSize: "2em" }}>Search by medical school</li>
+                <li>Search by medical school</li>
                 <li>
                   {" "}
                   <Link
-                    style={{ fontSize: "15px" }}
                     to="#"
                     className="hover:text-blue-500 hover:transition-colors hover:duration-150"
                   >
@@ -574,4 +560,4 @@ const Dropdown_Thrd = () => {
   );
 };
 
-export default Dropdown_Thrd;
+export default TenantNenu;

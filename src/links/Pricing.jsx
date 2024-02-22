@@ -108,7 +108,7 @@ const Pricing = () => {
               </Link>
             </div>
           </div>
-          <div className="bg-brown w-[70vw]">
+          <div className="bg-w w-[70vw]">
             <div className="flex justify-center mt-10">
               <img src={pricing_1} alt="pricing image" />
               <img src={pricing_2} alt="pricing image" />
