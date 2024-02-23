@@ -496,7 +496,7 @@ const Dropdown = () => {
                     to="#"
                     className="text-white hover:text-pastel-pink hover:transition-colors hover:duration-150"
                   >
-                    Europe
+                    <p className="hover:text-pastel-pink">Europe</p>
                   </Link>
                   <div
                     onClick={toggleDropdown1}
@@ -512,7 +512,7 @@ const Dropdown = () => {
                       />
                     ) : (
                       <FaChevronDown
-                        style={{ marginTop: "6px", color: "blue" }}
+                        style={{ marginTop: "6px" }}
                         className="text-pastel-pink hover:text-pastel-pink hover:transition-colors hover:duration-150"
                       />
                     )}
@@ -530,12 +530,12 @@ const Dropdown = () => {
                         </p>{" "}
                         {isOpen2 ? (
                           <FaChevronUp
-                            style={{ marginTop: "6px", color: "blue" }}
+                            style={{ marginTop: "6px" }}
                             className="text-pastel-pink hover:text-pastel-pink hover:transition-colors hover:duration-150"
                           />
                         ) : (
                           <FaChevronDown
-                            style={{ marginTop: "6px", color: "blue" }}
+                            style={{ marginTop: "6px" }}
                             className="text-pastel-pink hover:text-pastel-pink hover:transition-colors hover:duration-150"
                           />
                         )}
@@ -552,12 +552,12 @@ const Dropdown = () => {
                             </p>{" "}
                             {isOpen3 ? (
                               <FaChevronUp
-                                style={{ marginTop: "6px", color: "blue" }}
+                                style={{ marginTop: "6px" }}
                                 className="text-pastel-pink hover:text-pastel-pink hover:transition-colors hover:duration-150"
                               />
                             ) : (
                               <FaChevronDown
-                                style={{ marginTop: "6px", color: "blue" }}
+                                style={{ marginTop: "6px" }}
                                 className="text-pastel-pink hover:text-pastel-pink hover:transition-colors hover:duration-150"
                               />
                             )}
@@ -582,12 +582,12 @@ const Dropdown = () => {
 
                     {isOpen2 ? (
                       <FaChevronUp
-                        style={{ marginTop: "6px", color: "blue" }}
+                        style={{ marginTop: "6px" }}
                         className="text-pastel-pink hover:text-pastel-pink hover:transition-colors hover:duration-150"
                       />
                     ) : (
                       <FaChevronDown
-                        style={{ marginTop: "6px", color: "blue" }}
+                        style={{ marginTop: "6px" }}
                         className="text-pastel-pink hover:text-pastel-pink hover:transition-colors hover:duration-150"
                       />
                     )}
