@@ -94,7 +94,7 @@ const HerroSecond = () => {
         {medicalHousingData.map((housing) => (
           <div
             key={housing.id}
-            className="hover"
+            className="hoveron"
             style={{ width: "16vw", objectFit: "cover" }}
           >
             <img
@@ -106,9 +106,9 @@ const HerroSecond = () => {
                 objectFit: "contain",
               }}
             />
-            <Link 
+            <Link
               to="/"
-              className="mt-10"
+              className="mt-10 hover:text-pastel-pink"
               style={{
                 width: "12.5vw",
                 textAlign: "center",

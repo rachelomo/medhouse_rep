@@ -289,6 +289,9 @@ input {
   padding-bottom: 90px;
   overflow: hidden;
 }
+.Cards:hover {
+  color: #f8c8dc;
+}
 .featured-medical-housing {
   margin-top: 50px;
 }
@@ -381,9 +384,8 @@ h5 {
 } /* .copyWrite {
         
         } */
-.hover:hover {
+.hoveron:hover {
   background-color: #000;
-  color: #f8c8dc;
   cursor: pointer;
 }
 

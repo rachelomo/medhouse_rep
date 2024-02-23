@@ -6,7 +6,7 @@ import { useState } from "react";
 const medicalHousingData = [
   {
     id: 1,
-    name: "  1 bedroom fully furnished in Westboro - close to Civic Hospital ",
+    name: "1 bedroom fully furnished in Westboro - close to Civic Hospital ",
     location: "Ottawa, Ontario / Ad #04356",
     price: "$1,000.00",
     imageUrl:
@@ -154,8 +154,8 @@ const FeaturedMedicalHousing = () => {
       </h2>
       {/* </div> */}
 
-      <div>
-        <Link to="/" className="Cards">
+      <div className="">
+        <Link to="/" className="Cards ">
           {medicalHousingData.map((housing) => (
             <div key={housing.id} className="Card_split">
               <img
@@ -170,22 +170,29 @@ const FeaturedMedicalHousing = () => {
                 }}
               />
               <div className="option">
-                <span>
-                  <strong
-                    className="hover:text-#F8C8DC"
-                    style={{
-                      display: "flex",
-                      justifyContent: "center",
-                      width: "18vw",
-                      textAlign: "center",
-                      marginLeft: "20px",
-                      color: "#0c527b",
-                    }}
-                  >
-                    {housing.name}
-                  </strong>
-                </span>
-                <span style={{ textAlign: "center", marginLeft: "15px" }}>
+                <div
+                  className=""
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    width: "18vw",
+                    textAlign: "center",
+                    marginLeft: "20px",
+                    color: "#0c527b",
+                    fontSize: "11.9px",
+                    paddingTop: "15px",
+                  }}
+                >
+                  <h3 className="hover:text-pastel-pink">{housing.name}</h3>
+                </div>
+
+                <span
+                  style={{
+                    textAlign: "center",
+                    marginLeft: "4vw",
+                    fontSize: "11.9px",
+                  }}
+                >
                   {housing.location}
                 </span>
                 <span
