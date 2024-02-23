@@ -19,30 +19,28 @@ body {
 .function:hover {
   color: white;
 }
-.hover:hover {
-  background-color: #333333;
-}
 /* #33333370 */
 @media (max-width: 768px) {
-  .MEDS,
-  .f,
-  .Drop {
+  .MEDS {
     display: none;
-  }
-  .land {
-    margin-top: 20vh;
   }
   .MenuIcon {
     display: "block";
   }
-  .bg-or:focus {
+  .adds,
+  .blog,.about {
+    font-size: 1.4em;
   }
-  .land {
-    margin-top: 25vh;
+  .price {
+    font-size: 1.4em;
+    margin-top: 6vh;
   }
 }
 @media only screen and (min-width: 768px) {
   .MenuIcon {
     display: none;
+  }
+  .price {
+    margin-left: 21vw;
   }
 }

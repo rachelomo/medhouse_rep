@@ -15,7 +15,9 @@ const FAQ = () => {
         onMouseEnter={toggleDropdown}
         onMouseLeave={toggleDropdown}
       >
-        <Link to="/faqpath">Faq</Link>
+        <Link to="/faqpath" className="text-2xl" style={{ color: "#f8c8dc" }}>
+          Faq
+        </Link>
 
         {isOpen && (
           <div
@@ -25,12 +27,19 @@ const FAQ = () => {
               minWidth: "200px",
             }}
           >
-            <div className="bg-black opacity-60 text-white w-100 relative">
-              <ul className="p-5 mt-4" style={{ width: "120vw" }}>
+            <div className="bg-black opacity-80 text-pastel-pink w-100 relative right-20">
+              <ul
+                className=" p-5 mt-4 "
+                style={{
+                  width: "120vw",
+                  textDecoration: "none",
+                  listStyle: "none",
+                }}
+              >
                 <li>
                   <Link
                     to="/FaqPathsec"
-                    className="hover:text-blue-500"
+                    className="text-white hover:text-pastel-pink"
                     style={{ fontSize: "15px" }}
                   >
                     Faq for landlord
@@ -39,7 +48,7 @@ const FAQ = () => {
                 <li>
                   <Link
                     to="/faqtenant"
-                    className="hover:text-blue-500"
+                    className="text-white hover:text-pastel-pink"
                     style={{ fontSize: "15px" }}
                   >
                     Faq for tenants

@@ -158,13 +158,22 @@ const HouseMenu = () => {
   return (
     <div className="nested-dropdown">
       <div
-        className=""
-        style={{}}
+        className="dropdown"
+        style={{ position: "absolute" }}
         onMouseEnter={() => setFirstDropdownVisible(true)}
         onMouseLeave={() => setFirstDropdownVisible(false)}
       >
-        <div className="">
-          <a href="#">Hospital</a>
+        <div className="submenu">
+          <Link
+            className="text-2xl "
+            to="#"
+            style={{
+              color: " #f8c8dc",
+              textDecoration: "none",
+            }}
+          >
+            Hospital
+          </Link>
           {firstDropdownVisible && (
             <div
               className="dropdown-menu"
@@ -173,11 +182,13 @@ const HouseMenu = () => {
                 gap: "3em",
                 right: "25vw",
                 paddingLeft: "130px",
-                marginTop: " 6.5vh",
+                marginTop: "5.5vh",
               }}
             >
               <ul>
-                <li>Search by medical school</li>
+                <li style={{ fontSize: "2em", listStyle: "none" }}>
+                  Search by medical school
+                </li>
               </ul>
 
               <div
@@ -186,21 +197,22 @@ const HouseMenu = () => {
                 onClick={() => setSecondDropdownVisible(!secondDropdownVisible)}
               >
                 <Link
+                  style={{ textDecoration: "none", color: "white" }}
                   to="#"
                   className="hover:text-blue-500 hover:transition-colors hover:duration-150"
                 >
                   {" "}
-                  Canada
+                  <p className="hover:text-pastel-pink"> Canada</p>
                 </Link>
                 {secondDropdownVisible ? (
                   <FaChevronUp
-                    style={{ marginTop: "6px", color: "blue" }}
-                    className="hover:text-blue-500 hover:transition-colors hover:duration-150"
+                    style={{ marginTop: "6px" }}
+                    className="text-pastel-pink  hover:text-pastel-pink  hover:transition-colors hover:duration-150"
                   />
                 ) : (
                   <FaChevronUp
-                    style={{ marginTop: "6px", color: "blue" }}
-                    className="hover:text-blue-500 hover:transition-colors hover:duration-150"
+                    style={{ marginTop: "6px" }}
+                    className="text-pastel-pink  hover:text-pastel-pink hover:transition-colors hover:duration-150"
                   />
                 )}
               </div>
@@ -210,22 +222,23 @@ const HouseMenu = () => {
                   style={{ position: "absolute", left: "39vw", top: "60px" }}
                 >
                   <div
-                    className=" dropdown-item hover:text-blue-500 hover:transition-colors hover:duration-150"
+                    className=" dropdown-item hover:text-pastel-pink  hover:transition-colors hover:duration-150"
                     style={{ display: "flex", flexDirection: "row" }}
                     onClick={() =>
                       setThirdDropdownVisible(!thirdDropdownVisible)
                     }
                   >
+                    <p className="text-pastel-pink"> Alberta</p>
                     Alberta
                     {thirdDropdownVisible ? (
                       <FaChevronUp
-                        style={{ marginTop: "6px", color: "blue" }}
-                        className="hover:text-blue-500 hover:transition-colors hover:duration-150"
+                        style={{ marginTop: "6px" }}
+                        className="text-pastel-pink  hover:text-pastel-pink hover:transition-colors hover:duration-150"
                       />
                     ) : (
                       <FaChevronDown
-                        style={{ marginTop: "6px", color: "blue" }}
-                        className="hover:text-blue-500 hover:transition-colors hover:duration-150"
+                        style={{ marginTop: "6px" }}
+                        className="text-pastel-pink  hover:text-pastel-pink  hover:transition-colors hover:duration-150"
                       />
                     )}
                   </div>
@@ -233,7 +246,7 @@ const HouseMenu = () => {
                     <div className="nested-dropdown-menu">
                       <div className="dropDown-items relative right-20">
                         {" "}
-                        <h5 style={{}}>
+                        <h5 className="hover:text-pastel-pink ">
                           University of Alberta Faculty of Medicine and
                           Dentistry (15) University of Calgary Cumming School of
                           Medicine (22)
@@ -251,16 +264,16 @@ const HouseMenu = () => {
                   style={{ display: "flex", flexDirection: "row" }}
                 >
                   {" "}
-                  United State{" "}
+                  <p className="hover:text-pastel-pink">United State </p>
                   {isOpen ? (
                     <FaChevronUp
-                      style={{ marginTop: "6px", color: "blue" }}
-                      className="hover:text-blue-500 hover:transition-colors hover:duration-150"
+                      style={{ marginTop: "6px" }}
+                      className="text-pastel-pink hover:text-pastel-pink hover:transition-colors hover:duration-150"
                     />
                   ) : (
                     <FaChevronDown
-                      style={{ marginTop: "6px", color: "blue" }}
-                      className="hover:text-blue-500 hover:transition-colors hover:duration-150"
+                      style={{ marginTop: "6px" }}
+                      className="text-pastel-pink hover:text-pastel-pink hover:transition-colors hover:duration-150"
                     />
                   )}
                 </div>

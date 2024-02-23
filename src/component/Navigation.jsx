@@ -81,7 +81,7 @@ const Navigation = () => {
             <div className="button  mt-3">
               <span className="dropdown-account ">
                 <Link
-                  to=""
+                  to="/login"
                   className=""
                   style={{ color: " #f8c8dc", textDecoration: "none" }}
                 >
@@ -100,7 +100,7 @@ const Navigation = () => {
                   <a href="SignUp" style={{ textDecoration: "none" }}>
                     <li className="li">I am a landlord</li>
                   </a>
-                  <Link to="/" style={{ textDecoration: "none" }}>
+                  <Link to="login" style={{ textDecoration: "none" }}>
                     <li className="li">I am a tenant</li>
                   </Link>
                 </div>

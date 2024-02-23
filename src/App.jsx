@@ -72,6 +72,14 @@ function App() {
             />
           }
         />
+        <Route
+          path="/login"
+          element={
+            <Login
+             
+            />
+          }
+        />
 
         <Route path="/blogpath" element={<BlogPath />} />
         <Route path="/card/2" element={<Cardsec />} />

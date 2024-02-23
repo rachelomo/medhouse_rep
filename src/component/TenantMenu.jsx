@@ -2,7 +2,7 @@ import { useState } from "react";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import arrow from "../assets/submenu-arrow.gif";
-const TenantNenu = () => {
+const TenantMenu = () => {
   const [firstDropdownVisible, setFirstDropdownVisible] = useState(false);
   const [secondDropdownVisible, setSecondDropdownVisible] = useState(false);
   const [thirdDropdownVisible, setThirdDropdownVisible] = useState(false);
@@ -194,12 +194,22 @@ const TenantNenu = () => {
   return (
     <div className="nested-dropdown">
       <div
-        className=""
+        className="dropdown"
+        style={{ position: "absolute" }}
         onMouseEnter={() => setFirstDropdownVisible(true)}
         onMouseLeave={() => setFirstDropdownVisible(false)}
       >
-        <div className="">
-          <a href="#">Search Location</a>
+        <div className="submenu mt-6">
+          <Link
+            className="text-2xl "
+            href="#"
+            style={{
+              textDecoration: "none",
+              color: " #f8c8dc",
+            }}
+          >
+            Search Location
+          </Link>
 
           {firstDropdownVisible && (
             <div
@@ -207,120 +217,158 @@ const TenantNenu = () => {
               style={{
                 display: "flex",
                 gap: "3em",
-                right: "25vw",
+                right: "30vw",
                 paddingLeft: "130px",
-                marginTop: " 6.5vh",
+                marginTop: " 5.5vh",
               }}
             >
-              <ul className="flex flex-col gap-2 ">
-                <li>Search by medical school</li>
+              <ul className="flex flex-col gap-2 list-none">
+                <li style={{ fontSize: "2em" }}>Search by medical school</li>
                 <li>
                   {" "}
                   <Link
+                    style={{ fontSize: "15px", textDecoration: "none" }}
                     to="#"
-                    className="hover:text-blue-500 hover:transition-colors hover:duration-150"
+                    className="text-white hover:text-pastel-pink hover:transition-colors hover:duration-150"
                   >
-                    Popular Locations
+                    <p className="hover:pastel-pink"> Popular Locations</p>
                   </Link>
                 </li>
                 <li>
                   <Link
+                    style={{ textDecoration: "none", color: "white" }}
                     to="#"
-                    className="hover:text-blue-500 hover:transition-colors hover:duration-150"
+                    className="hover:text-pastel-pink hover:transition-colors hover:duration-150"
                   >
-                    University of Toronto
+                    <p className="hover:text-pastel-pink">
+                      {" "}
+                      University of Toronto
+                    </p>
                   </Link>
                   <li>
                     <Link
+                      style={{ textDecoration: "none", color: "white" }}
                       to="#"
-                      className="hover:text-blue-500 hover:transition-colors hover:duration-150"
+                      className="hover:text-hover:text-pastel-pink hover:transition-colors hover:duration-150"
                     >
-                      {" "}
-                      University of British Columbia
+                      <p className="hover:text-pastel-pink">
+                        University of British Columbia
+                      </p>
                     </Link>
                   </li>{" "}
                   <li>
                     <Link
+                      style={{ textDecoration: "none", color: "white" }}
                       to="#"
-                      className="hover:text-blue-500 hover:transition-colors hover:duration-150"
+                      className="hover:text-pastel-pink hover:transition-colors hover:duration-150"
                     >
-                      Western University Schulich School of Medicine
+                      <p className="hover:text-pastel-pink">
+                        Western University Schulich School of Medicine
+                      </p>
                     </Link>
                   </li>{" "}
                   <li>
                     <Link
+                      style={{ textDecoration: "none", color: "white" }}
                       to="#"
-                      className="hover:text-blue-500 hover:transition-colors hover:duration-150"
+                      className="hover:text-pastel-pink hover:transition-colors hover:duration-150"
                     >
-                      Mc Master University
+                      <p className="hover:text-pastel-pink">
+                        Mc Master University
+                      </p>
                     </Link>
                   </li>
                   <li>
                     <Link
+                      style={{ textDecoration: "none", color: "white" }}
                       to="#"
-                      className="hover:text-blue-500 hover:transition-colors hover:duration-150"
+                      className="hover:text-pastel-pink hover:transition-colors hover:duration-150"
                     >
-                      University of Ottawa
+                      <p className="hover:text-pastel-pink">
+                        University of Ottawa
+                      </p>
                     </Link>
                   </li>{" "}
                   <li>
                     <Link
+                      style={{ textDecoration: "none", color: "white" }}
                       to="#"
-                      className="hover:text-blue-500 hover:transition-colors hover:duration-150"
+                      className="hover:text-pastel-pink hover:transition-colors hover:duration-150"
                     >
-                      University of Calgary
+                      <p className="hover:text-pastel-pink">
+                        University of Calgary
+                      </p>
                     </Link>
                   </li>{" "}
                   <li>
                     <Link
+                      style={{ textDecoration: "none", color: "white" }}
                       to="#"
-                      className="hover:text-blue-500 hover:transition-colors hover:duration-150"
+                      className="hover:text-pastel-pink hover:transition-colors hover:duration-150"
                     >
-                      McGill University{" "}
+                      <p className="hover:text-pastel-pink">
+                        McGill University{" "}
+                      </p>
                     </Link>
                   </li>
                   <li>
                     <Link
+                      style={{ textDecoration: "none", color: "white" }}
                       to="#"
-                      className="hover:text-blue-500 hover:transition-colors hover:duration-150"
+                      className="hover:text-pastel-pink hover:transition-colors hover:duration-150"
                     >
                       {" "}
-                      University of Alberta
+                      <p className="hover:text-pastel-pink">
+                        University of Alberta
+                      </p>
                     </Link>
                   </li>{" "}
                   <li>
                     <Link
+                      style={{ textDecoration: "none", color: "white" }}
                       to="#"
-                      className="hover:text-blue-500 hover:transition-colors hover:duration-150"
+                      className="hover:text-pastel-pink hover:transition-colors hover:duration-150"
                     >
-                      University of Manitoba
+                      <p className="hover:text-pastel-pink">
+                        University of Manitoba
+                      </p>
                     </Link>
                   </li>{" "}
                   <li>
                     <Link
+                      style={{ textDecoration: "none", color: "white" }}
                       to="#"
-                      className="hover:text-blue-500 hover:transition-colors hover:duration-150"
+                      className="hover:text-pastel-pink hover:transition-colors hover:duration-150"
                     >
                       {" "}
-                      SUNY State University of New York Downstate <br /> Medical
-                      Center College of Medicine
+                      <p className="hover:text-pastel-pink">
+                        SUNY State University of New York Downstate <br />{" "}
+                        Medical Center College of Medicine
+                      </p>
                     </Link>
                   </li>{" "}
                   <li>
                     <Link
+                      style={{ textDecoration: "none", color: "white" }}
                       to="#"
-                      className="hover:text-blue-500 hover:transition-colors hover:duration-150"
+                      className="hover:text-pastel-pink hover:transition-colors hover:duration-150"
                     >
-                      NOSM University (Northern Ontario School of Medicine){" "}
+                      <p className="hover:text-pastel-pink">
+                        NOSM University (Northern Ontario School of Medicine){" "}
+                      </p>
                     </Link>
                   </li>
                   <li>
                     <Link
+                      style={{ textDecoration: "none", color: "white" }}
                       to="#"
-                      className="hover:text-blue-500 hover:transition-colors hover:duration-150"
+                      className="hover:text-pastel-pink hover:transition-colors hover:duration-150"
                     >
                       {" "}
-                      Dalhousie Medical School-Halifax and New Brunswick Campus
+                      <p className="hover:text-pastel-pink">
+                        Dalhousie Medical School-Halifax and New Brunswick
+                        Campus
+                      </p>
                     </Link>
                   </li>
                 </li>
@@ -332,21 +380,22 @@ const TenantNenu = () => {
                 onClick={() => setSecondDropdownVisible(!secondDropdownVisible)}
               >
                 <Link
+                  style={{ textDecoration: "none", color: "white" }}
                   to="#"
-                  className="hover:text-blue-500 hover:transition-colors hover:duration-150"
+                  className="hover:text-pastel-pink hover:transition-colors hover:duration-150"
                 >
                   {" "}
-                  Canada
+                  <p className="hover:text-pastel-pink"> Canada</p>
                 </Link>
                 {secondDropdownVisible ? (
                   <FaChevronUp
-                    style={{ marginTop: "6px", color: "blue" }}
-                    className="hover:text-blue-500 hover:transition-colors hover:duration-150"
+                    style={{ marginTop: "6px" }}
+                    className="text-pastel-pink hover:text-pastel-pink hover:transition-colors hover:duration-150"
                   />
                 ) : (
                   <FaChevronUp
-                    style={{ marginTop: "6px", color: "blue" }}
-                    className="hover:text-blue-500 hover:transition-colors hover:duration-150"
+                    style={{ marginTop: "6px" }}
+                    className="text-pastel-pink hover:text-pastel-pink hover:transition-colors hover:duration-150"
                   />
                 )}
               </div>
@@ -365,13 +414,13 @@ const TenantNenu = () => {
                     Alberta
                     {thirdDropdownVisible ? (
                       <FaChevronUp
-                        style={{ marginTop: "6px", color: "blue" }}
-                        className="hover:text-blue-500 hover:transition-colors hover:duration-150"
+                        style={{ marginTop: "6px" }}
+                        className="text-pastel-pink hover:text-pastel-pink hover:transition-colors hover:duration-150"
                       />
                     ) : (
                       <FaChevronDown
-                        style={{ marginTop: "6px", color: "blue" }}
-                        className="hover:text-blue-500 hover:transition-colors hover:duration-150"
+                        style={{ marginTop: "6px" }}
+                        className="text-pastel-pink hover:text-pastel-pink hover:transition-colors hover:duration-150"
                       />
                     )}
                   </div>
@@ -379,7 +428,7 @@ const TenantNenu = () => {
                     <div className="nested-dropdown-menu">
                       <div className="dropDown-items relative right-20">
                         {" "}
-                        <h5 style={{}}>
+                        <h5 className="hover:text-pastel-pink">
                           University of Alberta Faculty of Medicine and
                           Dentistry (15) University of Calgary Cumming School of
                           Medicine (22)
@@ -392,21 +441,21 @@ const TenantNenu = () => {
               <div className="text-dropdown  relative top-10">
                 {" "}
                 <div
-                  className="text ml-20 hover:text-blue-500 hover:transition-colors hover:duration-150"
+                  className="text ml-20 hover:text-pastel-pink hover:transition-colors hover:duration-150"
                   onClick={toggleDropdown}
                   style={{ display: "flex", flexDirection: "row" }}
                 >
                   {" "}
-                  United State{" "}
+                  <p className="hover:text-pastel-pink">United State </p>
                   {isOpen ? (
                     <FaChevronUp
-                      style={{ marginTop: "6px", color: "blue" }}
-                      className="hover:text-blue-500 hover:transition-colors hover:duration-150"
+                      style={{ marginTop: "6px" }}
+                      className="text-pastel-pink hover:text-pastel-pink hover:transition-colors hover:duration-150"
                     />
                   ) : (
                     <FaChevronDown
-                      style={{ marginTop: "6px", color: "blue" }}
-                      className="hover:text-blue-500 hover:transition-colors hover:duration-150"
+                      style={{ marginTop: "6px" }}
+                      className=" text-pastel-pink hover:text-pastel-pink hover:transition-colors hover:duration-150"
                     />
                   )}
                 </div>
@@ -457,69 +506,76 @@ const TenantNenu = () => {
                   }}
                 >
                   <Link
+                    style={{ textDecoration: "none", color: "white" }}
                     to="#"
-                    className="hover:text-blue-500 hover:transition-colors hover:duration-150"
+                    className="text-pastel-pink hover:text-pastel-pink hover:transition-colors hover:duration-150"
                   >
-                    Europe
+                    <p className="hover:text-pastel-pink"> Europe</p>
                   </Link>
                   <div
                     onClick={toggleDropdown1}
                     style={{ display: "flex", flexDirection: "row" }}
                   >
-                    Oceania{" "}
+                    <p className="hover:text-pastel-pink">Oceania </p>
                     {isOpen1 ? (
                       <FaChevronUp
-                        style={{ marginTop: "6px", color: "blue" }}
-                        className="hover:text-blue-500 hover:transition-colors hover:duration-150"
+                        style={{ marginTop: "6px" }}
+                        className=" text-pastel-pink hover:text-pastel-pink hover:transition-colors hover:duration-150"
                       />
                     ) : (
                       <FaChevronDown
-                        style={{ marginTop: "6px", color: "blue" }}
-                        className="hover:text-blue-500 hover:transition-colors hover:duration-150"
+                        style={{ marginTop: "6px" }}
+                        className=" text-pastel-pink hover:text-pastel-pink hover:transition-colors hover:duration-150"
                       />
                     )}
                   </div>
                   {isOpen1 && (
-                    <div>
+                    <div className="hover:text-pastel-pink">
                       California
                       <div
                         onClick={toggleDropdown2}
                         style={{ display: "flex", flexDirection: "row" }}
                       >
-                        Pennsylvania{" "}
+                        <p className="hover:text-pastel-pink">Pennsylvania </p>
                         {isOpen2 ? (
                           <FaChevronUp
-                            style={{ marginTop: "6px", color: "blue" }}
-                            className="hover:text-blue-500 hover:transition-colors hover:duration-150"
+                            style={{ marginTop: "6px" }}
+                            className="text-pastel-pink hover:text-pastel-pink hover:transition-colors hover:duration-150"
                           />
                         ) : (
                           <FaChevronDown
-                            style={{ marginTop: "6px", color: "blue" }}
-                            className="hover:text-blue-500 hover:transition-colors hover:duration-150"
+                            style={{ marginTop: "6px" }}
+                            className=" text-pastel-pink hover:text-pastel-pink hover:transition-colors hover:duration-150"
                           />
                         )}
                       </div>
                       {isOpen2 && (
-                        <div>
+                        <div className="hover:text-pastel-pink">
                           New York
                           <div
                             onClick={toggleDropdown3}
                             style={{ display: "flex", flexDirection: "row" }}
                           >
-                            South Carolina{" "}
+                            <p className="hover:text-pastel-pink">
+                              South Carolina{" "}
+                            </p>
                             {isOpen3 ? (
                               <FaChevronUp
-                                style={{ marginTop: "6px", color: "blue" }}
-                                className="hover:text-blue-500 hover:transition-colors hover:duration-150"
+                                style={{ marginTop: "6px" }}
+                                className=" text-pastel-pink hover:text-pastel-pink hover:transition-colors hover:duration-150"
                               />
                             ) : (
                               <FaChevronDown
-                                style={{ marginTop: "6px", color: "blue" }}
-                                className="hover:text-blue-500 hover:transition-colors hover:duration-150"
+                                style={{ marginTop: "6px" }}
+                                className="text-pastel-pink hover:text-pastel-pink hover:transition-colors hover:duration-150"
                               />
                             )}
                           </div>
-                          {isOpen3 && <div>South Africa</div>}
+                          {isOpen3 && (
+                            <div className="hover:text-pastel-pink">
+                              South Africa
+                            </div>
+                          )}
                         </div>
                       )}
                     </div>
@@ -528,26 +584,27 @@ const TenantNenu = () => {
                     onClick={toggleDropdown2}
                     style={{ display: "flex", flexDirection: "row" }}
                   >
-                    Hawaii{" "}
+                    <p className="hover:text-pastel-pink">Hawaii</p>{" "}
                     {isOpen2 ? (
                       <FaChevronUp
-                        style={{ marginTop: "6px", color: "blue" }}
-                        className="hover:text-blue-500 hover:transition-colors hover:duration-150"
+                        style={{ marginTop: "6px" }}
+                        className="text-pastel-pink hover:text-pastel-pink hover:transition-colors hover:duration-150"
                       />
                     ) : (
                       <FaChevronDown
-                        style={{ marginTop: "6px", color: "blue" }}
-                        className="hover:text-blue-500 hover:transition-colors hover:duration-150"
+                        style={{ marginTop: "6px" }}
+                        className="text-pastel-pink hover:text-pastel-pink hover:transition-colors hover:duration-150"
                       />
                     )}
                   </div>
                   {isOpen2 && <div>Caribbean</div>}
                   <div>
                     <Link
+                      style={{ textDecoration: "none", color: "white" }}
                       to=""
-                      className="hover:text-blue-500 hover:transition-colors hover:duration-150"
+                      className="text-pastel-pink hover:text-pastel-pink hover:transition-colors hover:duration-150"
                     >
-                      Other Countries
+                      <p className="hover:text-pastel-pink">Other Countries</p>
                     </Link>
                   </div>
                 </div>
@@ -560,4 +617,4 @@ const TenantNenu = () => {
   );
 };
 
-export default TenantNenu;
+export default TenantMenu;
