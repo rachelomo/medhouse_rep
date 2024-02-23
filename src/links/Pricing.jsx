@@ -48,7 +48,7 @@ const Pricing = () => {
         </ul>
         <div className="bg-customBlue text-center p-10 w-90 mt-10">
           <h3 className="text-white text-2xl">Have more than 1 property?</h3>
-          <p className="text-red text-2xl mt-2">
+          <p className=" text-2xl mt-2" style={{ color: "#FF0000" }}>
             We offer 50% off additional listings in the same category!
           </p>
         </div>
@@ -108,7 +108,7 @@ const Pricing = () => {
               </Link>
             </div>
           </div>
-          <div className="bg-w w-[70vw]">
+          <div className="w-[70vw]" style={{ backgroundColor: "#262626" }}>
             <div className="flex justify-center mt-10">
               <img src={pricing_1} alt="pricing image" />
               <img src={pricing_2} alt="pricing image" />
@@ -177,7 +177,10 @@ const Pricing = () => {
               </div>
             </div>
           </div>
-          <div className="bg-deepFade w-[70vw]" style={{ height: "150vh" }}>
+          <div
+            className="w-[70vw]"
+            style={{ height: "150vh", backgroundColor: "#554728" }}
+          >
             <div className="flex justify-center mt-10">
               <img src={pricing_1} alt="pricing image" />
               <img src={pricing_2} alt="pricing image" />
@@ -265,7 +268,10 @@ const Pricing = () => {
               </Link>
             </div>
           </div>
-          <div className="bg-blur w-[70vw]">
+          <div
+            style={{ backgroundColor: "#1096E5" }}
+            className=" w-[70vw]"
+          >
             <div className="flex justify-center mt-10">
               <img src={pricing_4} alt="pricing image" />
             </div>

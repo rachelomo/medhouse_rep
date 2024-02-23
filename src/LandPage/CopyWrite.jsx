@@ -5,29 +5,53 @@ const CopyWrite = () => {
     <div className="copyWrite" style={{ marginTop: "100px" }}>
       <div
         className="bottom_link"
-        style={{ fontSize: "smaller", color: "#85B8D5" }}
+        style={{ fontSize: "11px", color: "#85B8D5", marginRight: "20px" }}
       >
-        <Link to="#">Mission</Link>
-        <Link to="#">Pricing</Link>
-        <Link to="#">Add your Property</Link>
-        <Link to="#">Faq</Link>
-        <Link to="#">Blog</Link>
-        <Link to="#">Privacy/GDPR</Link>
-        <Link to="#">sITE Map</Link>
+        <Link to="#" style={{ textDecoration: "none" }}>
+          Mission
+        </Link>
+        <Link style={{ textDecoration: "none" }} to="#">
+          Pricing
+        </Link>
+        <Link style={{ textDecoration: "none" }} to="#">
+          Add your Property
+        </Link>
+        <Link style={{ textDecoration: "none" }} to="#">
+          Faq
+        </Link>
+        <Link style={{ textDecoration: "none" }} to="#">
+          Blog
+        </Link>
+        <Link style={{ textDecoration: "none" }} to="#">
+          Privacy/GDPR
+        </Link>
+        <Link style={{ textDecoration: "none" }} to="#">
+          sITE Map
+        </Link>
       </div>
       <div>
-        <span className="copyright">
+        <p className="copyright flex flex-col">
           {" "}
-          © 2024 MedsHousing.com <br />
-          Built by{" "}
+          <span
+            style={{
+              fontSize: "10px",
+            }}
+          >
+            {" "}
+            © 2024 MedsHousing.com Built by
+          </span>
           <Link
+            style={{
+              textDecoration: "none",
+              fontSize: "smaller",
+            }}
             to="https://www.numerique.ca"
             target="blank"
             id="realisationFooter"
           >
             Numérique.ca
           </Link>
-        </span>
+        </p>
       </div>
     </div>
   );

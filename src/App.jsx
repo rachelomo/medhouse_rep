@@ -6,7 +6,7 @@ import Signing from "./Signed/Signing.jsx";
 import CopyWrite from "./LandPage/CopyWrite.jsx";
 import Medhouse from "./LandPage/Medhouse.jsx";
 import Nav from "./Nav.jsx";
-import Login from "./login/Login.jsx"
+import Login from "./login/Login.jsx";
 import "./App.css";
 import BlogPath from "./links/BlogPath.jsx";
 import Purpular from "./links/Purpular.jsx";
@@ -22,6 +22,7 @@ import Listing from "./links/Listing.jsx";
 import FaqPath from "./links/FaqPath.jsx";
 import FaqPathsec from "./links/FaqPathsec.jsx";
 import FaqTenant from "./links/FaqTenant.jsx";
+
 function App() {
   const [currentStep, setCurrentStep] = useState(1);
   const [isNavVisible, setIsNavVisible] = useState(true);
@@ -58,7 +59,6 @@ function App() {
         <Route path="/" element={<Home />} />
 
         <Route path="/login" element={<Login />} />
-
 
         <Route path="/map" element={<Mapapi />} />
 

@@ -29,7 +29,12 @@ const BlogFooter = () => {
       <h2>
         <strong style={{ color: "black" }}>Blog</strong>{" "}
       </h2>
-      <a href="/blogpath" className="float-link" id="btn_map">
+      <a
+        href="/blogpath"
+        className="float-link"
+        id="btn_map"
+        style={{ textDecoration: "none", color: "#F8C8DC" }}
+      >
         See all →
       </a>
       <div className="Blog" style={{ position: "relative", left: "50px" }}>
@@ -43,15 +48,20 @@ const BlogFooter = () => {
               }}
             />
             <div style={{ marginTop: "40px" }}>
-              <Link to="/">
+              <Link to="/" style={{ textDecoration: "none" }}>
                 <strong
-                  style={{ width: "20vw", position: "relative", top: "30px" }}
+                  style={{
+                    width: "20vw",
+                    position: "relative",
+                    top: "30px",
+                    textDecoration: "none",
+                  }}
                 >
                   {housing.name}
                 </strong>
               </Link>
 
-              <Link to="/">
+              <Link to="/" style={{ textDecoration: "none" }}>
                 <span>
                   <strong>{housing.title}</strong>
                   <br />
@@ -59,7 +69,7 @@ const BlogFooter = () => {
                 </span>
               </Link>
             </div>
-            <Link to="/">
+            <Link to="/" style={{ textDecoration: "none" }}>
               {" "}
               <i style={{ position: "relative", right: "72%" }}>Read more</i>
             </Link>

@@ -79,31 +79,41 @@ const HerroSecond = () => {
   return (
     <div className="HerroSecond">
       {/* <div > */}
-      <h2 style={{ color: "black" }}>
-        Popular Medical <strong>Schools</strong>{" "}
+      <h2 style={{ color: "#F8C8DC" }}>
+        Popular Medical <strong className="text-black">Schools</strong>{" "}
       </h2>
-      <Link to="/purpular" className="float-link">
+      <Link
+        to="/purpular"
+        className="float-link"
+        style={{ textDecoration: "none", color: "#F8C8DC" }}
+      >
         See all →
       </Link>
       {/* </div> */}
       <div className="HerroFooter">
         {medicalHousingData.map((housing) => (
-          <div key={housing.id} className="item">
+          <div
+            key={housing.id}
+            className="hover"
+            style={{ width: "16vw", objectFit: "cover" }}
+          >
             <img
+              className="text-center"
               src={housing.imageUrl}
               alt={housing.name}
               style={{
-                width: "15vw",
+                width: "17vw",
                 objectFit: "contain",
               }}
             />
-            <Link
+            <Link 
               to="/"
-              className="hover"
+              className="mt-10"
               style={{
                 width: "12.5vw",
                 textAlign: "center",
                 marginLeft: "20px",
+                textDecoration: "none",
               }}
             >
               {housing.name}

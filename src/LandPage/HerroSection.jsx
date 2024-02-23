@@ -17,7 +17,7 @@ const medicalHousingData = [
   {
     id: 2,
     name: "Bath Ocean Front Executive Home Near Duncan/Nanaimo Hospitals",
-    location: "Saltair, British Columbia / Ad #04318",
+    location: "British Columbia / Ad #04318",
     price: "4,000.00",
     imageUrl:
       "https://www.medshousing.com/fichiersUploadOpt/370-252-99eee92d35a568eca4d07defd279a42bb4ccacc339a6a8c7e/20240130141915-20210428-162430.jpg",
@@ -141,10 +141,15 @@ const FeaturedMedicalHousing = () => {
           alignItems: "center",
         }}
       > */}
-      <Link to="/map" className="float-link" id="btn_map">
+      <Link
+        to="/map"
+        className="float-link"
+        id="btn_map"
+        style={{ textDecoration: "none" }}
+      >
         View on map →
       </Link>
-      <h2>
+      <h2 style={{ color: "#F8C8DC" }}>
         Featured Medical <strong style={{ color: "black" }}>Housing</strong>{" "}
       </h2>
       {/* </div> */}
@@ -165,15 +170,16 @@ const FeaturedMedicalHousing = () => {
                 }}
               />
               <div className="option">
-                <span style={{}}>
+                <span>
                   <strong
+                    className="hover:text-#F8C8DC"
                     style={{
                       display: "flex",
                       justifyContent: "center",
                       width: "18vw",
-                      color: "#262626",
                       textAlign: "center",
                       marginLeft: "20px",
+                      color: "#0c527b",
                     }}
                   >
                     {housing.name}

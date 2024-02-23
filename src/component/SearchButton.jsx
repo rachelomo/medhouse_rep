@@ -14,19 +14,43 @@ const SearchButton = () => {
       {/* Added flex container with justify-end */}
       <div className="">
         {!isExpanded && (
-          <button className="search-icon" onClick={handleButtonClick}>
-            <FaSearch style={{ fontSize: "25px" }} />
+          <button
+            className=""
+            style={{
+              outline: "none",
+              border: "none",
+              color: "#f8c8dc",
+              cursor: "pointer",
+            }}
+            onClick={handleButtonClick}
+          >
+            <FaSearch style={{ fontSize: "1.5vw", outline: "none" }} />
           </button>
         )}
         {isExpanded && (
-          <div className="search-input-container">
+          <div className="">
             <input
               type="text"
               placeholder="Search..."
-              className="search-input"
+              className=""
+              style={{
+                borderTop: "#f8c8dc",
+                borderLeft: "none",
+                borderRight: "none",
+                borderColor: "#F8C8DC",
+              }}
             />
-            <button className="close-button" onClick={handleButtonClick}>
-              <FaSearch style={{ fontSize: "25px" }} />
+            <button
+              className=""
+              onClick={handleButtonClick}
+              style={{
+                outline: "none",
+                border: "none",
+                color: "#f8c8dc",
+                cursor: "pointer",
+              }}
+            >
+              <FaSearch style={{ fontSize: "1.4vw", outline: "none" }} />
             </button>
           </div>
         )}

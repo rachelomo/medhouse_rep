@@ -11,6 +11,10 @@ import SchoolMenu from "./SchoolMenu.jsx";
 import HouseMenu from "./HouseMenu.jsx";
 import TenantNenu from "./TenantMenu.jsx";
 
+const img ={
+  
+}
+
 const MenuIcon = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -58,7 +62,7 @@ const MenuIcon = () => {
             </Link>
           </span>
         </div>
-        <div className="absolute left-80">
+        <div className="absolute left-60">
           <div style={{ fontSize: "5vw", borderRadius: "5px" }}>
             <FaBars
               onClick={toggleMenu}
@@ -76,7 +80,7 @@ const MenuIcon = () => {
                 height: "70vh",
                 maxWidth: "100%",
                 position: "relative",
-                right: "80vw",
+                right: "70vw",
                 top: "5vh",
                 fontSize: "3vh",
               }}

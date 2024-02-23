@@ -9,8 +9,9 @@ const Messageme = () => {
           <FaFacebookMessenger
             className="text-4xl"
             style={{
-              fontFamily: "Helvetica, Arial, sans-serif",
               lineHeight: " 1.28",
+              color: "#f8c8dc",
+              marginTop: "7px",
             }}
           ></FaFacebookMessenger>
         </Link>

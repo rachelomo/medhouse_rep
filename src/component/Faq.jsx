@@ -15,7 +15,12 @@ const FAQ = () => {
         onMouseEnter={toggleDropdown}
         onMouseLeave={toggleDropdown}
       >
-        <Link to="/faqpath">Faq</Link>
+        <Link
+          to="/faqpath"
+          style={{ textDecoration: "none", color: " #f8c8dc" }}
+        >
+          Faq
+        </Link>
 
         {isOpen && (
           <div
@@ -31,27 +36,38 @@ const FAQ = () => {
               style={{
                 width: "22px",
                 height: "10px",
-                marginTop: "4vh",
+                marginTop: "4.1vh",
               }}
             />
-            <div className="bg-black opacity-60 text-white w-100 relative right-20">
-              <ul className="p-5">
+            <div
+              style={{ position: "relative", bottom: "6px" }}
+              className="bg-black opacity-80 text-white w-100 relative right-20"
+            >
+              <ul className="p-5 list-none">
                 <li>
                   <Link
                     to="/FaqPathsec"
-                    className="hover:text-blue-500"
-                    style={{ fontSize: "15px" }}
+                    className="hover:text"
+                    style={{
+                      fontSize: "15px",
+                      textDecoration: "none",
+                      color: "white",
+                    }}
                   >
-                    Faq for landlord
+                    <p className="hover:text-pastel-pink">Faq for landlord</p>
                   </Link>
                 </li>
                 <li>
                   <Link
                     to="/faqtenant"
-                    className="hover:text-blue-500"
-                    style={{ fontSize: "15px" }}
+                    className=""
+                    style={{
+                      fontSize: "15px",
+                      textDecoration: "none",
+                      color: "white",
+                    }}
                   >
-                    Faq for tenants
+                    <p className="hover:text-pastel-pink">Faq for tenants</p>
                   </Link>
                 </li>
               </ul>

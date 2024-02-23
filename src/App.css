@@ -2,9 +2,9 @@
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #ffffffc0;
+  background-color: white;
   z-index: 1000;
-  font-family: "Montserrat", Arial;
+  font-family: "Montserrat", sans-serif;
 }
 
 body {
