@@ -1,0 +1,46 @@
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 1000;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+.height {
+  height: 100%;
+}
+.function {
+  transition: background-color 0.3s ease-in;
+}
+.function:hover {
+  color: white;
+}
+/* #33333370 */
+@media (max-width: 768px) {
+  .MEDS {
+    display: none;
+  }
+  .MenuIcon {
+    display: "block";
+  }
+  .adds,
+  .blog,.about {
+    font-size: 1.4em;
+  }
+  .price {
+    font-size: 1.4em;
+    margin-top: 6vh;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .MenuIcon {
+    display: none;
+  }
+  .price {
+    margin-left: 21vw;
+  }
+}

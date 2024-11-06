@@ -1,0 +1,477 @@
+/* styles.css */
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  font-family: "Montserrat", "sans-serif";
+}
+body {
+  width: 85%;
+  margin: auto;
+  background-color: white !important;
+  font-family: "Montserrat", "sans-serif";
+}
+:root {
+  font-family: "Montserrat", "sans-serif";
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* Dropdwon Menu */
+.submenu {
+  position: relative;
+  font-family: "Montserrat", "sans-serif";
+  font-size: 1vw;
+  font-weight: 500;
+  transition: color 150ms linear;
+}
+.price,
+.faq-container,
+.blog,
+.about,
+.adds {
+  font-size: 1vw;
+}
+.submenu-arrow {
+  margin-top: 2px;
+  position: absolute;
+  display: none;
+}
+.submenu:hover .submenu-arrow {
+  display: block;
+}
+.MED {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+/* .med {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+} */
+.social-icons {
+  display: flex;
+  gap: 1em;
+}
+.Cards > Link > img {
+  width: 100%;
+}
+.btn-register {
+  padding: 6px;
+  padding-left: 5px;
+  font-family: "Montserrat", "sans-serif";
+  font-size: 0.781vw;
+  font-weight: 400;
+  background: #0c527b;
+  border-radius: 3px;
+  text-transform: uppercase;
+  color: #f8c8dc;
+  margin-right: 60px;
+}
+.dp {
+  position: relative;
+  display: inline-block;
+}
+.dpc {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160;
+  width: 150px;
+  box-shadow: 0px 8px 6px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  right: 0px;
+  margin-top: 2px;
+}
+.dpc_black {
+  display: none;
+  position: absolute;
+  color: #f1f1f1;
+  background-color: black;
+  min-width: 160;
+  width: 200px;
+  box-shadow: 0px 8px 6px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  /* top: 10vh; */
+  opacity: 0.7;
+}
+.dpc .li {
+  list-style-type: none;
+  font-weight: 400;
+  font-size: 12px;
+  padding: 10px 10px;
+}
+.dpc_black .li {
+  list-style-type: none;
+  font-weight: 100;
+  font-size: 15px;
+  padding-top: 10px;
+}
+.dpc .li {
+  text-decoration: none;
+  display: block;
+}
+.dpc_black .li {
+  color: #f8c8dc;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dpc_black li:hover {
+  color: #0c527b;
+}
+.dpc li:hover {
+  background-color: #0c527b;
+  color: #f8c8dc;
+}
+.dp:hover .dpc {
+  display: block;
+}
+.dp:hover .dpc_black {
+  display: block;
+}
+.dp:hover .btn-register {
+  background-color: #0c527b;
+}
+.dp:hover .faq {
+  background-color: #0c527b;
+}
+.Drop_app {
+  position: fixed;
+  width: 85%;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.979);
+  padding: 30px;
+  box-shadow: inset;
+  z-index: 50;
+  padding-left: 49px;
+}
+
+.dropdown-menu {
+  background-color: rgba(0, 0, 0, 0.863);
+  /* opacity: 0.5; */
+  z-index: 10;
+  width: 120vw;
+  height: 60vh;
+  position: relative;
+  color: white;
+}
+
+.dropdown_cont {
+  display: flex; /* Change display to flex */
+  flex-direction: column;
+  padding: 8px 0;
+  z-index: 1;
+  margin-left: 85px;
+  position: absolute;
+}
+.dropdown:hover {
+  color: black;
+}
+.text {
+  cursor: pointer;
+}
+/* .Drop {
+  font-size: smaller;
+  display: flex;
+  gap: 1.5em;
+  margin-left: 18vw;
+  width: fit-content;
+  margin-top: 5px;
+  position: absolute;
+  color: #0c527b;
+} */
+
+.hero-section {
+  text-align: center;
+  background-image: url();
+}
+.image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  margin: auto;
+}
+
+/* styles.css */
+.dropdown-text {
+  position: relative;
+  display: inline-block;
+}
+
+/* .dropdown-toggle:hover {
+          background-color: #2779bd;
+        } */
+
+.dropdown-content {
+  display: block;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 200px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.scrollable-container {
+  max-height: 200px; /* Adjust max-height as needed */
+  overflow-y: auto;
+  padding: 8px;
+}
+/* herro section */
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.map-container {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.map-container img {
+  max-width: 100%;
+}
+
+.data-container {
+  flex: 1;
+}
+
+.data-item {
+  margin-bottom: 20px;
+}
+/* .land {
+  background-image: url(https://www.medshousing.com/images/site/slider_1.jpg);
+  background-size: cover;
+  height: 35.365vw;
+  margin-top: 10vw;
+  padding-top: 5.2vw;
+  text-align: center;
+} */
+/* .land h1 {
+  padding: 0 3vw;
+  font-size: 3.906vw;
+  color: #ffffff;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 3.6vw;
+  margin-bottom: 0;
+  font-family: "Montserrat", "sans-serif";
+} */
+/* .default-link {
+  border-radius: 4px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  transition: background 150ms linear;
+} */
+/* .default-link {
+  background: #0c527b;
+  float: left;
+  height: 2.6044vw;
+  width: 2.6044vw;
+  
+} */
+input {
+  margin-left: 2px;
+  margin-right: 2px;
+}
+.Cards {
+  background-color: rgba(128, 128, 128, 0.062);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  margin-top: 20px;
+  padding-bottom: 90px;
+  overflow: hidden;
+}
+.Cards:hover {
+  color: #f8c8dc;
+}
+.featured-medical-housing {
+  margin-top: 50px;
+}
+
+.featured-medical-housing h2 {
+  text-align: center;
+  font-size: 30px;
+}
+.featured-medical-housing a {
+  font-size: 1.302vw;
+  color: #f8c8dc;
+  transition: color 150ms linear;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 110px;
+  position: relative;
+  bottom: 25px;
+  position: relative;
+  top: 40px;
+  text-decoration: none;
+}
+.housing_option h3,
+h5 {
+  width: 15vw;
+}
+
+.Card_split:hover {
+  background-color: black;
+  color: #f8c8dc;
+}
+.Card_split {
+  background-color: white;
+}
+.HerroSecond {
+  margin-top: 50px;
+}
+.HerroSecond h2 {
+  font-size: 2vw;
+  text-align: center;
+}
+.HerroSecond a {
+  font-size: 1.302vw;
+  color: #0c527b;
+  font-family: "Old Standard TT";
+  transition: color 150ms linear;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 115px;
+  position: relative;
+  bottom: 25px;
+}
+.HerroFooter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  margin-top: 0px;
+  margin-left: 110px;
+}
+
+.hr {
+  border-bottom: 50px;
+  width: 89%;
+  background-color: rgba(128, 128, 128, 0.425);
+  height: 1px;
+  margin-left: 100px;
+}
+
+.Market h2 {
+  text-align: center;
+  font-size: 1.5em;
+  color: black;
+  margin-top: 15px;
+}
+
+.AllDrop {
+  display: flex;
+}
+.Medname {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+.med_img {
+  margin-left: 80px;
+}
+.Sign {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+} /* .copyWrite {
+        
+        } */
+.hoveron:hover {
+  background-color: #000;
+  cursor: pointer;
+}
+
+.Blog {
+  display: flex;
+  gap: 3em;
+}
+.copyWrite {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+}
+.copyWrite a {
+  color: #0c527b;
+}
+.bottom_link {
+  display: flex;
+  gap: 10px;
+}
+.bottom_link:hover {
+  color: "black";
+}
+
+.message {
+  width: 60px;
+  height: 60px;
+  background-color: #0c527b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 60px;
+  cursor: pointer;
+  color: #f8c8dc;
+}
+.element {
+  border-radius: 50%;
+  bottom: 28.5px;
+  /* height: ; */
+  position: fixed;
+  right: 65px;
+  width: 15px;
+  z-index: 2147483646;
+}
+a {
+  text-decoration: none;
+}
+/* loading circle */
+.faqfst {
+  position: relative;
+}
+
+.faqsec {
+  cursor: pointer;
+  /* padding: 10px; */
+  border: 1px solid #ccc;
+  border-radius: 1px;
+  display: flex;
+  align-items: center;
+}
+
+.faqList {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-top: none;
+  border-radius: 0 0 5px 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 5;
+  display: none;
+}
+
+.faqList ul {
+  list-style-type: none;
+  /* padding: 0;
+  margin: 0; */
+}
+
+.faqList ul li {
+}
+
+.faqfst.open .faqList {
+  display: block;
+}
+img {
+  display: inline-block;
+  max-width: 100%;
+}
