@@ -77,28 +77,29 @@ const medicalHousingData = [
 
 const HerroSecond = () => {
   return (
-    <div className="HerroSecond">
+    <div className="featured-medical-housing">
       {/* <div > */}
-      <h2 style={{ color: "#F8C8DC" }}>
-        Popular Medical <strong className="text-black">Schools</strong>{" "}
-      </h2>
-      <Link
-        to="/purpular"
-        className="float-link"
-        style={{ textDecoration: "none", color: "#F8C8DC" }}
-      >
-        See all →
+
+   <Link
+  to="/map"
+  className="float-link relative left-[76px]"
+  style={{ textDecoration: "none", color: "#0c527b" }}
+>
+        View on map →
       </Link>
+      <h2 style={{ color: "#0c527b" }}>
+        Popular Medical <strong style={{ color: "black" }}>Schools</strong>{" "}
+      </h2>
       {/* </div> */}
-      <div className="HerroFooter">
+      <div className="housing-cards-container">
         {medicalHousingData.map((housing) => (
           <div
             key={housing.id}
-            className="hoveron"
+            className="housing-card"
             style={{ width: "16vw", objectFit: "cover" }}
           >
             <img
-              className="text-center"
+              className="housing-image"
               src={housing.imageUrl}
               alt={housing.name}
               style={{
@@ -108,11 +109,12 @@ const HerroSecond = () => {
             />
             <Link
               to="/"
-              className="mt-10 hover:text-pastel-pink"
+            className="housing-info"
               style={{
+                alignItems:'center',
                 width: "12.5vw",
                 textAlign: "center",
-                marginLeft: "20px",
+                marginLeft: "5px",
                 textDecoration: "none",
               }}
             >

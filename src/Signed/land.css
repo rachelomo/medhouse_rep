@@ -70,7 +70,7 @@ body {
   background: #0c527b;
   border-radius: 3px;
   text-transform: uppercase;
-  color: #f8c8dc;
+  color:white;
   margin-right: 60px;
 }
 .dp {
@@ -91,7 +91,7 @@ body {
 .dpc_black {
   display: none;
   position: absolute;
-  color: #f1f1f1;
+  color:white;
   background-color: black;
   min-width: 160;
   width: 200px;
@@ -117,7 +117,7 @@ body {
   display: block;
 }
 .dpc_black .li {
-  color: #f8c8dc;
+  color:white;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -127,13 +127,14 @@ body {
 }
 .dpc li:hover {
   background-color: #0c527b;
-  color: #f8c8dc;
+  color:white;
 }
 .dp:hover .dpc {
   display: block;
 }
 .dp:hover .dpc_black {
   display: block;
+  
 }
 .dp:hover .btn-register {
   background-color: #0c527b;
@@ -294,15 +295,27 @@ input {
 }
 .featured-medical-housing {
   margin-top: 50px;
+  font-size: 1.302vw;
 }
 
 .featured-medical-housing h2 {
   text-align: center;
   font-size: 30px;
 }
-.featured-medical-housing a {
+.float-link{
   font-size: 1.302vw;
-  color: #f8c8dc;
+  transition: color 150ms linear;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 110px;
+  position: relative;
+  bottom: 25px;
+  position: relative;
+  top: 40px;
+  text-decoration: none;
+}
+.float-linkS{
+  font-size: 1.302vw;
   transition: color 150ms linear;
   display: flex;
   justify-content: flex-end;
@@ -320,12 +333,12 @@ h5 {
 
 .Card_split:hover {
   background-color: black;
-  color: #f8c8dc;
+ 
 }
 .Card_split {
   background-color: white;
 }
-.HerroSecond {
+/* .HerroSecond {
   margin-top: 50px;
 }
 .HerroSecond h2 {
@@ -349,7 +362,7 @@ h5 {
   gap: 2em;
   margin-top: 0px;
   margin-left: 110px;
-}
+} */
 
 .hr {
   border-bottom: 50px;
@@ -357,6 +370,7 @@ h5 {
   background-color: rgba(128, 128, 128, 0.425);
   height: 1px;
   margin-left: 100px;
+  margin-top: 20px;
 }
 
 .Market h2 {
@@ -368,7 +382,96 @@ h5 {
 
 .AllDrop {
   display: flex;
+  flex-direction: column;
+  width: 100%; 
+
 }
+
+
+
+.dropdown-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  margin-bottom: 5px; /* Space between dropdown items */
+  font-size: 16px;
+  color: #333;
+  border-radius: 5px;
+}
+
+.dropdown-header span {
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-content {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  margin-top: 5px;
+}
+
+.dropdown-content a {
+  text-decoration: none;
+  color: #0c527b;
+  padding: 5px 0;
+  font-size: 14px;
+}
+
+.dropdown-content a:hover {
+  color: #005d6d;
+}
+
+@media (min-width: 600px) {
+  /* On medium and larger screens, align the dropdowns horizontally */
+  .AllDrop {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+  }
+
+  .dropdown-header {
+    width: 200px; /* Limit the width of each dropdown header */
+    text-align: center;
+  }
+
+  .dropdown-content {
+    display: none; /* Hide content by default */
+    position: absolute; /* Ensure the dropdown list floats above other elements */
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    z-index: 1000;
+    margin-top: 10px;
+    padding: 10px;
+  }
+
+  .dropdown-header:hover + .dropdown-content {
+    display: flex;
+  }
+}
+
+@media (max-width: 600px) {
+  .dropdown-header {
+    justify-content: flex-start; /* Align to the left for mobile screens */
+    padding-left: 20px;
+  }
+
+  .dropdown-content {
+    display: flex; /* Show dropdown content on small screens */
+    padding-left: 10px;
+    margin-top: 10px;
+  }
+
+  .dropdown-content a {
+    font-size: 14px;
+  }
+}
+
 .Medname {
   display: flex;
   justify-content: space-around;
@@ -474,4 +577,192 @@ a {
 img {
   display: inline-block;
   max-width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ///////////////////////////////*/
+/* Styles for the container and card layout */
+.extra-content {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.featured-medical-housing {
+  padding: 20px;
+}
+
+.float-link {
+  text-decoration: none;
+  color: #0c527b;
+  font-size: 14px;
+  
+}
+
+.housing-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px; 
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.housing-card {
+  width: 21vw; /* width of each card */
+  max-width: 100%;
+  background-color: white;
+  border-radius: 8px;
+  color: #0c527b;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+.housing-card:hover{
+  background-color: black;
+  color: #0c527b;
+}
+
+.housing-card:hover {
+  transform: scale(1.05);
+}
+
+.housing-image {
+  width: 100%;
+  height: auto;
+}
+
+.housing-info {
+  padding: 10px;
+  text-align: center;
+}
+
+.housing-name {
+  font-size: 14px;
+  font-weight: bold;
+  color: #0c527b;
+}
+
+.housing-location {
+  display: block;
+  font-size: 12px;
+  margin: 10px 0;
+}
+
+.housing-details {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  font-size: 12px;
+}
+
+.housing-price {
+  color: #1779ba;
+  font-weight: bold;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .float-link{
+    display: none;
+  }
+  .housing-card {
+    width: 48%; /* Make cards take up 48% width on smaller screens */
+  }
+}
+
+
+@media (max-width: 480px) {
+  .housing-card {
+    width: 100%; /* Stack cards vertically on very small screens */
+  }
+}
+
+.Signing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.Sign {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.newsletter,
+.section,
+.contact {
+  text-align: center;
+}
+
+.newsletter-form {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.email-input {
+  border: 1px solid #0c527b;
+  width: 70%;
+  padding: 12px;
+  border-radius: 5px;
+}
+
+.submit-btn {
+  background-color: #0c527b;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.icon {
+  font-size: 80px;
+  color: #0c527b;
+}
+
+.action-btn {
+  display: inline-block;
+  background-color: #0c527b;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social-icon {
+  color: #0c527b;
+  font-size: 1.5em;
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .Sign {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .Sign {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }

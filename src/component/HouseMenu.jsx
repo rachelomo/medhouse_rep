@@ -168,7 +168,7 @@ const HouseMenu = () => {
             className="text-2xl "
             to="#"
             style={{
-              color: " #f8c8dc",
+              color: "#0c527b",
               textDecoration: "none",
             }}
           >

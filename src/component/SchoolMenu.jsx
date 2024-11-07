@@ -199,7 +199,7 @@ const SchoolMenu = () => {
     <div className="nested-dropdown">
       <div
         className="dropdown"
-        style={{ color: "#f8c8dc" }}
+        style={{ color: "##0c527b" }}
         onMouseEnter={() => setFirstDropdownVisible(true)}
         onMouseLeave={() => setFirstDropdownVisible(false)}
       >
@@ -207,7 +207,7 @@ const SchoolMenu = () => {
           <Link
             className="text-2xl"
             to="#"
-            style={{ textDecoration: "none", color: " #f8c8dc" }}
+            style={{ textDecoration: "none", color: " ##0c527b" }}
           >
             Medical Schools
           </Link>

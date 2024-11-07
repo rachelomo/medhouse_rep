@@ -11,31 +11,31 @@ const MarketFooter = () => {
   };
   return (
     <div className="Market">
-      <h5 className="hr"></h5>
+      <h5 className="w-full h-0.5 bg-gray-200 border mt-5"></h5>
       <h2>
         <strong>MedsHousing Global Markets</strong>
       </h2>
       <div className="AllDrop">
-        <div>
-          <h5 className="ml-10">
-            <strong> Canada</strong>
+        <div className="">
+          {/* <h5 className="ml-10"> */}
+            <strong className="mx-10"> Canada</strong>
             <Alldrop />
             <Alldrop />
             <Alldrop />
             <Alldrop />
-            <Alldrop />
-            <Alldrop />
-          </h5>
+            {/* <Alldrop />
+            <Alldrop /> */}
+          {/* </h5> */}
         </div>
         <div>
           <div>
             <h5>
-              <strong>United States</strong>
+              <strong className="">United States</strong>
             </h5>
           </div>
-          <div className="dropdown-header" onClick={toggleDropdown}>
+          <div className="dropdown-header md:mr-6 mr-2 " onClick={toggleDropdown}>
             <span style={{ display: "flex" }}>
-              <h5> Alberta</h5>
+             <Link to="#">Alberta</Link>
               {isOpen ? <RiArrowDropUpLine /> : <RiArrowDropDownLine />}
             </span>
           </div>

@@ -17,7 +17,7 @@ const FAQ = () => {
       >
         <Link
           to="/faqpath"
-          style={{ textDecoration: "none", color: " #f8c8dc" }}
+          style={{ textDecoration: "none", color: " #0c527b" }}
         >
           Faq
         </Link>

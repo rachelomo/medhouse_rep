@@ -71,7 +71,7 @@ const Login = () => {
                         </p>
                     </div>
                 </div>
-                <div className="container mx-auto p-8 text-center px-40">
+                <div className="mx-auto p-8 text-center px-40">
                     <h1 className=" text-2xl  mb-6 text-black" >Log in to your  <span className="font-bold">account</span></h1>
                     <div className="mb-8">
 

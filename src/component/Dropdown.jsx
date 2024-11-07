@@ -199,12 +199,12 @@ const Dropdown = () => {
     <div className="nested-dropdown">
       <div
         className="dropdown absolute left-2"
-        style={{ color: "#f8c8dc" }}
+        style={{ color: "#0c527b" }}
         onMouseEnter={() => setFirstDropdownVisible(true)}
         onMouseLeave={() => setFirstDropdownVisible(false)}
       >
         <div className="submenu">
-          <Link to="#" style={{ textDecoration: "none", color: " #f8c8dc" }}>
+          <Link to="#" style={{ textDecoration: "none", color: " #0c527b" }}>
             Medical Schools
             <div className="submenu-arrow">
               {/* <FaChevronUp className="text-5xl" /> */}

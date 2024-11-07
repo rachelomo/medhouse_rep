@@ -204,7 +204,7 @@ const Dropdown_Thrd = () => {
             href="#"
             style={{
               textDecoration: "none",
-              color: " #f8c8dc",
+              color: "#0c527b",
               textDecoration: "none",
             }}
           >

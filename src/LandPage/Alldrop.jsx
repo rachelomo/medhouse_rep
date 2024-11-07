@@ -10,15 +10,15 @@ const Alldrop = () => {
   };
 
   return (
-    <div className="AllDrop">
+    <div className="md:ml-10 ml-2">
       <div className="dropdown-header" onClick={toggleDropdown}>
-        <span style={{ display: "flex" }}>
+      <span style={{ display: "flex" }}>
           Alberta
           {isOpen ? <RiArrowDropUpLine /> : <RiArrowDropDownLine />}
         </span>
       </div>
       <div className="dropdown-header" onClick={toggleDropdown}>
-        <span style={{ display: "flex", marginLeft: "25px" }}>
+      <span style={{ display: "flex" }}>
           Calgary
           {isOpen ? <RiArrowDropUpLine /> : <RiArrowDropDownLine />}
         </span>
@@ -26,16 +26,12 @@ const Alldrop = () => {
       {isOpen && (
         <div className="dropdown-content">
           <Link to="#">Calgary (19)</Link>
-
-          <br />
           <Link to="#">Edmonton (19)</Link>
-
-          <br />
           <Link to="#">Grande Prairie (19)</Link>
-          <br />
         </div>
       )}
     </div>
   );
 };
+
 export default Alldrop;

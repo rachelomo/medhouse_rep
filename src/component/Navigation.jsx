@@ -38,7 +38,7 @@ const Navigation = () => {
           <div className="social-icons pt-5">
             <div className="mr-20 flex gap-4">
               <Link
-                style={{ color: " #f8c8dc" }}
+                style={{ color: " #0c527b" }}
                 to="https://www.facebook.com/MedsHousing/"
                 className=" mt-4 "
                 target="_blank"
@@ -46,7 +46,7 @@ const Navigation = () => {
                 <FaFacebook />
               </Link>
               <Link
-                style={{ color: " #f8c8dc" }}
+                style={{ color: " #0c527b" }}
                 to="https://twitter.com/MedsHousing"
                 className=" mt-4 "
                 target="_blank"
@@ -54,7 +54,7 @@ const Navigation = () => {
                 <FaTwitter />
               </Link>
               <Link
-                style={{ color: " #f8c8dc" }}
+                style={{ color: " #0c527b" }}
                 to="https://www.pinterest.ca/medshousing/_created/"
                 className=" mt-4 "
                 target="_blank"
@@ -62,7 +62,7 @@ const Navigation = () => {
                 <FaPinterest />
               </Link>
               <Link
-                style={{ color: " #f8c8dc" }}
+                style={{ color: " #0c527b" }}
                 to="https://www.instagram.com/medshousing/"
                 className=" mt-4 "
                 target="_blank"
@@ -70,7 +70,7 @@ const Navigation = () => {
                 <FaInstagram />
               </Link>
               <Link
-                style={{ color: " #f8c8dc" }}
+                style={{ color: " #0c527b" }}
                 to="https://www.linkedin.com/company/medshousing/?viewAsMember=true"
                 className=" mt-4 "
                 target="_blank"
@@ -83,7 +83,7 @@ const Navigation = () => {
                 <Link
                   to="/login"
                   className=""
-                  style={{ color: " #f8c8dc", textDecoration: "none" }}
+                  style={{ color: "#0c527b", textDecoration: "none" }}
                 >
                   Login
                 </Link>
@@ -92,7 +92,7 @@ const Navigation = () => {
                 <Link
                   to=""
                   className="btn-register"
-                  style={{ textDecoration: "none" }}
+                  style={{ textDecoration: "none",color: "white" }}
                 >
                   Join us
                 </Link>

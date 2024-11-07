@@ -59,15 +59,14 @@ const MenuIcon = () => {
           </span>
         </div>
         <div className="absolute left-80">
-          <div style={{ fontSize: "5vw", borderRadius: "5px" }}>
-            <FaBars
-              onClick={toggleMenu}
-              className="bg-or cursor-pointer outline-none border focus:bg-customBlue"
-              className={`cursor-pointer ${
-                isClicked ? "bg-customBlue" : "bg-gry-500"
-              } outline-none border focus:bg-blue-500`}
-            />
-          </div>
+        <div style={{ fontSize: "5vw", borderRadius: "5px" }}>
+  <FaBars
+    onClick={toggleMenu}
+    className={`bg-or cursor-pointer outline-none border focus:bg-customBlue ${
+      isClicked ? "bg-customBlue" : "bg-gry-500"} focus:bg-blue-500`}
+  />
+</div>
+
           {menuOpen && (
             <div
               className="bg-w menu-overlay text-white flex flex-col pl-20 text-semibold pt-5"

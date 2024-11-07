@@ -9,175 +9,96 @@ import {
 import { BsArrowRight } from "react-icons/bs";
 import { FaUserDoctor } from "react-icons/fa6";
 import { MdEventBusy } from "react-icons/md";
-// import pricing from "../assets/pricing_1"
-
 import { Link } from "react-router-dom";
+
 const Signing = () => {
   return (
-    <div className="Signing">
-      <div style={{ marginTop: "50px" }}>
-        <h5 className="hr"></h5>
+    <div className="Signing container">
+      <h5 className="w-full h-0.5 bg-gray-200 border"></h5>
+      <div className="header" style={{ marginTop: "50px" }}>
+      
       </div>
       <div className="Sign">
-        <div className="ml-5">
-          <h2 style={{ fontSize: "20px", lineHeight: "1" }}>
-            <strong>Sign up now</strong> for our newsletter <br /> and be the
-            first to receive the <br /> latest news from MedsHousing
+        <div className="newsletter">
+          <h2>
+            <strong>Sign up now</strong> for our newsletter <br />
+            and be the first to receive the <br /> latest news from MedsHousing
           </h2>
-          <form action="#" style={{ marginTop: "15PX" }}>
+          <form className="newsletter-form">
             <input
               type="email"
               required
               placeholder="E-mail"
-              style={{
-                border: "1px solid",
-                borderColor: "#0c527b",
-                width: "70%",
-                padding: "7px",
-                paddingTop: "12px",
-                paddingBottom: "12px",
-                borderRadius: "5px",
-              }}
+              className="email-input"
             />
-            <input type="submit" hidden />
-            <button
-              type="submit"
-              style={{
-                backgroundColor: "#0c527b",
-                padding: "13px",
-                width: "17%",
-                marginTop: "9px",
-                borderRadius: "5px",
-                paddingTop: "10px",
-                fontWeight: "500",
-              }}
-            >
-              {" "}
+            <button type="submit" className="submit-btn">
               <Link to="#">
-                <BsArrowRight
-                  style={{
-                    color: "wheat",
-                    marginLeft: "7px",
-                  }}
-                />
+                <BsArrowRight size={20} color="white"/>
               </Link>
             </button>
           </form>
         </div>
-        <div className="doc">
-          <FaUserDoctor style={{ fontSize: "80px" }} />
-        </div>
-        <div>
-          <h2 style={{ fontSize: "20px", lineHeight: "1" }}>
-            Have a great property{" "}
-            <strong>
-              near <br /> medical schools or hospitals?
-            </strong>{" "}
-            <br /> Add your Property Listing!
+        <div className="section">
+          <FaUserDoctor className="icon" />
+          <h2>
+            Have a great property <br />
+            <strong>near medical schools or hospitals?</strong> <br />
+            Add your Property Listing!
           </h2>
-          <Link
-            to="/signup"
-            type="submit"
-            style={{
-              backgroundColor: "#0c527b",
-              color: "white",
-              borderRadius: "5px",
-              paddingLeft: "35px",
-              paddingRight: "35px",
-              paddingTop: "4px",
-              paddingBottom: "6px",
-              position: "relative",
-              top: "5vh",
-              textDecoration: "none",
-            }}
-            className="btn bg-#0C527B"
-          >
+          <Link to="/signup" className="action-btn">
             Sign Up
           </Link>
         </div>
-        <MdEventBusy style={{ fontSize: "80px" }} />
-        <div>
-          <h2 style={{ fontSize: "20px", lineHeight: "1" }}>
+        <div className="section">
+          <MdEventBusy className="icon" />
+          <h2>
             When life is too busy, <br />
             <strong>post a want ad</strong> and <br /> let landlords find you!
           </h2>
-          <Link
-            to="#"
-            className="btn"
-            type="submit"
-            style={{
-              backgroundColor: "#0c527b",
-              color: "white",
-              paddingLeft: "10px",
-              paddingRight: "10px",
-              borderRadius: "5px",
-              paddingTop: "9px",
-              paddingBottom: "9px",
-              position: "relative",
-              top: "5vh",
-              textDecoration: "none",
-            }}
-          >
+          <Link to="#" className="action-btn">
             Post a want ad now!
           </Link>
         </div>
-        <div>
-          <div className="" style={{ marginLeft: "20px" }}>
-            <strong>MedsHousing.com</strong>
-            <br />
-
+        <div className="contact">
+          <strong>MedsHousing.com</strong>
+          <br />
+          <Link to="mailto:info@medshousing.com">info@medshousing.com</Link>
+          <div className="social-icons">
             <Link
-              to="mailto:info@medshousing.com"
-              style={{ textDecoration: "none" }}
+              to="https://www.facebook.com/MedsHousing/"
+              target="_blank"
+              className="social-icon"
             >
-              info@medshousing.com
+              <FaFacebook />
             </Link>
-            <br />
-            <h5 className="flex gap-3">
-              <Link
-                to="https://www.facebook.com/MedsHousing/"
-                className="fab fa-facebook"
-                target="blank"
-                style={{
-                  textDecoration: "none",
-                  color: "#F8C8DC",
-                }}
-              >
-                {" "}
-                <FaFacebook />
-              </Link>
-              <Link
-                style={{ textDecoration: "none", color: "#F8C8DC" }}
-                to="https://twitter.com/MedsHousing"
-                className="fab fa-twitter"
-                target="blank"
-              >
-                <FaTwitter />
-              </Link>
-              <Link
-                to="https://www.pinterest.ca/medshousing/_created/"
-                className="fab fa-pinterest-p"
-                target="blank"
-                style={{ textDecoration: "none", color: "#F8C8DC" }}
-              >
-                <FaPinterest />
-              </Link>
-              <Link
-                to="https://www.instagram.com/medshousing/"
-                className="fab fa-instagram"
-                target="blank"
-                style={{ textDecoration: "none", color: "#F8C8DC" }}
-              >
-                <FaInstagram />
-              </Link>
-              <Link
-                to="https://www.linkedin.com/company/medshousing/?viewAsMember=true"
-                target="blank"
-                style={{ textDecoration: "none", color: "#F8C8DC" }}
-              >
-                <FaLinkedin />
-              </Link>
-            </h5>
+            <Link
+              to="https://twitter.com/MedsHousing"
+              target="_blank"
+              className="social-icon"
+            >
+              <FaTwitter />
+            </Link>
+            <Link
+              to="https://www.pinterest.ca/medshousing/_created/"
+              target="_blank"
+              className="social-icon"
+            >
+              <FaPinterest />
+            </Link>
+            <Link
+              to="https://www.instagram.com/medshousing/"
+              target="_blank"
+              className="social-icon"
+            >
+              <FaInstagram />
+            </Link>
+            <Link
+              to="https://www.linkedin.com/company/medshousing/?viewAsMember=true"
+              target="_blank"
+              className="social-icon"
+            >
+              <FaLinkedin />
+            </Link>
           </div>
         </div>
       </div>

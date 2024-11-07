@@ -69,16 +69,16 @@ const Adding = () => {
           <p className="text-white text-4xl mb-20 mr-10">TENANT WANT ADS</p>
         </div>
       </div>
-      <div className="bg-blur text-white mt-10 h-40">
+      <div className="bg-blur text-white mt-10 h-[100%]">
         <div className="flex justify-between text-white p-2">
-          <h3 className="text-2xl ml-40 mt-5">
-            Upgrade to a <strong>MedsGold Yearly</strong> listing and reach out
-            to the want ads!
-          </h3>
-          <img src={upgrade} alt="upgrade_img" className="w-[8vw] mt-5" />
+           <h3 className="text-2xl sm:text-3xl ml-8 sm:ml-40 mt-5 sm:mt-0">
+      Upgrade to a <strong>MedsGold Yearly</strong> listing and reach out
+      to the want ads!
+    </h3>
+          <img src={upgrade} alt="upgrade_img" className="w-[40%] sm:w-[8vw] mt-5 sm:mt-0" />
         </div>
         <div className="flex justify-center relative bottom-10">
-          <Link to="/" className="hover bg-r p-2 pl-2 pr-2">
+          <Link to="/" className="hover bg-r p-2 pl-2 pr-2 mt-10 md:mt-2">
             Upgrade now!
           </Link>
         </div>
@@ -92,7 +92,7 @@ const Adding = () => {
             borderBottom: "grey",
           }}
         >
-          <div className="flex">
+   <div className="flex flex-col sm:flex-row sm:items-start items-center">
             <div className="ml-10">
               <div
                 className="bg-o w-60 text-center text-white mt-10 pt-5"
@@ -181,30 +181,27 @@ const Adding = () => {
                   </label>
                 </div>
                 {/* date picker */}
-                <div
-                  className="relative inline-block ml-1"
-                  style={{ width: "15vw" }}
-                >
-                  <FaCalendarAlt
-                    selected={selectedDate}
-                    onChange={(date) => setSelectedDate(date)}
-                    className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400 "
-                    style={{ zIndex: "10" }}
-                  />
-                  <DatePicker
-                    selected={selectedDate}
-                    onChange={(date) => setSelectedDate(date)}
-                    placeholderText="When?"
-                    dateFormat="MMMM d, yyyy"
-                    className="border border-gray-300 rounded-md focus:outline-none "
-                    popperPlacement="top-end"
-                  />
-                  {selectedDate && (
-                    <div className="absolute mt-1 bg-white rounded-md border border-gray-300 px-4 py-2">
-                      {selectedDate.toLocaleDateString()}
-                    </div>
-                  )}
-                </div>
+                <div className="relative inline-block w-full md:w-auto">
+    <FaCalendarAlt
+      selected={selectedDate}
+      onChange={(date) => setSelectedDate(date)}
+      className="absolute right-4 top-3 transform -translate-y-1/2 text-gray-400"
+      style={{ zIndex: "10" }}
+    />
+    <DatePicker
+      selected={selectedDate}
+      onChange={(date) => setSelectedDate(date)}
+      placeholderText="When?"
+      dateFormat="MMMM d, yyyy"
+      className="border border-gray-300 rounded-md px-4 py-3 focus:outline-none w-full md:w-auto"
+      popperPlacement="top-end"
+    />
+    {selectedDate && (
+      <div className="absolute mt-1 bg-white rounded-md border border-gray-300 px-4 py-2">
+        {selectedDate.toLocaleDateString()}
+      </div>
+    )}
+  </div>
                 {/* checkbox */}
                 <div>
                   <label>
@@ -228,48 +225,45 @@ const Adding = () => {
                 </div>
               </div>
             </div>
-            <div className="flex flex-col ml-20 mt-10">
-              <div className="bg-white p-5" style={{ width: "115vh" }}>
-                <h3 className="text-blue-500 text-3xl font-semibold">
-                  Bracebridge, Ontario (Canada){" "}
-                </h3>
-                <p>Start date : April 1, 2024</p>
-                <p className="font-semibold text-black">
-                  South Muskoka Memorial Hospital Site - Muskoka Algonquin
-                  Healthcare{" "}
-                </p>
-                <div className="flex justify-between">
-                  <span className="text-blue-500">Furnished/Unfurnished </span>
-                  <Link
-                    to=""
-                    className="bg-customBlue pl-10 pr-10 pt-2 pb-2 text-white"
-                  >
-                    More info
-                  </Link>
-                </div>
-                <p>Ad #791 Posted on 2024-01-11 11:51:05</p>
-                <div className="border-t-2 border-gray-300 my-4"></div>
-                <div>
-                  <p>Start date : March 1, 2024</p>
-                  <p className="font-semibold text-black">
-                    NOSM University-Northern Ontario School of Medicine (NOSM) /
-                    South{" "}
-                  </p>
-                  <p className="font-semibold text-black">
-                    Muskoka Memorial Hospital Site - Muskoka Algonquin
-                    Healthcare{" "}
-                  </p>
-                  <div className="flex justify-between">
-                    <span className="text-blue-500">Unfurnished </span>
-                    <Link
-                      to=""
-                      className="bg-customBlue pl-10 pr-10 pt-2 pb-2 text-white"
-                    >
-                      More info
-                    </Link>
-                  </div>
-                </div>
-              </div>
+            <div className="flex flex-col ml-1 md:ml-20 mt-10">
+  <div className="bg-white p-5" style={{ width: "100%" }}>
+    <h3 className="text-blue-500 text-3xl font-semibold">
+      Bracebridge, Ontario (Canada)
+    </h3>
+    <p>Start date : April 1, 2024</p>
+    <p className="font-semibold text-black">
+      South Muskoka Memorial Hospital Site - Muskoka Algonquin Healthcare
+    </p>
+    <div className="flex flex-wrap justify-between">
+      <span className="text-blue-500">Furnished/Unfurnished</span>
+      <Link
+        to=""
+        className="bg-customBlue pl-10 pr-10 pt-2 pb-2 text-white mr-0 md:mr-8"
+      >
+        More info
+      </Link>
+    </div>
+    <p>Ad #791 Posted on 2024-01-11 11:51:05</p>
+    <div className="border-t-2 border-gray-300 my-4"></div>
+    <div>
+      <p>Start date : March 1, 2024</p>
+      <p className="font-semibold text-black">
+        NOSM University-Northern Ontario School of Medicine (NOSM) / South
+      </p>
+      <p className="font-semibold text-black">
+        Muskoka Memorial Hospital Site - Muskoka Algonquin Healthcare
+      </p>
+      <div className="flex flex-wrap justify-between">
+        <span className="text-blue-500">Unfurnished</span>
+        <Link
+          to=""
+          className="bg-customBlue pl-10 pr-10 pt-2 pb-2 text-white mr-2 md:mr-8"
+        >
+          More info
+        </Link>
+      </div>
+    </div>
+  </div>
               <div className="mt-10 bg-white p-5">
                 <h3 className="text-blue-500 text-3xl font-semibold">
                   Bracebridge, Ontario (Canada){" "}

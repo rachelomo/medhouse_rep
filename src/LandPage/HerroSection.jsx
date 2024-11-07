@@ -1,4 +1,3 @@
-// Dummy data for medical housing
 import { FaBath } from "react-icons/fa";
 import { RiHotelBedLine } from "react-icons/ri";
 import { Link } from "react-router-dom";
@@ -134,85 +133,47 @@ const FeaturedMedicalHousing = () => {
   };
   return (
     <div className="featured-medical-housing" onClick={toggleMap}>
-      {/* <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      > */}
-      <Link
-        to="/map"
-        className="float-link"
-        id="btn_map"
-        style={{ textDecoration: "none" }}
-      >
-        View on map →
-      </Link>
-      <h2 style={{ color: "#F8C8DC" }}>
-        Featured Medical <strong style={{ color: "black" }}>Housing</strong>{" "}
-      </h2>
+   
+   <Link
+  to="/map"
+  className="float-link relative left-[76px]"
+  style={{ textDecoration: "none", color: "#0c527b" }}
+>
+    View on map →
+  </Link>
+  <h2 style={{ color: "#0c527b" }} className="mt-2 sm:mt-0 sm:ml-4">
+    Featured Medical <strong style={{ color: "black" }}>Housing</strong>
+  </h2>
+
+
+
+
       {/* </div> */}
 
-      <div className="">
-        <Link to="/" className="Cards ">
-          {medicalHousingData.map((housing) => (
-            <div key={housing.id} className="Card_split">
-              <img
-                src={housing.imageUrl}
-                alt={housing.name}
-                style={{
-                  width: "21vw",
-                  display: "inline-block",
-                  verticalAlign: "middle",
-                  maxWidth: "100%",
-                  height: "auto",
-                }}
-              />
-              <div className="option">
-                <div
-                  className=""
-                  style={{
-                    display: "flex",
-                    justifyContent: "center",
-                    width: "18vw",
-                    textAlign: "center",
-                    marginLeft: "20px",
-                    color: "#0c527b",
-                    fontSize: "11.9px",
-                    paddingTop: "15px",
-                  }}
-                >
-                  <h3 className="hover:text-pastel-pink">{housing.name}</h3>
-                </div>
-
-                <span
-                  style={{
-                    textAlign: "center",
-                    marginLeft: "4vw",
-                    fontSize: "11.9px",
-                  }}
-                >
-                  {housing.location}
+      {/* <div className=""> */}
+      <div className="housing-cards-container">
+        {medicalHousingData.map((housing) => (
+          <div key={housing.id} className="housing-card">
+            <img
+              src={housing.imageUrl}
+              alt={housing.name}
+              className="housing-image"
+            />
+            <div className="housing-info">
+              <h3 className="housing-name">{housing.name}</h3>
+              <span className="housing-location">{housing.location}</span>
+              <div className="housing-details">
+                <span>
+                  <RiHotelBedLine /> 1
                 </span>
-                <span
-                  style={{
-                    display: "flex",
-                    gap: "1em",
-                    textAlign: "center",
-                    marginLeft: "80px",
-                    fontSize: "11px",
-                  }}
-                >
-                  <RiHotelBedLine />1
-                  <FaBath />1
-                  <span style={{ color: "#1779ba" }}>{housing.price}</span>
+                <span>
+                  <FaBath /> 1
                 </span>
-                {/* <img src={housing.mapImageUrl} alt={`Map for ${housing.name}`} /> */}
+                <span className="housing-price">{housing.price}</span>
               </div>
             </div>
-          ))}
-        </Link>
+          </div>
+        ))}
       </div>
 
       {showMap && <div className="map-section">{/* Map section */}</div>}

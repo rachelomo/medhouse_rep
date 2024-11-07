@@ -6,7 +6,7 @@ const AboutUs = () => {
     <div className="about">
       <Link
         to="/aboutpath"
-        style={{ textDecoration: "none", color: " #f8c8dc" }}
+        style={{ textDecoration: "none", color: " #0c527b" }}
       >
         About Us
       </Link>

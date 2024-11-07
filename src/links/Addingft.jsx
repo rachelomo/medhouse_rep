@@ -58,6 +58,7 @@ const Addingft = () => {
   );
   return (
     <div className="adding">
+  
       <div className="">
         <img
           src={waitinRoom}

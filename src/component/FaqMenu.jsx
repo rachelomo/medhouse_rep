@@ -15,7 +15,7 @@ const FAQ = () => {
         onMouseEnter={toggleDropdown}
         onMouseLeave={toggleDropdown}
       >
-        <Link to="/faqpath" className="text-2xl" style={{ color: "#f8c8dc" }}>
+        <Link to="/faqpath" className="text-2xl" style={{ color: "#0c527b" }}>
           Faq
         </Link>
 

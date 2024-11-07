@@ -19,7 +19,7 @@ const SearchButton = () => {
             style={{
               outline: "none",
               border: "none",
-              color: "#f8c8dc",
+              color: "#0c527b",
               cursor: "pointer",
             }}
             onClick={handleButtonClick}
@@ -34,10 +34,10 @@ const SearchButton = () => {
               placeholder="Search..."
               className=""
               style={{
-                borderTop: "#f8c8dc",
+                borderTop: "#0c527b",
                 borderLeft: "none",
                 borderRight: "none",
-                borderColor: "#F8C8DC",
+                borderColor: "#0c527b",
               }}
             />
             <button
@@ -46,7 +46,7 @@ const SearchButton = () => {
               style={{
                 outline: "none",
                 border: "none",
-                color: "#f8c8dc",
+                color: "#0c527b",
                 cursor: "pointer",
               }}
             >
