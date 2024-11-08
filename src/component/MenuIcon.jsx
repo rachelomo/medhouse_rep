@@ -49,7 +49,7 @@ const MenuIcon = () => {
       Join us
     </Link>
     <div className="dpc">
-      <a href="/SignUp">
+      <a href="/signup">
         <li className="li">I am a landlord</li>
       </a>
 
