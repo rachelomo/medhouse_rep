@@ -110,7 +110,7 @@ const Component = () => {
                 </div>
 
                 <div className="flex justify-center">
-                    <button className="bg-blue-500 text-white rounded-full p-3 w-full sm:w-48">Submit</button>
+                    <button className="bg-blue-500 text-white rounded p-3 w-full sm:w-48">Submit</button>
                 </div>
             </form>
         </div>
