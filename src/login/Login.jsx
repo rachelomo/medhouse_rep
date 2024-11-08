@@ -57,24 +57,23 @@ const Login = () => {
     return (
 
 
-        < div className="py-0 px-50 font-sans mt-40 bg-gray-200" >
+        < div className="py-0 px-4 sm:px-0 xl:px-22 mt-8 sm:mt-16 bg-gray-200" >
             <div className="">
                 <div className="relative">
-                    <img
+                <img
                         src={waitinRoom}
                         alt="firstImage"
-                        className="w-full h-80 object-cover mt-20"
+                        className="w-full h-80 object-cover mt-10 sm:mt-16"
                     />
-                    <div className="absolute inset-0 flex items-center justify-center bg-black opacity-70">
+                        <div className="absolute inset-0 flex items-center justify-center bg-black opacity-70">
                         <p className="text-white text-4xl font-semibold">
-                            LOGIN
+                                LOGIN
                         </p>
                     </div>
                 </div>
-                <div className="mx-auto p-8 text-center px-40">
-                    <h1 className=" text-2xl  mb-6 text-black" >Log in to your  <span className="font-bold">account</span></h1>
-                    <div className="mb-8">
-
+                <div className="mx-auto p-8 text-center sm:px-12 lg:px-20 xl:px-32">
+                    <h1 className="text-2xl sm:text-3xl mb-6 text-black">Log in to your <span className="font-bold">account</span></h1>
+                    <div className="mb-6 sm:mb-8">
                         <input
                             type="text"
                             name="email"
@@ -104,7 +103,7 @@ const Login = () => {
                     </div>
                     <hr className="border-t border-gray-400 mt-8" />
 
-                    <div className="flex justify-between">
+                    <div className="flex flex-col sm:flex-row sm:justify-between mt-6 sm:mt-8">
                         <Link to="/signup">
                             <button className="mt-8 bg-blue-800 text-white text-left align-left px-4 py-2 rounded ">Create a Landlord account</button >
                         </Link>

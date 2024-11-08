@@ -1,110 +1,89 @@
-// // DragAndDropContainer.js
-// import React from 'react';
-// import { DndProvider } from 'react-dnd';
-// import { HTML5Backend } from 'react-dnd-html5-backend';
-// import Drag from './Drag';
-
-// const DragAndDropContainer = () => {
-//     return (
-//         <DndProvider backend={HTML5Backend}>
-//             <div className="flex">
-//                 <div className="flex-1 p-4">
-//                     <h2 className="text-xl font-bold mb-4">Drag and Drop Container</h2>
-//                     <div className="flex space-x-4">
-//                         <Drag name="Item 1" type="ITEM" borderColor="blue-500" />
-//                         <Drag name="Item 2" type="ITEM" borderColor="green-500" />
-//                         <Drag name="Item 3" type="ITEM" borderColor="red-500" />
-//                     </div>
-//                 </div>
-//                 <div className="flex-1 p-4 border-2 border-dashed border-gray-500">
-//                     <h2 className="text-xl font-bold mb-4">Drop Area</h2>
-//                     {/* Drop area content */}
-//                 </div>
-//             </div>
-//         </DndProvider>
-//     );
-// };
-
-// export default DragAndDropContainer;
-
 import axios from "axios";
-
 import React, { Component } from "react";
 
 class App extends Component {
     state = {
         selectedFile: null,
+        isUploading: false,
+        uploadStatus: null,
     };
 
     onFileChange = (event) => {
         this.setState({
             selectedFile: event.target.files[0],
+            uploadStatus: null, // Reset upload status on new file selection
         });
     };
 
     onFileUpload = () => {
+        if (!this.state.selectedFile) {
+            this.setState({
+                uploadStatus: "Please select a file first!",
+            });
+            return;
+        }
+
         const formData = new FormData();
+        formData.append("myFile", this.state.selectedFile, this.state.selectedFile.name);
 
-        formData.append(
-            "myFile",
-            this.state.selectedFile,
-            this.state.selectedFile.name
-        );
+        // Start uploading
+        this.setState({ isUploading: true });
 
-        console.log(this.state.selectedFile);
-
-
-        axios.post("api/uploadfile", formData);
+        axios
+            .post("api/uploadfile", formData)
+            .then((response) => {
+                this.setState({
+                    isUploading: false,
+                    uploadStatus: "File uploaded successfully!",
+                });
+            })
+            .catch((error) => {
+                this.setState({
+                    isUploading: false,
+                    uploadStatus: "File upload failed. Please try again.",
+                });
+                console.error("Error uploading file:", error);
+            });
     };
-
 
     fileData = () => {
         if (this.state.selectedFile) {
             return (
                 <div>
                     <h2>File Details:</h2>
+                    <p>File Name: {this.state.selectedFile.name}</p>
+                    <p>File Type: {this.state.selectedFile.type}</p>
                     <p>
-                        File Name:{" "}
-                        {this.state.selectedFile.name}
-                    </p>
-
-                    <p>
-                        File Type:{" "}
-                        {this.state.selectedFile.type}
-                    </p>
-
-                    <p>
-                        Last Modified:{" "}
-                        {this.state.selectedFile.lastModifiedDate.toDateString()}
+                        Last Modified: {this.state.selectedFile.lastModifiedDate.toDateString()}
                     </p>
                 </div>
             );
         } else {
-            return (
-                <div>
-                    <br />
-                    {/* <h4>
-                        Choose before Pressing the Upload
-                        button
-                    </h4> */}
-                </div>
-            );
+            return null;
         }
     };
 
     render() {
+        const { isUploading, uploadStatus } = this.state;
+
         return (
             <div>
                 <div className="border-2 border-blue-700 border-dashed p-10 mt-8 flex justify-center">
-                    <input
-                        type="file"
-                        onChange={this.onFileChange}
-                    />
-                    <button className="p-2 bg-blue-900 text-white rounded" onClick={this.onFileUpload}>
-                        Upload!
+                    <input type="file" onChange={this.onFileChange} />
+                    <button
+                        className="p-2 bg-blue-900 text-white rounded"
+                        onClick={this.onFileUpload}
+                        disabled={isUploading}
+                    >
+                        {isUploading ? "Uploading..." : "Upload!"}
                     </button>
                 </div>
                 {this.fileData()}
+                {uploadStatus && (
+                    <div className="mt-4 text-center">
+                        <p>{uploadStatus}</p>
+                    </div>
+                )}
             </div>
         );
     }
