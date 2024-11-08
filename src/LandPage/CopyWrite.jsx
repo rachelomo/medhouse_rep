@@ -2,10 +2,18 @@ import { Link } from "react-router-dom";
 
 const CopyWrite = () => {
   return (
-    <div className="copyWrite" style={{ marginTop: "100px" }}>
+    <div className="copyWrite" style={{ marginTop: "100px", textAlign: "center" }}>
       <div
         className="bottom_link"
-        style={{ fontSize: "11px", color: "#85B8D5", marginRight: "20px" }}
+        style={{
+          fontSize: "11px",
+          color: "#85B8D5",
+          display: "flex",
+          flexWrap: "wrap",
+          gap: "10px",
+          justifyContent: "center",
+          marginBottom: "20px"
+        }}
       >
         <Link to="#" style={{ textDecoration: "none" }}>
           Mission
@@ -26,27 +34,30 @@ const CopyWrite = () => {
           Privacy/GDPR
         </Link>
         <Link style={{ textDecoration: "none" }} to="#">
-          sITE Map
+          Site Map
         </Link>
       </div>
-      <div>
-        <p className="copyright flex flex-col">
-          {" "}
-          <span
-            style={{
-              fontSize: "10px",
-            }}
-          >
-            {" "}
-            © 2024 MedsHousing.com Built by
-          </span>
+      <div className="mb-3">
+        <p
+          className="copyright"
+          style={{
+            fontSize: "10px",
+            color: "#85B8D5",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+          }}
+        >
+          © 2024 MedsHousing.com Built by
           <Link
             style={{
               textDecoration: "none",
               fontSize: "smaller",
+              color: "#85B8D5",
+              marginTop: "5px",
             }}
             to="https://www.numerique.ca"
-            target="blank"
+            target="_blank"
             id="realisationFooter"
           >
             Numérique.ca
@@ -56,4 +67,5 @@ const CopyWrite = () => {
     </div>
   );
 };
+
 export default CopyWrite;
