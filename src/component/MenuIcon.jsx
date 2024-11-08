@@ -40,7 +40,7 @@ const MenuIcon = () => {
       {/* flex w-full justify-around items-center */}
     <div className="flex justify-around">
     <div>
-      <div className="dp relative right-[15vw] md:relative md:right-0">
+      <div className="dp relative right-[15vw] md:relative md:right-0 mt-3">
     <Link
       to=""
       className=" bg-[#0c527b] font-montserrat font-normal text-xs md:text-base rounded-md uppercase text-white p-2 pl-7 pr-7"
@@ -66,7 +66,7 @@ const MenuIcon = () => {
     </div>
 {/* </div> */}
         {/* Menu Toggle Button */}
-        <div className="relative right-[3vw] md:relative md:right-0">
+        <div className="relative right-[4.5vw] md:relative md:right-0">
           <FaBars
             onClick={toggleMenu}
             className={`text-3xl p-2  cursor-pointer ${

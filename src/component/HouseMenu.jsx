@@ -158,12 +158,11 @@ const HouseMenu = () => {
   return (
     <div className="nested-dropdown">
       <div
-        className="dropdown"
-        style={{ position: "absolute" }}
+        className="dropdown absolute-none md:absolute "
         onMouseEnter={() => setFirstDropdownVisible(true)}
         onMouseLeave={() => setFirstDropdownVisible(false)}
       >
-        <div className="submenu">
+        <div className="submenu md:top-0 top-10">
           <Link
             className="text-2xl "
             to="#"

@@ -4,11 +4,11 @@ export default {
   theme: {
     extend: {
       colors: {
-
+     
         // "pastel-pink": "#F8C8DC",
         // w: "#262626",
          b: "#3E7696",
-         r: "#6E6B66",
+         r: "#6E6B66",  
          o: "#212121",
          or: "#FFFFFF",
       },

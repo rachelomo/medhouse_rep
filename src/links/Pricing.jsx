@@ -16,7 +16,7 @@ const Pricing = () => {
           className="w-full h-80 object-cover"
           style={{ marginTop: "10vw" }}
         />
-        <div className="absolute inset-0 flex items-center justify-center">
+                <div className="absolute inset-0 flex items-center justify-center mt-40">
           <p className="text-white text-4xl">PRICING</p>
         </div>
       </div>

@@ -199,11 +199,11 @@ const SchoolMenu = () => {
     <div className="nested-dropdown">
       <div
         className="dropdown"
-        style={{ color: "##0c527b" }}
+        style={{color: "##0c527b" }}
         onMouseEnter={() => setFirstDropdownVisible(true)}
         onMouseLeave={() => setFirstDropdownVisible(false)}
       >
-        <div className="submenu ">
+        <div className="submenu md:top-0 top-12">
           <Link
             className="text-2xl"
             to="#"
@@ -218,9 +218,9 @@ const SchoolMenu = () => {
               style={{
                 display: "flex",
                 gap: "3em",
-                right: "15vw",
-                paddingLeft: "80px",
-                marginTop: " 5.5vh",
+                right: "25vw",
+                paddingLeft: "130px",
+                marginTop: "5.5vh",
               }}
             >
               <ul className="flex flex-col gap-2 list-none text-white">

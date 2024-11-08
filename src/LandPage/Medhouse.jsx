@@ -24,30 +24,33 @@ const medicalHousingData = [
       "https://www.medshousing.com/fichiersUploadOpt/400-0-0-0-150-165-92d1804f98b0ad6eacb4e8564d1fe194d5821ed13f8896a52/20221108074125-logocfms-femc-thumbnail.jpg",
   },
 ];
+
 const Medhouse = () => {
   return (
     <div className="Medhousing mt-20">
-      <div style={{ textAlign: "center" }}>
-        <h2>
-          <strong
-            style={{ color: "black", fontWeight: "700", fontSize: "1.2em" }}
-          >
-            MedsHousing.com
-          </strong>
+      <div className="text-center">
+        <h2 className="text-black font-bold text-lg md:text-xl">
+          MedsHousing.com
         </h2>
-        <span style={{ fontSize: "80%" }}>Is the Proud partner of:</span>
+        <span className="text-sm md:text-base">Is the Proud partner of:</span>
       </div>
-      <div className="Medname">
+      <div className="flex flex-wrap justify-center gap-4 mt-6">
         {medicalHousingData.map((housing) => (
-          <div key={housing.id} className="med_img">
-            <img
-              src={housing.imageUrl}
-              alt={housing.name}
-              style={{
-                width: "15vw",
-              }}
-            />
-            <img style={{ width: "6vw" }} src={housing.image} alt="" />
+          <div key={housing.id} className="med_img flex flex-col items-center">
+            {housing.imageUrl && (
+              <img
+                src={housing.imageUrl}
+                alt={housing.name}
+                className="w-32 sm:w-36 md:w-40 lg:w-48 object-contain" 
+              />
+            )}
+            {housing.image && (
+              <img
+                src={housing.image}
+                alt={housing.title || ""}
+                className="w-16 sm:w-20 md:w-24 lg:w-28object-contain" 
+              />
+            )}
           </div>
         ))}
       </div>
