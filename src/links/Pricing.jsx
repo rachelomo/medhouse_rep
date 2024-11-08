@@ -52,9 +52,9 @@ const Pricing = () => {
             We offer 50% off additional listings in the same category!
           </p>
         </div>
-        <div className="height mt-20 flex justify-between gap-8">
-          <div className="bg-customBlue w-[70vw]">
-            <div className="flex justify-center mt-10">
+        <div className="height mt-20 flex flex-wrap justify-between gap-8">
+        <div className="bg-customBlue w-full md:w-[47%] lg:w-[70vw] p-4 rounded-lg">
+        <div className="flex justify-center mt-10">
               <img
                 src={pricing_1}
                 alt="pricing image"
