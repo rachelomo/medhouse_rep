@@ -51,14 +51,14 @@ const App = () => {
         <LandlordFaq
           title={
             <>
-              <h3 className="p-3 font-semibold" style={{ width: "40vw" }}>
+              <h3 className="p-3 font-semibold w-[72.5vw] sm:w-[40vw]">
                 Landlord User Guide
               </h3>
             </>
           }
           linkText={
             <>
-              <div className="flex p-5" style={{ width: "41.2vw" }}>
+              <div className="flex p-5 w-[72.5vw] sm:w-[40vw]">
                 <div className="">
                   <div className="text-center mt-10">
                     <img
@@ -263,14 +263,14 @@ const App = () => {
         <LandlordFaq
           title={
             <>
-              <h3 className="p-3" style={{ width: "40vw" }}>
+              <h3 className="p-3 w-[72.5vw] sm:w-[40vw]">
                 What is an Ideal MedsHousing property?
               </h3>
             </>
           }
           linkText={
             <>
-              <div className="p-10" style={{ width: "41.2vw" }}>
+              <div className="p-10  w-[64.5vw] sm:w-[37vw]" >
                 <ul
                   className="mt-5 text-1xl text-gry"
                   style={{ fontWeight: "lighter" }}
@@ -402,14 +402,14 @@ const App = () => {
         <LandlordFaq
           title={
             <>
-              <h3 style={{ width: "40vw" }} className="p-3">
+              <h3 className="p-3  w-[72.5vw] sm:w-[40vw]">
                 Q: How do I know if there is interest in my listed property?
               </h3>
             </>
           }
           linkText={
             <>
-              <div className="p-10" style={{ width: "41.2vw" }}>
+              <div className="p-10 w-[64.5vw] sm:w-[37vw]">
                 <ul className="text-gry">
                   <li
                     className=""
@@ -548,7 +548,7 @@ const App = () => {
         <LandlordFaq
           title={
             <>
-              <h3 style={{ width: "40vw" }} className="p-3">
+              <h3 className="p-3 w-[72.5vw] sm:w-[40vw]">
                 Q: Are MedsHousing.com tenants verified?
               </h3>
             </>
@@ -556,8 +556,8 @@ const App = () => {
           linkText={
             <>
               <div
-                className="p-10"
-                style={{ width: "41.2vw", fontWeight: "lighter" }}
+                className="w-[64.5vw] sm:w-[37vw] p-10"
+                style={{  fontWeight: "lighter" }}
               >
                 <ul className="text-grey">
                   <li>
@@ -619,7 +619,7 @@ const App = () => {
         <LandlordFaq
           title={
             <>
-              <h3 style={{ width: "40vw" }} className="p-3">
+              <h3 className="w-[72.5vw] sm:w-[40vw] p-3">
                 Q: I want to rent my property to a medical learner or healthcare
                 provider. Does the property need to be furnished or unfurnished?
               </h3>
@@ -628,8 +628,8 @@ const App = () => {
           linkText={
             <>
               <div
-                className="p-10"
-                style={{ width: "41.2vw", fontWeight: "lighter" }}
+                className="p-10 w-[64.5vw] sm:w-[37vw]"
+                style={{ fontWeight: "lighter" }}
               >
                 <ul className="text-black">
                   <li className="text-black list-disc text-semibold">
@@ -695,7 +695,7 @@ const App = () => {
         <LandlordFaq
           title={
             <>
-              <h3 style={{ width: "40vw" }} className="p-3">
+              <h3 className="p-3 w-[72.5vw] sm:w-[40vw]">
                 Q: I have an inquiry about my listing in the 'My Listing
                 Inquiries' tab of my Dashboard, but I am unsure how to respond
                 to them.
@@ -705,8 +705,8 @@ const App = () => {
           linkText={
             <>
               <div
-                className="p-10"
-                style={{ width: "41.2vw", fontWeight: "lighter" }}
+                className="p-10 w-[64.5vw] sm:w-[37vw]"
+                style={{ fontWeight: "lighter" }}
               >
                 <ul className="text-black">
                   <li className="text-black list-disc text-semibold">
@@ -772,7 +772,7 @@ const App = () => {
         <LandlordFaq
           title={
             <>
-              <h3 style={{ width: "40vw" }} className="p-3">
+              <h3 className="p-3 w-[72.5vw] sm:w-[40vw]">
                 Q: Should I offer my property to a medical learner for short or
                 long-term?
               </h3>
@@ -781,8 +781,8 @@ const App = () => {
           linkText={
             <>
               <div
-                className="p-10"
-                style={{ width: "41.2vw", fontWeight: "lighter" }}
+                className="p-10 w-[64.5vw] sm:w-[37vw]"
+                style={{fontWeight: "lighter" }}
               >
                 <ul className="text-black">
                   <li className="text-black list-disc text-semibold">
@@ -848,7 +848,7 @@ const App = () => {
         <LandlordFaq
           title={
             <>
-              <h3 style={{ width: "40vw" }} className="p-3">
+              <h3 className="p-3 w-[72.5vw] sm:w-[40vw]">
                 Q: How do I change the rental price for my listing?
               </h3>
             </>
@@ -856,8 +856,8 @@ const App = () => {
           linkText={
             <>
               <div
-                className="p-10"
-                style={{ width: "41.2vw", fontWeight: "lighter" }}
+                className="p-10 w-[64.5vw] sm:w-[37vw]"
+                style={{fontWeight: "lighter" }}
               >
                 <ul className="text-gry p-9">
                   <li className="list-disc list-black">
@@ -934,7 +934,7 @@ const App = () => {
         <LandlordFaq
           title={
             <>
-              <h3 style={{ width: "40vw" }} className="p-3">
+              <h3 className="w-[72.5vw] sm:w-[40vw] p-3">
                 What exactly is MedsHousing.com
               </h3>
             </>
@@ -942,8 +942,8 @@ const App = () => {
           linkText={
             <>
               <div
-                className="p-10"
-                style={{ width: "41.2vw", fontWeight: "lighter" }}
+                className="p-10 w-[64.5vw] sm:w-[37vw]"
+                style={{ fontWeight: "lighter" }}
               >
                 <ul className="text-gry p-9">
                   <li className="list-disc list-black">
@@ -1019,7 +1019,7 @@ const App = () => {
         <LandlordFaq
           title={
             <>
-              <h3 style={{ width: "40vw" }} className="p-3">
+              <h3 className="p-3 w-[72.5vw] sm:w-[40vw]">
                 Q: I have an inquiry about my listing in the 'My Listing
                 Inquiries' tab of my Dashboard, but I am unsure how to respond
                 to them.
@@ -1029,8 +1029,8 @@ const App = () => {
           linkText={
             <>
               <div
-                className="p-10"
-                style={{ width: "41.2vw", fontWeight: "lighter" }}
+                className="p-10 w-[64.5vw] sm:w-[37vw]"
+                style={{ fontWeight: "lighter" }}
               >
                 <ul className="text-gry p-9">
                   <li className="list-disc list-black">
@@ -1106,7 +1106,7 @@ const App = () => {
         <LandlordFaq
           title={
             <>
-              <h3 style={{ width: "40vw" }} className="p-3">
+              <h3 className="p-3 w-[72.5vw] sm:w-[40vw]">
                 Q: Is there any way of reporting a no-show so other landlords
                 have a heads up?
               </h3>
@@ -1115,7 +1115,7 @@ const App = () => {
           linkText={
             <>
               <div
-                className="p-10"
+                className="p-10 w-[64.5vw] sm:w-[37vw]"
                 style={{ width: "41.2vw", fontWeight: "lighter" }}
               >
                 <ul className="text-gry p-9">
@@ -1192,7 +1192,7 @@ const App = () => {
         <LandlordFaq
           title={
             <>
-              <h3 style={{ width: "40vw" }} className="p-3">
+              <h3 className="p-3 w-[72.5vw] sm:w-[40vw]">
                 Q: Can I remove one property listing and replace it with another
                 under the same subscription fee? I have successfully found a
                 tenant and would like to post another property.
@@ -1202,8 +1202,8 @@ const App = () => {
           linkText={
             <>
               <div
-                className="p-10"
-                style={{ width: "41.2vw", fontWeight: "lighter" }}
+                className="p-10 w-[56.4vw] sm:w-[37vw]"
+                style={{fontWeight: "lighter" }}
               >
                 <ul className="text-gry p-9">
                   <li className="list-disc list-black">
@@ -1279,7 +1279,7 @@ const App = () => {
         <LandlordFaq
           title={
             <>
-              <h3 style={{ width: "40vw" }} className="p-3">
+              <h3  className="p-3 w-[72.5vw] sm:w-[40vw]">
                 Q: Does MedsHousing collect rent and submit it to the landlord,
                 similar to AirBNB?
               </h3>
@@ -1288,8 +1288,8 @@ const App = () => {
           linkText={
             <>
               <div
-                className="p-10"
-                style={{ width: "41.2vw", fontWeight: "lighter" }}
+                className="p-10 w-[64.5vw] sm:w-[37vw]"
+                style={{ fontWeight: "lighter" }}
               >
                 <ul className="text-gry p-9">
                   <li className="list-disc list-black">
@@ -1365,7 +1365,7 @@ const App = () => {
         <LandlordFaq
           title={
             <>
-              <h3 style={{ width: "40vw" }} className="p-3">
+              <h3 className="p-3 w-[72.5vw] sm:w-[40vw]">
                 Q: My listing has been up for one month but I have not received
                 any interest so I posted on a student website and have rented my
                 property. I would like to cancel my listing.
@@ -1375,8 +1375,8 @@ const App = () => {
           linkText={
             <>
               <div
-                className="p-10"
-                style={{ width: "41.2vw", fontWeight: "lighter" }}
+                className="p-10 w-[64.5vw] sm:w-[37vw]"
+                style={{ fontWeight: "lighter" }}
               >
                 <ul className="text-gry p-9">
                   <li className="list-disc list-black">
@@ -1452,7 +1452,7 @@ const App = () => {
         <LandlordFaq
           title={
             <>
-              <h3 style={{ width: "40vw" }} className="p-3">
+              <h3 className="p-3 w-[72.5vw] sm:w-[40vw]">
                 Q: How do I change my pictures for an existing posting?
               </h3>
             </>
@@ -1460,8 +1460,8 @@ const App = () => {
           linkText={
             <>
               <div
-                className="p-10"
-                style={{ width: "41.2vw", fontWeight: "lighter" }}
+                className="p-10 w-[64.5vw] sm:w-[37vw]"
+                style={{ fontWeight: "lighter" }}
               >
                 <ul className="text-gry p-9">
                   <li className="list-disc list-black">
@@ -1537,7 +1537,7 @@ const App = () => {
         <LandlordFaq
           title={
             <>
-              <h3 style={{ width: "40vw" }} className="p-3">
+              <h3 className="p-3 w-[72.5vw] sm:w-[40vw]">
                 Q: As a new landlord, can MedsHousing provide me with template
                 rental agreement forms or contracts?
               </h3>
@@ -1546,8 +1546,8 @@ const App = () => {
           linkText={
             <>
               <div
-                className="p-10"
-                style={{ width: "41.2vw", fontWeight: "lighter" }}
+                className="p-10 w-[64.5vw] sm:w-[37vw]"
+                style={{ fontWeight: "lighter" }}
               >
                 <ul className="text-gry p-9">
                   <li className="list-disc list-black">
@@ -1623,7 +1623,7 @@ const App = () => {
         <LandlordFaq
           title={
             <>
-              <h3 style={{ width: "40vw" }} className="p-3">
+              <h3 className="p-3 w-[72.5vw] sm:w-[40vw]">
                 Q: I'm interested in using your platform to list my properties
                 on your site and would like to know if I need to pay per
                 listing?
@@ -1633,8 +1633,8 @@ const App = () => {
           linkText={
             <>
               <div
-                className="p-10"
-                style={{ width: "41.2vw", fontWeight: "lighter" }}
+                className="p-10 w-[64.5vw] sm:w-[37vw]"
+                style={{ fontWeight: "lighter" }}
               >
                 <ul className="text-gry p-9">
                   <li className="list-disc list-black">
@@ -1710,7 +1710,7 @@ const App = () => {
         <LandlordFaq
           title={
             <>
-              <h3 style={{ width: "40vw" }} className="p-3">
+              <h3 className="w-[72.5vw] sm:w-[40vw] p-3">
                 Q: I'm interested in using your platform to list my properties
                 on your site and would like to know if I need to pay per
                 listing?
@@ -1720,8 +1720,8 @@ const App = () => {
           linkText={
             <>
               <div
-                className="p-10"
-                style={{ width: "41.2vw", fontWeight: "lighter" }}
+                className="p-10 w-[64.5vw] sm:w-[37vw]"
+                style={{fontWeight: "lighter" }}
               >
                 <ul className="text-gry p-9">
                   <li className="list-disc list-black">
@@ -1797,7 +1797,7 @@ const App = () => {
         <LandlordFaq
           title={
             <>
-              <h3 style={{ width: "40vw" }} className="p-3">
+              <h3  className="p-3 w-[72.5vw] sm:w-[40vw]">
                 Q: I'm interested in using your platform to list my properties
                 on your site and would like to know if I need to pay per
                 listing?
@@ -1807,8 +1807,8 @@ const App = () => {
           linkText={
             <>
               <div
-                className="p-10"
-                style={{ width: "41.2vw", fontWeight: "lighter" }}
+                className="p-10 w-[64.5vw] sm:w-[37vw]"
+                style={{ fontWeight: "lighter" }}
               >
                 <ul className="text-gry p-9">
                   <li className="list-disc list-black">
@@ -1884,7 +1884,7 @@ const App = () => {
         <LandlordFaq
           title={
             <>
-              <h3 style={{ width: "40vw" }} className="p-3">
+              <h3 className="w-[72.5vw] sm:w-[40vw] p-3">
                 Q: I'm interested in using your platform to list my properties
                 on your site and would like to know if I need to pay per
                 listing?
@@ -1894,8 +1894,8 @@ const App = () => {
           linkText={
             <>
               <div
-                className="p-10"
-                style={{ width: "41.2vw", fontWeight: "lighter" }}
+                className="p-10 w-[64.5vw] sm:w-[37vw]"
+                style={{fontWeight: "lighter" }}
               >
                 <ul className="text-gry p-9">
                   <li className="list-disc list-black">

@@ -33,19 +33,19 @@ const FaqPaththd = ({ title, linkText }) => {
 };
 const App = () => {
   return (
-    <div className="text-black font-semibold flex ml-2 mt-10">
-      <div>
+    <div className="text-black font-semibold flex justify-center mt-10 gap-2">
+   <div className="grid gap-4 ">
         <FaqPaththd
           title={
             <>
-              <h3 className="p-3 font-semibold" style={{ width: "40vw" }}>
+              <h3 className="p-3 font-semibold">
                 Landlord FAQs
               </h3>
             </>
           }
           linkText={
             <>
-              <ul className="p-3 text-sm " style={{ width: "41.2vw" }}>
+              <ul className="list-disc text-gry p-7 text-sm ">
                 <li>
                   view our
                   <Link to="/" className="text-customBlue hover:underline">
@@ -61,14 +61,14 @@ const App = () => {
         <FaqPaththd
           title={
             <>
-              <h3 className="p-3" style={{ width: "40vw" }}>
+              <h3 className="p-3" style={{ width: "38vw" }}>
                 Tenant FAQs
               </h3>
             </>
           }
           linkText={
             <>
-              <ul className="p-3 text-sm" style={{ width: "41.2vw" }}>
+         <ul className="list-disc text-gry p-7 text-sm ">
                 <li>
                   view our
                   <Link to="/" className="text-customBlue hover:underline">
@@ -82,14 +82,14 @@ const App = () => {
         <FaqPaththd
           title={
             <>
-              <h3 className="p-3" style={{ width: "40vw" }}>
+              <h3 className="p-3" style={{ width: "38vw" }}>
                 Tenant FAQs
               </h3>
             </>
           }
           linkText={
             <>
-              <ul className="p-3 text-sm" style={{ width: "41.2vw" }}>
+             <ul className="list-disc text-gry p-7 text-sm ">
                 <li>
                   view our
                   <Link to="/" className="text-customBlue hover:underline">
@@ -103,7 +103,7 @@ const App = () => {
         <FaqPaththd
           title={
             <>
-              <h3 style={{ width: "40vw" }} className="p-3">
+              <h3 style={{ width: "38vw" }} className="p-3">
                 What is your Local Medical School or Hospital
               </h3>
             </>
@@ -156,7 +156,7 @@ const App = () => {
         <FaqPaththd
           title={
             <>
-              <h3 style={{ width: "40vw" }} className="p-3">
+                <h3 style={{ width: "38vw" }} className="p-3">
                 What exactly is MedsHousing.com
               </h3>
             </>
@@ -225,7 +225,7 @@ const App = () => {
         <FaqPaththd
           title={
             <>
-              <h3 style={{ width: "40vw" }} className="p-3">
+              <h3 style={{ width: "38vw" }} className="p-3">
                 What exactly is MedsHousing.com
               </h3>
             </>
@@ -294,7 +294,7 @@ const App = () => {
         <FaqPaththd
           title={
             <>
-              <h3 style={{ width: "40vw" }} className="p-3">
+              <h3 style={{ width: "38vw" }} className="p-3">
                 What exactly is MedsHousing.com
               </h3>
             </>
@@ -372,7 +372,7 @@ const App = () => {
         <FaqPaththd
           title={
             <>
-              <h3 style={{ width: "40vw" }} className="p-3">
+              <h3 style={{ width: "38vw" }} className="p-3">
                 Are your Contact emails going into spam
               </h3>
             </>

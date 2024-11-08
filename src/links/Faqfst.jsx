@@ -34,22 +34,22 @@ const Faqfst = ({ title, linkText }) => {
 
 const App = () => {
   return (
-    <div className="text-black font-semibold flex ml-2 mt-10">
-      <div>
+    <div className="text-black font-semibold flex justify-center mt-10 gap-2">
+   <div className="grid gap-4">
         <Faqfst
           title={
             <>
-              <h3 className="p-3 font-semibold" style={{ width: "40vw" }}>
+              <h3 className="p-3 font-semibold" style={{ width: "38vw"}}>
                 Landlord FAQs
               </h3>
             </>
           }
           linkText={
             <>
-              <ul className="p-3 text-sm " style={{ width: "41.2vw" }}>
+              <ul className="p-3 text-sm " style={{ width: "39.2vw" }}>
                 <li>
                   view our
-                  <Link to="/" className="text-customBlue hover:underline">
+                  <Link to="/FaqPathsec" className="text-customBlue hover:underline">
                     {" "}
                     FAQ section specifically made for landlords.
                   </Link>
@@ -62,17 +62,17 @@ const App = () => {
         <Faqfst
           title={
             <>
-              <h3 className="p-3" style={{ width: "40vw" }}>
+              <h3 className="p-3" style={{ width: "38vw"}}>
                 Tenant FAQs
               </h3>
             </>
           }
           linkText={
             <>
-              <ul className="p-3 text-sm" style={{ width: "41.2vw" }}>
+              <ul className="p-3 text-sm" style={{ width: "39.2vw"}}>
                 <li>
                   view our
-                  <Link to="/" className="text-customBlue hover:underline">
+                  <Link to="/faqtenant" className="text-customBlue hover:underline">
                     FAQ section specifically made for tenants.
                   </Link>
                 </li>
@@ -83,7 +83,7 @@ const App = () => {
         <Faqfst
           title={
             <>
-              <h3 style={{ width: "40vw" }} className="p-3">
+              <h3 style={{ width: "38vw"}} className="p-3">
                 What is your Local Medical School or Hospital
               </h3>
             </>
@@ -132,11 +132,11 @@ const App = () => {
           }
         />
       </div>
-      <div>
+      <div className="grid gap-4">
         <Faqfst
           title={
             <>
-              <h3 style={{ width: "40vw" }} className="p-3">
+              <h3 style={{ width: "38vw"}} className="p-3">
                 What exactly is MedsHousing.com
               </h3>
             </>
@@ -205,7 +205,7 @@ const App = () => {
         <Faqfst
           title={
             <>
-              <h3 style={{ width: "40vw" }} className="p-3">
+              <h3 style={{ width: "38vw"}} className="p-3">
                 What exactly is MedsHousing.com
               </h3>
             </>
@@ -283,7 +283,7 @@ const App = () => {
         <Faqfst
           title={
             <>
-              <h3 style={{ width: "40vw" }} className="p-3">
+              <h3 style={{ width: "38vw"}} className="p-3">
                 Are your Contact emails going into spam
               </h3>
             </>

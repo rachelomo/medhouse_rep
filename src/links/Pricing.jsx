@@ -9,7 +9,7 @@ import { IoIosCheckmark } from "react-icons/io";
 const Pricing = () => {
   return (
     <div className="pricing">
-      <div className="">
+      <div className="relative">
         <img
           src={waitinRoom}
           alt="firstImage"
@@ -20,6 +20,7 @@ const Pricing = () => {
           <p className="text-white text-4xl">PRICING</p>
         </div>
       </div>
+
       <div>
         <div>
           <p className="text-center text-3xl mt-10 text-black">
@@ -27,7 +28,7 @@ const Pricing = () => {
           </p>
         </div>
 
-        <ul className="mt-20 text-black ml-20 list-disc">
+        <ul className="mt-10 text-black mx-5 md:mx-20 list-disc space-y-4">
           <li>
             Choose from our <strong>MedsBasic</strong> or{" "}
             <strong>MedsGold</strong> plans to offer your property to this great
@@ -35,26 +36,28 @@ const Pricing = () => {
           </li>
           <li>
             Note that only <strong>MedsGold</strong> Landlords have exclusive
-            access to
-            <strong> Tenant Want Ads</strong>
+            access to <strong>Tenant Want Ads</strong>
           </li>
           <li>
             Look for our various options to <strong>MedsFeature</strong> or
-            <strong>MedsBoost</strong> your listing for inceased visibility
+            <strong>MedsBoost</strong> your listing for increased visibility
           </li>
           <li>
-            <strong>Best deal ever! </strong>Our pricing is in Canadian dollars
+            <strong>Best deal ever!</strong> Our pricing is in Canadian dollars
           </li>
         </ul>
-        <div className="bg-customBlue text-center p-10 w-90 mt-10">
+
+        <div className="bg-customBlue text-center p-6 md:p-20 mt-10">
           <h3 className="text-white text-2xl">Have more than 1 property?</h3>
-          <p className=" text-2xl mt-2" style={{ color: "#FF0000" }}>
+          <p className="text-2xl mt-2 text-red-500">
             We offer 50% off additional listings in the same category!
           </p>
         </div>
-        <div className="height mt-20 flex flex-wrap justify-between gap-8">
-        <div className="bg-customBlue w-full md:w-[47%] lg:w-[70vw] p-4 rounded-lg">
-        <div className="flex justify-center mt-10">
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mt-10">
+          {/* MedsBasic Monthly */}
+          <div className="bg-customBlue p-3 md:w-full rounded-md">
+            <div className="flex justify-center">
               <img
                 src={pricing_1}
                 alt="pricing image"
@@ -65,51 +68,36 @@ const Pricing = () => {
               MedsBasic Monthly
             </h3>
             <p className="text-center text-white text-sm mt-3">
-              Our basic listing option for a quick one-month posting. Feel lucky
-              and you think your property will rent quickly? Or maybe you just
-              want to try us out? Then choose this low-cost option.
+              Our basic listing option for a quick one-month posting. Perfect if
+              you think your property will rent quickly or want to try us out.
             </p>
-            {/* </div> */}
-            <div>
-              <p className="text-white text-center mt-20 pt-10">
-                <strong className="font-semibold text-4xl">$19</strong>
-                <strong className="relative bottom-4">/month</strong>
-              </p>
-              <ul className="text-white mt-4 ml-7 text-sm">
-                <li className="flex">
-                  <span className="pt-2">
-                    {" "}
-                    <IoIosCheckmark />
-                  </span>
-                  30-day listing
-                </li>
-                <li className="flex">
-                  <span className="pt-2">
-                    {" "}
-                    <IoIosCheckmark />
-                  </span>
-                  5 images
-                </li>
-                <li className="flex">
-                  <span className="pt-2">
-                    {" "}
-                    <IoIosCheckmark />
-                  </span>
-                  Availability Calendar
-                </li>
-              </ul>
-            </div>
-            <div className="mt-20 text-center pt-40">
+            <p className="text-white text-center mt-10 font-semibold text-4xl">
+              $19<span className="text-sm">/month</span>
+            </p>
+            <ul className="text-white mt-4 space-y-2 text-sm">
+              <li className="flex items-center">
+                <IoIosCheckmark /> 30-day listing
+              </li>
+              <li className="flex items-center">
+                <IoIosCheckmark /> 5 images
+              </li>
+              <li className="flex items-center">
+                <IoIosCheckmark /> Availability Calendar
+              </li>
+            </ul>
+            <div className="mt-10 text-center">
               <Link
-                to="/sighup"
-                className="function text-black bg-white p-5 rounded-md hover:bg-black"
+                to="/signup"
+                className="bg-white text-black p-3 rounded-md hover:bg-black hover:text-white transition duration-300"
               >
                 Choose MedsBasic Monthly
               </Link>
             </div>
           </div>
-          <div className="w-[70vw]" style={{ backgroundColor: "#262626" }}>
-            <div className="flex justify-center mt-10">
+
+          {/* MedsBasic Yearly */}
+          <div className="bg-gray-800 p-3 md:w-full rounded-md relative right-0 md:relative md:right-2">
+            <div className="flex justify-center">
               <img src={pricing_1} alt="pricing image" />
               <img src={pricing_2} alt="pricing image" />
             </div>
@@ -117,71 +105,39 @@ const Pricing = () => {
               MedsBasic Yearly
             </h3>
             <p className="text-center text-white text-sm mt-3">
-              List for a year and save! When you go with{" "}
-              <strong>MedsBasic</strong> Yearly, you know your property will be
-              posted hassle-free for a year, at a great price. ({" "}
-              <strong>Optional</strong>: Medical trainees often look for
-              properties many months, or sometime years in advance. With our
-              <strong> MedsBasic</strong> and <strong>MedsGold</strong> yearly
-              plans, your property is listed year-round for medical trainee
-              tenants who are looking well in advan)
+              List for a year and save! Perfect for medical trainees searching
+              in advance.
             </p>
-            <div>
-              <p className="text-white text-center mt-3">
-                <strong className="font-semibold text-4xl">$89</strong>
-                <strong className="relative bottom-4">/year</strong>
-              </p>
-              <ul className="text-white mt-7 ml-7 text-sm">
-                <li className="flex">
-                  {" "}
-                  <span className="pt-2">
-                    {" "}
-                    <IoIosCheckmark />
-                  </span>
-                  365-day listing
-                </li>
-                <li className="flex">
-                  {" "}
-                  <span className="pt-2">
-                    {" "}
-                    <IoIosCheckmark />
-                  </span>
-                  5 images
-                </li>
-                <li className="flex">
-                  {" "}
-                  <span className="pt-2">
-                    {" "}
-                    <IoIosCheckmark />
-                  </span>
-                  Availability Calendar
-                </li>
-                <li className="flex">
-                  {" "}
-                  <span className="pt-2">
-                    {" "}
-                    <IoIosCheckmark />
-                  </span>
-                  MedsFeature and MedsBoost options available
-                </li>
-              </ul>
-            </div>
-            <div>
-              <div className="text-center pt-40 mt-10">
-                <Link
-                  to="/sighup"
-                  className="function bg-white text-black p-5 rounded-md hover:bg-black"
-                >
-                  Choose MedsBasic Yearly
-                </Link>
-              </div>
+            <p className="text-white text-center mt-10 font-semibold text-4xl">
+              $89<span className="text-sm">/year</span>
+            </p>
+            <ul className="text-white mt-4 space-y-2 text-sm">
+              <li className="flex items-center">
+                <IoIosCheckmark /> 365-day listing
+              </li>
+              <li className="flex items-center">
+                <IoIosCheckmark /> 5 images
+              </li>
+              <li className="flex items-center">
+                <IoIosCheckmark /> Availability Calendar
+              </li>
+              <li className="flex items-center">
+                <IoIosCheckmark /> MedsFeature and MedsBoost options
+              </li>
+            </ul>
+            <div className="mt-10 text-center">
+              <Link
+                to="/signup"
+                className="bg-white text-black p-3 rounded-md hover:bg-black hover:text-white transition duration-300"
+              >
+                Choose MedsBasic Yearly
+              </Link>
             </div>
           </div>
-          <div
-            className="w-[70vw]"
-            style={{ height: "150vh", backgroundColor: "#554728" }}
-          >
-            <div className="flex justify-center mt-10">
+
+          {/* MedsGold Yearly */}
+          <div className="bg-yellow-800 p-3 md:w-full rounded-md relative right-0 md:relative md:right-5">
+            <div className="flex justify-center">
               <img src={pricing_1} alt="pricing image" />
               <img src={pricing_2} alt="pricing image" />
               <img src={pricing_3} alt="pricing image" />
@@ -190,122 +146,57 @@ const Pricing = () => {
               MedsGold Yearly
             </h3>
             <p className="text-center text-white text-sm mt-3">
-              Our gold standard. One year hassle-free, and your listing will
-              appear above the <strong>MedsBasic</strong> listings, giving you
-              more views. Also comes with one-month Home Page{" "}
-              <strong>MedsFeature</strong> free of charge. More views, more
-              tenants!
+              Our premium package. Increased visibility with exclusive features.
             </p>
-            <div>
-              <p className="text-center text-white mt-20 pt-4">
-                <strong className="font-semibold text-4xl">$129</strong>
-                <strong className="relative bottom-4">/year</strong>
-              </p>
-              <ul className="text-white mt-6 ml-7 text-sm">
-                <li className="flex">
-                  {" "}
-                  <span className="pt-2">
-                    {" "}
-                    <IoIosCheckmark />
-                  </span>
-                  30-day listing365-day listing
-                </li>
-                <li className="flex">
-                  {" "}
-                  <span className="pt-2">
-                    {" "}
-                    <IoIosCheckmark />
-                  </span>
-                  30-day listing25 images
-                </li>
-                <li className="flex">
-                  {" "}
-                  <span className="pt-2">
-                    {" "}
-                    <IoIosCheckmark />
-                  </span>
-                  30-day listingAvailability Calendar
-                </li>
-                <li className="flex">
-                  {" "}
-                  <span className="pt-2">
-                    {" "}
-                    <IoIosCheckmark />
-                  </span>
-                  30-day listingListed above MedsBasic listings
-                </li>
-                <li className="flex">
-                  <span className="pt-2">
-                    {" "}
-                    <IoIosCheckmark />
-                  </span>
-                  30-day listingHome Page MedsFeature for <br />
-                  one month free (new listings only){" "}
-                </li>
-                <li className="flex">
-                  {" "}
-                  <span className="pt-2">
-                    {" "}
-                    <IoIosCheckmark />
-                  </span>
-                  30-day listing MedsFeature and MedsBoost <br />
-                  options available
-                </li>
-                <li>
-                  Exclusive access to tenant want <br /> ads
-                  <li>
-                    Get SMS/Text messages when <br /> you get a request
-                  </li>
-                </li>
-              </ul>
-            </div>
-            <div className=" text-center">
+            <p className="text-white text-center mt-10 font-semibold text-4xl">
+              $129<span className="text-sm">/year</span>
+            </p>
+            <ul className="text-white mt-4 space-y-2 text-sm">
+              <li className="flex items-center">
+                <IoIosCheckmark /> 365-day listing
+              </li>
+              <li className="flex items-center">
+                <IoIosCheckmark /> 25 images
+              </li>
+              <li className="flex items-center">
+                <IoIosCheckmark /> Listed above MedsBasic listings
+              </li>
+              <li className="flex items-center">
+                <IoIosCheckmark /> MedsFeature and MedsBoost options
+              </li>
+            </ul>
+            <div className="mt-10 text-center">
               <Link
-                to="/sighup"
-                className="function text-black bg-white p-5 rounded-md hover:bg-black"
+                to="/signup"
+                className="bg-white text-black p-3 rounded-md hover:bg-black hover:text-white transition duration-300"
               >
                 Choose MedsGold Yearly
               </Link>
             </div>
           </div>
-          <div
-            style={{ backgroundColor: "#1096E5" }}
-            className=" w-[70vw]"
-          >
-            <div className="flex justify-center mt-10">
+
+          {/* Urgent */}
+          <div className="bg-blue-600 p-4 relative right-0 md:relative md:right-8 md:w-full rounded-md">
+            <div className="flex justify-center">
               <img src={pricing_4} alt="pricing image" />
             </div>
             <h3 className="mt-3 text-center text-4xl text-white font-semibold">
               Urgent
             </h3>
             <p className="text-center text-white text-sm mt-3">
-              Get tenants faster. Show an urgent tag on your listing attract
-              tenants by showing urgency
+              Get tenants faster. Show an "Urgent" tag on your listing.
             </p>
-            <div>
-              <p className="text-white text-center mt-40 pt-10">
-                <strong className="font-semibold text-4xl">$15</strong>
-                <strong className="relative bottom-4">for 7 days</strong>
-              </p>
-              <ul className="text-white mt-6 ml-7 text-sm">
-                <li className="flex">
-                  {" "}
-                  <span className="pt-2">
-                    {" "}
-                    <IoIosCheckmark />
-                  </span>
-                  Top of all listings for 7 days
-                </li>
-                <li className="flex">
-                  <span className="pt-2">
-                    {" "}
-                    <IoIosCheckmark />
-                  </span>
-                  Boosts your ad in every location (home page, medical schools,
-                  listings)
-                </li>
-              </ul>
-            </div>
+            <p className="text-white text-center mt-10 font-semibold text-4xl">
+              $15<span className="text-sm"> for 7 days</span>
+            </p>
+            <ul className="text-white mt-4 space-y-2 text-sm">
+              <li className="flex items-center">
+                <IoIosCheckmark /> Top of all listings for 7 days
+              </li>
+              <li className="flex items-center">
+                <IoIosCheckmark /> Boosts your ad in every location
+              </li>
+            </ul>
           </div>
         </div>
       </div>
