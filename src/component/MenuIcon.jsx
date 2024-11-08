@@ -49,11 +49,11 @@ const MenuIcon = () => {
       Join us
     </Link>
     <div className="dpc">
-      <a href="SignUp">
+      <a href="/SignUp">
         <li className="li">I am a landlord</li>
       </a>
 
-      <Link to="login" style={{ cursor: "pointer" }}>
+      <Link to="/login" style={{ cursor: "pointer" }}>
         <li className="li"> I am a tenant</li>
       </Link>
     </div>

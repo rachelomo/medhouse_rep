@@ -97,10 +97,10 @@ const Navigation = () => {
                   Join us
                 </Link>
                 <div className="dpc">
-                  <a href="SignUp" style={{ textDecoration: "none" }}>
+                  <a href="/SignUp" style={{ textDecoration: "none" }}>
                     <li className="li">I am a landlord</li>
                   </a>
-                  <Link to="login" style={{ textDecoration: "none" }}>
+                  <Link to="/login" style={{ textDecoration: "none" }}>
                     <li className="li">I am a tenant</li>
                   </Link>
                 </div>
