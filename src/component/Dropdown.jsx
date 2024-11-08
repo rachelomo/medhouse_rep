@@ -209,7 +209,7 @@ const Dropdown = () => {
             style={{
               textDecoration: "none",
               color: " #0c527b",
-              textDecoration: "none",
+           
             }}
           >
             Medical Schools

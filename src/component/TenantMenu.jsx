@@ -199,7 +199,7 @@ const TenantMenu = () => {
         onMouseEnter={() => setFirstDropdownVisible(true)}
         onMouseLeave={() => setFirstDropdownVisible(false)}
       >
-        <div className="submenu mt-6">
+        <div className="submenu">
           <Link
             className="text-2xl "
             href="#"

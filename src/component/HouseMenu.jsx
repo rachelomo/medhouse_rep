@@ -162,7 +162,7 @@ const HouseMenu = () => {
         onMouseEnter={() => setFirstDropdownVisible(true)}
         onMouseLeave={() => setFirstDropdownVisible(false)}
       >
-        <div className="submenu md:top-0 top-10">
+        <div className="submenu">
           <Link
             className="text-2xl "
             to="#"
