@@ -53,14 +53,14 @@ const MenuIcon = () => {
         <li className="li">I am a landlord</li>
       </a>
 
-      <Link to="/" style={{ cursor: "pointer" }}>
+      <Link to="login" style={{ cursor: "pointer" }}>
         <li className="li"> I am a tenant</li>
       </Link>
     </div>
   </div>
   <span className="dropdown-account relative right-[4.5vw] md:relative md:right-0">
 
-    <Link to="" className="gray index">
+    <Link to="/login" className="gray index">
       {" "}
       Login
     </Link>
