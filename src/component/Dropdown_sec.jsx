@@ -169,7 +169,7 @@ const Dropdown_sec = () => {
             style={{
               textDecoration: "none",
               color: " #0c527b",
-              textDecoration: "none",
+           
             }}
           >
             Hospital

@@ -287,7 +287,7 @@ input {
   overflow: hidden;
 }
 .Cards:hover {
-  color: #f8c8dc;
+  color: rgba(255, 255, 255, 0.611);
 }
 .featured-medical-housing {
   margin-top: 50px;

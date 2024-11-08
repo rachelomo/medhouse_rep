@@ -203,8 +203,15 @@ const Dropdown = () => {
         onMouseEnter={() => setFirstDropdownVisible(true)}
         onMouseLeave={() => setFirstDropdownVisible(false)}
       >
-        <div className="submenu">
-          <Link to="#" style={{ textDecoration: "none", color: " #0c527b" }}>
+            <div className="submenu">
+          <Link
+            to="#"
+            style={{
+              textDecoration: "none",
+              color: " #0c527b",
+              textDecoration: "none",
+            }}
+          >
             Medical Schools
             <div className="submenu-arrow">
               {/* <FaChevronUp className="text-5xl" /> */}

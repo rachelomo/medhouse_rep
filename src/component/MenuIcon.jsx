@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { FaBars } from "react-icons/fa";
+import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import logo from "../assets/logo.png";
 import FAQ from "./FaqMenu";
@@ -13,73 +13,71 @@ import TenantMenu from "./TenantMenu.jsx";
 
 const MenuIcon = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [isClicked, setIsClicked] = useState(false);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
-    setIsClicked(!isClicked);
   };
 
   return (
     <div className="MenuIcon flex flex-col w-full">
-  {/* Logo Section */}
-<div className="w-full flex justify-center mb-2  relative right-5">
-  <Link to="/" className="w-full">
-    <img
-      src={logo}
-      alt="logo"
-      className="h-[15vh] w-[71vw]"
-      style={{boxSizing: "border-box" }}
-    />
-  </Link>
-</div>
-
-
+      {/* Logo Section */}
+      <div className="w-full flex justify-center mb-2 relative right-5">
+        <Link to="/" className="w-full">
+          <img
+            src={logo}
+            alt="logo"
+            className="h-[15vh] w-[71vw]"
+            style={{ boxSizing: "border-box" }}
+          />
+        </Link>
+      </div>
 
       {/* Join Us and Login Section */}
-      {/* flex w-full justify-around items-center */}
-    <div className="flex justify-around">
-    <div>
-      <div className="dp relative right-[15vw] md:relative md:right-0 mt-3">
-    <Link
-      to=""
-      className=" bg-[#0c527b] font-montserrat font-normal text-xs md:text-base rounded-md uppercase text-white p-2 pl-7 pr-7"
-    >
-      Join us
-    </Link>
-    <div className="dpc">
-      <a href="SignUp">
-        <li className="li">I am a landlord</li>
-      </a>
+      <div className="flex justify-around">
+        <div>
+          <div className="dp relative right-[15vw] md:relative md:right-0 mt-3">
+            <Link
+              to=""
+              className="bg-[#0c527b] font-montserrat font-normal text-xs md:text-base rounded-md uppercase text-white p-2 pl-7 pr-7"
+            >
+              Join us
+            </Link>
+            <div className="dpc">
+              <a href="SignUp">
+                <li className="li">I am a landlord</li>
+              </a>
+              <Link to="/" style={{ cursor: "pointer" }}>
+                <li className="li">I am a tenant</li>
+              </Link>
+            </div>
+          </div>
+          <span className="dropdown-account relative right-[14vw] md:relative md:right-0">
+            <Link to="" className="gray index">
+              Login
+            </Link>
+          </span>
+        </div>
 
-      <Link to="/" style={{ cursor: "pointer" }}>
-        <li className="li"> I am a tenant</li>
-      </Link>
-    </div>
-  </div>
-  <span className="dropdown-account relative right-[14vw] md:relative md:right-0">
-    <Link to="" className="gray index">
-      {" "}
-      Login
-    </Link>
-  </span>
-    </div>
-{/* </div> */}
         {/* Menu Toggle Button */}
         <div className="relative right-[4.5vw] md:relative md:right-0">
-          <FaBars
-            onClick={toggleMenu}
-            className={`text-3xl p-2  cursor-pointer ${
-              isClicked ? "bg-[#0c527b] text-black" : "text-black"
-            }`}
-          />
+          {menuOpen ? (
+            <FaTimes
+              onClick={toggleMenu}
+              className="text-3xl p-2 cursor-pointer bg-[#0c527b] text-black"
+            />
+          ) : (
+            <FaBars
+              onClick={toggleMenu}
+              className="text-3xl p-2 cursor-pointer text-black"
+            />
+          )}
         </div>
       </div>
 
       {/* Menu Overlay */}
       {menuOpen && (
         <div
-          className="menu-overlay bg-[#262626] text-white fixed inset-0 z-10 flex flex-col items-center p-6 space-y-4 overflow-y-auto"
+          className="menu-overlay bg-[#262626] text-white fixed inset-0 z-10 flex flex-col items-center p-6 space-y-4 overflow-y-auto transition-opacity duration-300 ease-in-out"
           style={{
             width: "100vw",
             height: "100vh",

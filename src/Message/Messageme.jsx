@@ -10,8 +10,8 @@ const Messageme = () => {
             className="text-3xl md:text-4xl" // Adjust icon size for mobile
             style={{
               lineHeight: "1.28",
-              color: "#f8c8dc",
               marginTop: "7px",
+              color: "white",
             }}
           />
         </Link>
