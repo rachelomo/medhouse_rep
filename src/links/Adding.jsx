@@ -69,7 +69,7 @@ const Adding = () => {
           <p className="text-white text-4xl mb-20 mr-10">TENANT WANT ADS</p>
         </div>
       </div>
-      <div className="bg-blur text-white mt-10 h-[100%]">
+      <div className="bg-[#1096E5] text-white mt-10 h-[100%]">
         <div className="flex justify-between text-white p-2">
            <h3 className="text-2xl sm:text-3xl ml-8 sm:ml-40 mt-5 sm:mt-0">
       Upgrade to a <strong>MedsGold Yearly</strong> listing and reach out
@@ -104,7 +104,7 @@ const Adding = () => {
                 <div className="mt-5 ">
                   <Link
                     to=""
-                    className="bg-blur pl-10 pr-10 pt-2 pb-2"
+                    className="bg-[#1096E5] pl-10 pr-10 pt-2 pb-2"
                     style={{ borderRadius: "5px" }}
                   >
                     Post a want ad!
@@ -146,7 +146,7 @@ const Adding = () => {
                         {filteredOptions.map((option, index) => (
                           <div
                             key={index}
-                            className="py-2 px-4 cursor-pointer hover:text-white hover:bg-blur "
+                            className="py-2 px-4 cursor-pointer hover:text-white hover:bg-[#1096E5] "
                             onClick={() => handleOptionClick(option)}
                           >
                             {option}
@@ -217,7 +217,7 @@ const Adding = () => {
                 <div className="mt-5">
                   <Link
                     to=""
-                    className="bg-customBlue pl-20 pr-20 pt-2 pb-2 text-white"
+                    className="bg-[#0c527b] pl-20 pr-20 pt-2 pb-2 text-white"
                     style={{ borderRadius: "5px" }}
                   >
                     Search
@@ -238,7 +238,7 @@ const Adding = () => {
       <span className="text-blue-500">Furnished/Unfurnished</span>
       <Link
         to=""
-        className="bg-customBlue pl-10 pr-10 pt-2 pb-2 text-white mr-0 md:mr-8"
+        className="bg-[#0c527b] pl-10 pr-10 pt-2 pb-2 text-white mr-0 md:mr-8"
       >
         More info
       </Link>
@@ -257,7 +257,7 @@ const Adding = () => {
         <span className="text-blue-500">Unfurnished</span>
         <Link
           to=""
-          className="bg-customBlue pl-10 pr-10 pt-2 pb-2 text-white mr-2 md:mr-8"
+          className="bg-[#0c527b] pl-10 pr-10 pt-2 pb-2 text-white mr-2 md:mr-8"
         >
           More info
         </Link>
@@ -277,7 +277,7 @@ const Adding = () => {
                   <span className="text-blue-500">Furnished/Unfurnished </span>
                   <Link
                     to=""
-                    className="bg-customBlue pl-10 pr-10 pt-2 pb-2 text-white"
+                    className="bg-[#0c527b] pl-10 pr-10 pt-2 pb-2 text-white"
                   >
                     More info
                   </Link>
@@ -296,7 +296,7 @@ const Adding = () => {
                     </span>
                     <Link
                       to=""
-                      className="bg-customBlue pl-10 pr-10 pt-2 pb-2 text-white"
+                      className="bg-[#0c527b] pl-10 pr-10 pt-2 pb-2 text-white"
                     >
                       More info
                     </Link>
@@ -316,7 +316,7 @@ const Adding = () => {
                     </span>
                     <Link
                       to=""
-                      className="bg-customBlue pl-10 pr-10 pt-2 pb-2 text-white"
+                      className="bg-[#0c527b] pl-10 pr-10 pt-2 pb-2 text-white"
                     >
                       More info
                     </Link>
@@ -337,7 +337,7 @@ const Adding = () => {
                   <span className="text-blue-500">Furnished/Unfurnished </span>
                   <Link
                     to=""
-                    className="bg-customBlue pl-10 pr-10 pt-2 pb-2 text-white"
+                    className="bg-[#0c527b] pl-10 pr-10 pt-2 pb-2 text-white"
                   >
                     More info
                   </Link>
@@ -357,7 +357,7 @@ const Adding = () => {
                   <span className="text-blue-500">Furnished/Unfurnished </span>
                   <Link
                     to=""
-                    className="bg-customBlue pl-10 pr-10 pt-2 pb-2 text-white"
+                    className="bg-[#0c527b] pl-10 pr-10 pt-2 pb-2 text-white"
                   >
                     More info
                   </Link>
@@ -377,7 +377,7 @@ const Adding = () => {
                   <span className="text-blue-500">Furnished/Unfurnished </span>
                   <Link
                     to=""
-                    className="bg-customBlue pl-10 pr-10 pt-2 pb-2 text-white"
+                    className="bg-[#0c527b] pl-10 pr-10 pt-2 pb-2 text-white"
                   >
                     More info
                   </Link>
@@ -396,7 +396,7 @@ const Adding = () => {
                     </span>
                     <Link
                       to=""
-                      className="bg-customBlue pl-10 pr-10 pt-2 pb-2 text-white"
+                      className="bg-[#0c527b] pl-10 pr-10 pt-2 pb-2 text-white"
                     >
                       More info
                     </Link>
@@ -416,7 +416,7 @@ const Adding = () => {
                     </span>
                     <Link
                       to=""
-                      className="bg-customBlue pl-10 pr-10 pt-2 pb-2 text-white"
+                      className="bg-[#0c527b] pl-10 pr-10 pt-2 pb-2 text-white"
                     >
                       More info
                     </Link>
@@ -436,7 +436,7 @@ const Adding = () => {
                     </span>
                     <Link
                       to=""
-                      className="bg-customBlue pl-10 pr-10 pt-2 pb-2 text-white"
+                      className="bg-[#0c527b] pl-10 pr-10 pt-2 pb-2 text-white"
                     >
                       More info
                     </Link>
@@ -456,7 +456,7 @@ const Adding = () => {
                     </span>
                     <Link
                       to=""
-                      className="bg-customBlue pl-10 pr-10 pt-2 pb-2 text-white"
+                      className="bg-[#0c527b] pl-10 pr-10 pt-2 pb-2 text-white"
                     >
                       More info
                     </Link>
@@ -476,7 +476,7 @@ const Adding = () => {
                     </span>
                     <Link
                       to=""
-                      className="bg-customBlue pl-10 pr-10 pt-2 pb-2 text-white"
+                      className="bg-[#0c527b] pl-10 pr-10 pt-2 pb-2 text-white"
                     >
                       More info
                     </Link>
@@ -497,7 +497,7 @@ const Adding = () => {
                   <span className="text-blue-500">Furnished</span>
                   <Link
                     to=""
-                    className="bg-customBlue pl-10 pr-10 pt-2 pb-2 text-white"
+                    className="bg-[#0c527b] pl-10 pr-10 pt-2 pb-2 text-white"
                   >
                     More info
                   </Link>
@@ -516,7 +516,7 @@ const Adding = () => {
                   <span className="text-blue-500">Furnished</span>
                   <Link
                     to=""
-                    className="bg-customBlue pl-10 pr-10 pt-2 pb-2 text-white"
+                    className="bg-[#0c527b] pl-10 pr-10 pt-2 pb-2 text-white"
                   >
                     More info
                   </Link>
@@ -537,7 +537,7 @@ const Adding = () => {
                   <span className="text-blue-500">Furnished/Unfurnished </span>
                   <Link
                     to=""
-                    className="bg-customBlue pl-10 pr-10 pt-2 pb-2 text-white"
+                    className="bg-[#0c527b] pl-10 pr-10 pt-2 pb-2 text-white"
                   >
                     More info
                   </Link>
@@ -557,7 +557,7 @@ const Adding = () => {
                   <span className="text-blue-500">Furnished/Unfurnished </span>
                   <Link
                     to=""
-                    className="bg-customBlue pl-10 pr-10 pt-2 pb-2 text-white"
+                    className="bg-[#0c527b] pl-10 pr-10 pt-2 pb-2 text-white"
                   >
                     More info
                   </Link>
@@ -574,7 +574,7 @@ const Adding = () => {
                   <span className="text-blue-500">Furnished/Unfurnished </span>
                   <Link
                     to=""
-                    className="bg-customBlue pl-10 pr-10 pt-2 pb-2 text-white"
+                    className="bg-[#0c527b] pl-10 pr-10 pt-2 pb-2 text-white"
                   >
                     More info
                   </Link>
@@ -596,7 +596,7 @@ const Adding = () => {
                   <span className="text-blue-500">Furnished</span>
                   <Link
                     to=""
-                    className="bg-customBlue pl-10 pr-10 pt-2 pb-2 text-white"
+                    className="bg-[#0c527b] pl-10 pr-10 pt-2 pb-2 text-white"
                   >
                     More info
                   </Link>
@@ -615,7 +615,7 @@ const Adding = () => {
                   <span className="text-blue-500">Furnished </span>
                   <Link
                     to=""
-                    className="bg-customBlue pl-10 pr-10 pt-2 pb-2 text-white"
+                    className="bg-[#0c527b] pl-10 pr-10 pt-2 pb-2 text-white"
                   >
                     More info
                   </Link>
@@ -634,7 +634,7 @@ const Adding = () => {
                   <span className="text-blue-500">Furnished</span>
                   <Link
                     to=""
-                    className="bg-customBlue pl-10 pr-10 pt-2 pb-2 text-white"
+                    className="bg-[#0c527b] pl-10 pr-10 pt-2 pb-2 text-white"
                   >
                     More info
                   </Link>
@@ -651,7 +651,7 @@ const Adding = () => {
                     <span className="text-blue-500">Furnished </span>
                     <Link
                       to=""
-                      className="bg-customBlue pl-10 pr-10 pt-2 pb-2 text-white"
+                      className="bg-[#0c527b] pl-10 pr-10 pt-2 pb-2 text-white"
                     >
                       more info
                     </Link>
@@ -669,7 +669,7 @@ const Adding = () => {
                     <span className="text-blue-500">Furnished </span>
                     <Link
                       to=""
-                      className="bg-customBlue pl-10 pr-10 pt-2 pb-2 text-white"
+                      className="bg-[#0c527b] pl-10 pr-10 pt-2 pb-2 text-white"
                     >
                       more info
                     </Link>
@@ -689,7 +689,7 @@ const Adding = () => {
                   <span>Furnished/Unfurnished </span>
                   <Link
                     to=""
-                    className="bg-customBlue pl-10 pr-10 pt-2 pb-2 text-white"
+                    className="bg-[#0c527b] pl-10 pr-10 pt-2 pb-2 text-white"
                   >
                     More info
                   </Link>
@@ -709,7 +709,7 @@ const Adding = () => {
                   <span>Furnished/Unfurnished</span>
                   <Link
                     to=""
-                    className="bg-customBlue pl-10 pr-10 pt-2 pb-2 text-white"
+                    className="bg-[#0c527b] pl-10 pr-10 pt-2 pb-2 text-white"
                   >
                     More info
                   </Link>
@@ -726,7 +726,7 @@ const Adding = () => {
                   <span>Furnished/Unfurnished</span>
                   <Link
                     to=""
-                    className="bg-customBlue pl-10 pr-10 pt-2 pb-2 text-white"
+                    className="bg-[#0c527b] pl-10 pr-10 pt-2 pb-2 text-white"
                   >
                     More info
                   </Link>
@@ -742,7 +742,7 @@ const Adding = () => {
                   <span>Furnished/Unfurnished</span>
                   <Link
                     to=""
-                    className="bg-customBlue pl-10 pr-10 pt-2 pb-2 text-white"
+                    className="bg-[#0c527b] pl-10 pr-10 pt-2 pb-2 text-white"
                   >
                     More info
                   </Link>
@@ -758,7 +758,7 @@ const Adding = () => {
                   <span>Furnished/Unfurnished</span>
                   <Link
                     to=""
-                    className="bg-customBlue pl-10 pr-10 pt-2 pb-2 text-white"
+                    className="bg-[#0c527b] pl-10 pr-10 pt-2 pb-2 text-white"
                   >
                     More info
                   </Link>
@@ -778,7 +778,7 @@ const Adding = () => {
                   <span>Furnished/Unfurnished</span>
                   <Link
                     to=""
-                    className="bg-customBlue pl-10 pr-10 pt-2 pb-2 text-white"
+                    className="bg-[#0c527b] pl-10 pr-10 pt-2 pb-2 text-white"
                   >
                     More info
                   </Link>
@@ -799,37 +799,37 @@ const Adding = () => {
           >
             <Link
               to=""
-              className="bg-customBlue rounded pl-2 pr-2 text-white font-semibold"
+              className="bg-[#0c527b] rounded pl-2 pr-2 text-white font-semibold"
             >
               <FaChevronLeft className="mt-1" />
             </Link>
             <Link
               to="#"
-              className="bg-gry rounded pl-2 pr-2 text-white font-semibold"
+              className="bg-[#666666] rounded pl-2 pr-2 text-white font-semibold"
             >
               1
             </Link>
             <Link
               to=""
-              className="bg-customBlue rounded pl-2 pr-2 text-white font-semibold"
+              className="bg-[#0c527b] rounded pl-2 pr-2 text-white font-semibold"
             >
               2
             </Link>
             <Link
               to=""
-              className="bg-customBlue rounded pl-2 pr-2 text-white font-semibold"
+              className="bg-[#0c527b] rounded pl-2 pr-2 text-white font-semibold"
             >
               3
             </Link>
             <Link
               to=""
-              className="bg-customBlue rounded pl-2 pr-2 text-white font-semibold"
+              className="bg-[#0c527b] rounded pl-2 pr-2 text-white font-semibold"
             >
               4
             </Link>
             <Link
               to=""
-              className="bg-customBlue rounded pl-2 pr-2 text-white font-semibold"
+              className="bg-[#0c527b] rounded pl-2 pr-2 text-white font-semibold"
             >
               <FaChevronRight className="mt-1" />
             </Link>

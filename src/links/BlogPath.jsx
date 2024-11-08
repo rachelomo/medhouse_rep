@@ -107,7 +107,7 @@ const BlogPath = () => {
         >
           <Link
             to="#"
-            className="bg-gry rounded pl-2 pr-2 text-white font-semibold"
+            className="bg-[#666666] rounded pl-2 pr-2 text-white font-semibold"
           >
             1
           </Link>

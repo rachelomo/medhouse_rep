@@ -39,7 +39,7 @@ const FAQ = () => {
                 <li>
                   <Link
                     to="/FaqPathsec"
-                    className="text-white hover:text-pastel-pink"
+                    className="text-white hover:text-pastel-pink ml-[12vw] md:ml-0"
                     style={{ fontSize: "15px" }}
                   >
                     Faq for landlord
@@ -48,7 +48,7 @@ const FAQ = () => {
                 <li>
                   <Link
                     to="/faqtenant"
-                    className="text-white hover:text-pastel-pink"
+                    className="text-white hover:text-pastel-pink ml-[12vw] md:ml-0"
                     style={{ fontSize: "15px" }}
                   >
                     Faq for tenants

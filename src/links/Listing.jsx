@@ -21,15 +21,15 @@ const Listing = () => {
           <h3 className="text-3xl text-black ">
             <strong>614</strong> MedsHousing Listing
           </h3>
-          <span className="text-customBlue ml-80 text-sm">
+          <span className="text-[#0c527b] ml-80 text-sm">
             <img
               src={maker_1}
               alt="marker"
-              className="text-customBlue ml-8 w-4"
+              className="text-[#0c527b] ml-8 w-4"
             />
             view on map
           </span>
-          <div className="text-customBlue flex justify-between w-60 bg-customBlue text-white h-8 p-1">
+          <div className="text-[#0c527b] flex justify-between w-60 bg-[#0c527b] text-white h-8 p-1">
             order now
             <FaArrowDown className="mt-1" />
           </div>

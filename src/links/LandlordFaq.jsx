@@ -71,11 +71,11 @@ const App = () => {
                       How to Create an Account & Create a Listing
                     </p>
                   </div>
-                  <div className="ml-10 mt-10 text-gry ">
+                  <div className="ml-10 mt-10 text-[#666666] ">
                     <span>There are 6 steps to creating a rental listing</span>
                     <img src={post} alt="post" />
                   </div>
-                  <div className="mt-20  text-gry ml-5 text-1xl">
+                  <div className="mt-20  text-[#666666] ml-5 text-1xl">
                     <h3 className="text-black ">STEP ONE: REGISTRATION</h3>
                     <p className="mt-5">
                       To create an account, click on{" "}
@@ -92,7 +92,7 @@ const App = () => {
                       <img src={list} alt="new list" style={{ width: "9vw" }} />
                     </p>
                   </div>
-                  <div className="ml-5 text-gry">
+                  <div className="ml-5 text-[#666666]">
                     <h3 className="mt-5 text-black">STEP TWO: ADDRESS</h3>
                     <p className="mt-5">
                       Select the package you wish to purchase:
@@ -108,7 +108,7 @@ const App = () => {
                     </p>
                     <img src={next} alt="Next" style={{ width: "7vw" }} />
                   </div>
-                  <div className="mt-20 ml-5 text-gry">
+                  <div className="mt-20 ml-5 text-[#666666]">
                     <h3 className="text-black ml-1">STEP THREE: DETAILS</h3>
                     <p
                       className=" mt-10 text-1xl"
@@ -123,7 +123,7 @@ const App = () => {
                       Maps/.
                     </p>
                   </div>
-                  <div className="mt-20 ml-5 text-gry">
+                  <div className="mt-20 ml-5 text-[#666666]">
                     <h3 className="text-black ml-1">STEP FOUR: PHOTOS</h3>
                     <p className="mt-5" style={{ fontWeight: "lighter" }}>
                       Upload the photos you wish to include in your listing:
@@ -139,7 +139,7 @@ const App = () => {
                       style={{ width: "35vw" }}
                     />
                   </div>
-                  <div className="mt-20 ml-5 text-gry">
+                  <div className="mt-20 ml-5 text-[#666666]">
                     <h3 className="text-black">STEP FIVE: AVAILABILITY</h3>
                     <p className="mt-5" style={{ fontWeight: "lighter" }}>
                       Next, confirm the dates your rental property will be
@@ -182,7 +182,7 @@ const App = () => {
                       <img src={next} alt="next" style={{ width: "8vw" }} />
                     </p>
                   </div>
-                  <div className="mt-20 text-gry ml-5">
+                  <div className="mt-20 text-[#666666] ml-5">
                     <h3 className="text-black">STEP SIX: PAYMENT</h3>
                     <p style={{ fontWeight: "lighter" }} className="mt-5">
                       Review the details of the package you wish to purchase and
@@ -198,7 +198,7 @@ const App = () => {
                       discount code if you have one.
                     </p>
                   </div>
-                  <div className="mt-10 ml-5 text-gry">
+                  <div className="mt-10 ml-5 text-[#666666]">
                     <img src={text} alt="text" style={{ width: "35vw" }} />
                     <p style={{ fontWeight: "lighter" }} className="ml-2">
                       After you pay this invoice, you will be able to continue
@@ -222,7 +222,7 @@ const App = () => {
                       “seen”. This shows tenants you are an active landlord.
                     </p>
                   </div>
-                  <div className="mt-20 ml-5 text-gry">
+                  <div className="mt-20 ml-5 text-[#666666]">
                     <h3 className="text-black">RENEWAL</h3>
                     <p
                       style={{ fontWeight: "lighter" }}
@@ -272,7 +272,7 @@ const App = () => {
             <>
               <div className="p-10  w-[64.5vw] sm:w-[37vw]" >
                 <ul
-                  className="mt-5 text-1xl text-gry"
+                  className="mt-5 text-1xl text-[#666666]"
                   style={{ fontWeight: "lighter" }}
                 >
                   <li>
@@ -283,7 +283,7 @@ const App = () => {
                   </li>
                 </ul>
                 <ol
-                  className="mt-5 text-1xl text-gry list-decimal"
+                  className="mt-5 text-1xl text-[#666666] list-decimal"
                   style={{ fontWeight: "lighter" }}
                 >
                   <li className="mt-5">
@@ -384,7 +384,7 @@ const App = () => {
                   </li>
                 </ol>
                 <ul
-                  className="text-gry text-1xl"
+                  className="text-[#666666] text-1xl"
                   style={{ fontWeight: "lighter" }}
                 >
                   {" "}
@@ -410,7 +410,7 @@ const App = () => {
           linkText={
             <>
               <div className="p-10 w-[64.5vw] sm:w-[37vw]">
-                <ul className="text-gry">
+                <ul className="text-[#666666]">
                   <li
                     className=""
                     style={{ fontWeight: "lighter", text: "1xl" }}
@@ -424,7 +424,7 @@ const App = () => {
                     Email Inquiries:
                   </li>
                   <ul
-                    className="list-disc text-gry mt-5 ml-5"
+                    className="list-disc text-[#666666] mt-5 ml-5"
                     style={{ fontWeight: "lighter", text: "1xl" }}
                   >
                     <li className="list-disc">
@@ -464,7 +464,7 @@ const App = () => {
                   </ul>
                   <li className="list-decimal">Text Message Alerts:</li>
                   <ul
-                    className="list-disc text-gry mt-5 ml-5"
+                    className="list-disc text-[#666666] mt-5 ml-5"
                     style={{ fontWeight: "lighter", text: "1xl" }}
                   >
                     <li className="list-disc">
@@ -480,7 +480,7 @@ const App = () => {
                     Personal Dashboard:
                   </li>
                   <ul
-                    className="list-disc text-gry mt-5 ml-5"
+                    className="list-disc text-[#666666] mt-5 ml-5"
                     style={{ fontWeight: "lighter", text: "1xl" }}
                   >
                     <li className="list-disc">
@@ -497,7 +497,7 @@ const App = () => {
                   </ul>
                   <li className="list-decimal">View Statistics:</li>
                   <ul
-                    className="list-disc text-gry mt-5 ml-5"
+                    className="list-disc text-[#666666] mt-5 ml-5"
                     style={{ fontWeight: "lighter", text: "1xl" }}
                   >
                     <li className="list-disc">
@@ -513,7 +513,7 @@ const App = () => {
                     Social Media Sharing:
                   </li>
                   <ul
-                    className="text-gry mt-5 ml-5"
+                    className="text-[#666666] mt-5 ml-5"
                     style={{ fontWeight: "lighter", text: "1xl" }}
                   >
                     <li className="list-disc">
@@ -636,7 +636,7 @@ const App = () => {
                     <strong>Location Matters:</strong>
                   </li>
                 </ul>
-                <ul className="mt-5 text-gry">
+                <ul className="mt-5 text-[#666666]">
                   <li className="list-disc">
                     In major teaching cities near universities, consider
                     long-term rentals (2 to 5+ years) for students
@@ -645,7 +645,7 @@ const App = () => {
                     Urban centers attract short and long-term healthcare
                     providers based on clinical rotations.
                   </li>
-                  <ul className="text-gry">
+                  <ul className="text-[#666666]">
                     <li className="text-black list-disc text-semibold">
                       <strong>Flexibility:</strong>
                     </li>
@@ -673,7 +673,7 @@ const App = () => {
                     </li>
                   </ul>
                 </ul>
-                <ul className="text-gry list-disc">
+                <ul className="text-[#666666] list-disc">
                   <li className="text-black list-disc text-semibold">
                     <strong>Consider Tenant Needs:</strong>
                   </li>
@@ -713,7 +713,7 @@ const App = () => {
                     <strong>Location Matters:</strong>
                   </li>
                 </ul>
-                <ul className="mt-5 text-gry">
+                <ul className="mt-5 text-[#666666]">
                   <li className="list-disc">
                     In major teaching cities near universities, consider
                     long-term rentals (2 to 5+ years) for students
@@ -722,7 +722,7 @@ const App = () => {
                     Urban centers attract short and long-term healthcare
                     providers based on clinical rotations.
                   </li>
-                  <ul className="text-gry">
+                  <ul className="text-[#666666]">
                     <li className="text-black list-disc text-semibold">
                       <strong>Flexibility:</strong>
                     </li>
@@ -750,7 +750,7 @@ const App = () => {
                     </li>
                   </ul>
                 </ul>
-                <ul className="text-gry list-disc">
+                <ul className="text-[#666666] list-disc">
                   <li className="text-black list-disc text-semibold">
                     <strong>Consider Tenant Needs:</strong>
                   </li>
@@ -789,7 +789,7 @@ const App = () => {
                     <strong>Location Matters:</strong>
                   </li>
                 </ul>
-                <ul className="mt-5 text-gry">
+                <ul className="mt-5 text-[#666666]">
                   <li className="list-disc">
                     In major teaching cities near universities, consider
                     long-term rentals (2 to 5+ years) for students
@@ -798,7 +798,7 @@ const App = () => {
                     Urban centers attract short and long-term healthcare
                     providers based on clinical rotations.
                   </li>
-                  <ul className="text-gry">
+                  <ul className="text-[#666666]">
                     <li className="text-black list-disc text-semibold">
                       <strong>Flexibility:</strong>
                     </li>
@@ -826,7 +826,7 @@ const App = () => {
                     </li>
                   </ul>
                 </ul>
-                <ul className="text-gry list-disc">
+                <ul className="text-[#666666] list-disc">
                   <li className="text-black list-disc text-semibold">
                     <strong>Consider Tenant Needs:</strong>
                   </li>
@@ -859,7 +859,7 @@ const App = () => {
                 className="p-10 w-[64.5vw] sm:w-[37vw]"
                 style={{fontWeight: "lighter" }}
               >
-                <ul className="text-gry p-9">
+                <ul className="text-[#666666] p-9">
                   <li className="list-disc list-black">
                     Q: I have an inquiry about my listing in the 'My Listing
                     Inquiries' tab of my Dashboard, but I am unsure how to
@@ -945,7 +945,7 @@ const App = () => {
                 className="p-10 w-[64.5vw] sm:w-[37vw]"
                 style={{ fontWeight: "lighter" }}
               >
-                <ul className="text-gry p-9">
+                <ul className="text-[#666666] p-9">
                   <li className="list-disc list-black">
                     There could be a few reasons you have't received a good
                     response.
@@ -1032,7 +1032,7 @@ const App = () => {
                 className="p-10 w-[64.5vw] sm:w-[37vw]"
                 style={{ fontWeight: "lighter" }}
               >
-                <ul className="text-gry p-9">
+                <ul className="text-[#666666] p-9">
                   <li className="list-disc list-black">
                     There could be a few reasons you have't received a good
                     response.
@@ -1118,7 +1118,7 @@ const App = () => {
                 className="p-10 w-[64.5vw] sm:w-[37vw]"
                 style={{ width: "41.2vw", fontWeight: "lighter" }}
               >
-                <ul className="text-gry p-9">
+                <ul className="text-[#666666] p-9">
                   <li className="list-disc list-black">
                     There could be a few reasons you have't received a good
                     response.
@@ -1205,7 +1205,7 @@ const App = () => {
                 className="p-10 w-[56.4vw] sm:w-[37vw]"
                 style={{fontWeight: "lighter" }}
               >
-                <ul className="text-gry p-9">
+                <ul className="text-[#666666] p-9">
                   <li className="list-disc list-black">
                     There could be a few reasons you have't received a good
                     response.
@@ -1291,7 +1291,7 @@ const App = () => {
                 className="p-10 w-[64.5vw] sm:w-[37vw]"
                 style={{ fontWeight: "lighter" }}
               >
-                <ul className="text-gry p-9">
+                <ul className="text-[#666666] p-9">
                   <li className="list-disc list-black">
                     There could be a few reasons you have't received a good
                     response.
@@ -1378,7 +1378,7 @@ const App = () => {
                 className="p-10 w-[64.5vw] sm:w-[37vw]"
                 style={{ fontWeight: "lighter" }}
               >
-                <ul className="text-gry p-9">
+                <ul className="text-[#666666] p-9">
                   <li className="list-disc list-black">
                     There could be a few reasons you have't received a good
                     response.
@@ -1463,7 +1463,7 @@ const App = () => {
                 className="p-10 w-[64.5vw] sm:w-[37vw]"
                 style={{ fontWeight: "lighter" }}
               >
-                <ul className="text-gry p-9">
+                <ul className="text-[#666666] p-9">
                   <li className="list-disc list-black">
                     There could be a few reasons you have't received a good
                     response.
@@ -1549,7 +1549,7 @@ const App = () => {
                 className="p-10 w-[64.5vw] sm:w-[37vw]"
                 style={{ fontWeight: "lighter" }}
               >
-                <ul className="text-gry p-9">
+                <ul className="text-[#666666] p-9">
                   <li className="list-disc list-black">
                     There could be a few reasons you have't received a good
                     response.
@@ -1636,7 +1636,7 @@ const App = () => {
                 className="p-10 w-[64.5vw] sm:w-[37vw]"
                 style={{ fontWeight: "lighter" }}
               >
-                <ul className="text-gry p-9">
+                <ul className="text-[#666666] p-9">
                   <li className="list-disc list-black">
                     There could be a few reasons you have't received a good
                     response.
@@ -1723,7 +1723,7 @@ const App = () => {
                 className="p-10 w-[64.5vw] sm:w-[37vw]"
                 style={{fontWeight: "lighter" }}
               >
-                <ul className="text-gry p-9">
+                <ul className="text-[#666666] p-9">
                   <li className="list-disc list-black">
                     There could be a few reasons you have't received a good
                     response.
@@ -1810,7 +1810,7 @@ const App = () => {
                 className="p-10 w-[64.5vw] sm:w-[37vw]"
                 style={{ fontWeight: "lighter" }}
               >
-                <ul className="text-gry p-9">
+                <ul className="text-[#666666] p-9">
                   <li className="list-disc list-black">
                     There could be a few reasons you have't received a good
                     response.
@@ -1897,7 +1897,7 @@ const App = () => {
                 className="p-10 w-[64.5vw] sm:w-[37vw]"
                 style={{fontWeight: "lighter" }}
               >
-                <ul className="text-gry p-9">
+                <ul className="text-[#666666] p-9">
                   <li className="list-disc list-black">
                     There could be a few reasons you have't received a good
                     response.

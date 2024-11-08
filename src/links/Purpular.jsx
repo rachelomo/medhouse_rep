@@ -31,7 +31,7 @@ const Purpular = () => {
           <p className="text-white text-4xl mb-20 mr-10">MEDICAL SCHOOLS</p>
         </div>
       </div>
-      <div className="flex flex-wrap text-center text-customBlue mt-5 justify-between">
+      <div className="flex flex-wrap text-center text-[#0c527b] mt-5 justify-between">
         <div>
           <img src={medicine_1} alt="medicine" />
           <div className="hover:bg-black hover:text-white">
@@ -237,7 +237,7 @@ const Purpular = () => {
           </div>
         </div>
       </div>
-      <div className="flex text-center text-customBlue mt-10 justify-between gap-10 flex-wrap ml-20">
+      <div className="flex text-center text-[#0c527b] mt-10 justify-between gap-10 flex-wrap ml-20">
         <div>
           <img
             src={logo_default}

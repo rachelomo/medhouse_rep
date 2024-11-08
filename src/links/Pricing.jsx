@@ -47,7 +47,7 @@ const Pricing = () => {
           </li>
         </ul>
 
-        <div className="bg-customBlue text-center p-6 md:p-20 mt-10">
+        <div className="bg-[#0c527b] text-center p-6 md:p-20 mt-10">
           <h3 className="text-white text-2xl">Have more than 1 property?</h3>
           <p className="text-2xl mt-2 text-red-500">
             We offer 50% off additional listings in the same category!
@@ -56,7 +56,7 @@ const Pricing = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mt-10">
           {/* MedsBasic Monthly */}
-          <div className="bg-customBlue p-3 md:w-full rounded-md">
+          <div className="bg-[#0c527b] p-3 md:w-full rounded-md">
             <div className="flex justify-center">
               <img
                 src={pricing_1}

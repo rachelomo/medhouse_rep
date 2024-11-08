@@ -93,7 +93,7 @@ const BlogPath = () => {
           </Link>
           <Link
             to="/card/2"
-            className="bg-gry rounded pl-2 pr-2 text-white font-semibold"
+            className="bg-[#666666] rounded pl-2 pr-2 text-white font-semibold"
           >
             2
           </Link>

@@ -126,7 +126,7 @@ const LandingPage = () => {
        {/* Link Button */}
        <Link
     to="/Listing"
-    className="default-link bg-customBlue px-4 ml-12 md:ml-3 py-3 text-center text-white rounded-md flex items-center justify-center"
+    className="default-link bg-[#0c527b] px-4 ml-12 md:ml-3 py-3 text-center text-white rounded-md flex items-center justify-center"
   >
     <IoArrowForward className="pl-2 pr-2 text-pastel-pink" />
   </Link>

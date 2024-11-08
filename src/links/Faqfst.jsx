@@ -49,7 +49,7 @@ const App = () => {
               <ul className="p-3 text-sm " style={{ width: "39.2vw" }}>
                 <li>
                   view our
-                  <Link to="/FaqPathsec" className="text-customBlue hover:underline">
+                  <Link to="/FaqPathsec" className="text-[#0c527b] hover:underline">
                     {" "}
                     FAQ section specifically made for landlords.
                   </Link>
@@ -72,7 +72,7 @@ const App = () => {
               <ul className="p-3 text-sm" style={{ width: "39.2vw"}}>
                 <li>
                   view our
-                  <Link to="/faqtenant" className="text-customBlue hover:underline">
+                  <Link to="/faqtenant" className="text-[#0c527b] hover:underline">
                     FAQ section specifically made for tenants.
                   </Link>
                 </li>
@@ -90,7 +90,7 @@ const App = () => {
           }
           linkText={
             <>
-              <ul className="text-gry text-sm p-7">
+              <ul className="text-[#666666] text-sm p-7">
                 <li className="list-disc list-black">
                   Check the various names for the local medical school or
                   hospital nearby with a quick google: 'Medical School or
@@ -104,7 +104,7 @@ const App = () => {
                   lengths of time. Ask your local health care connections.
                 </li>
                 <li className="list-disc list-black">
-                  <Link to="/" className="text-customBlue hover:underline">
+                  <Link to="/" className="text-[#0c527b] hover:underline">
                     MedsHousing.com{" "}
                   </Link>
                   <li>
@@ -114,7 +114,7 @@ const App = () => {
                     school(s) and hospital(s) service your area? Pop us an email
                     and we'll try to find out for you{" "}
                   </li>
-                  <Link to="/" className="text-customBlue hover:underline">
+                  <Link to="/" className="text-[#0c527b] hover:underline">
                     {" "}
                     info@MedsHousing.com
                   </Link>
@@ -123,7 +123,7 @@ const App = () => {
                   First time landlord for the medical community and wanting to
                   help out with 'Housing for Healthcare'? Send us an email if
                   you are needing some guidance.
-                  <Link to="/" className="text-customBlue hover:underline">
+                  <Link to="/" className="text-[#0c527b] hover:underline">
                     info@MedsHousing.com
                   </Link>
                 </li>
@@ -143,9 +143,9 @@ const App = () => {
           }
           linkText={
             <>
-              <ul className="list-disc text-gry p-7 text-sm ">
+              <ul className="list-disc text-[#666666] p-7 text-sm ">
                 <li>
-                  <Link to="/" className="text-customBlue hover:underline">
+                  <Link to="/" className="text-[#0c527b] hover:underline">
                     MedsHousing.com{" "}
                   </Link>
                   <li className="list-disc list-black">
@@ -212,14 +212,14 @@ const App = () => {
           }
           linkText={
             <>
-              <ul className="text-gry p-9 text-sm ">
+              <ul className="text-[#666666] p-9 text-sm ">
                 <li className="list-disc list-black">
                   There could be a few reasons you have't received a good
                   response.
                 </li>
                 <li className="list-disc list-black mt-9">
                   Make sure you have added{" "}
-                  <Link to="/" className="text-customBlue hover:underline">
+                  <Link to="/" className="text-[#0c527b] hover:underline">
                     info@MedsHousing.com
                   </Link>{" "}
                   to your contacts and address book to prevent automatic filing
@@ -301,7 +301,7 @@ const App = () => {
                     losing important messages from prospectivve landlords or
                     tenants.{" "}
                   </span>
-                  <span className="text-gry">
+                  <span className="text-[#666666]">
                     Check your Spam folder every few days. Make sure you do not
                     miss an opportunity.. Many institutional servers have
                     agressive spam filters. (for good reason!)

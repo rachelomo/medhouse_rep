@@ -55,7 +55,7 @@ const Addingthd = () => {
               {filteredOptions.map((option, index) => (
                 <div
                   key={index}
-                  className="py-2 px-4 cursor-pointer hover:text-white hover:bg-blur "
+                  className="py-2 px-4 cursor-pointer hover:text-white hover:bg-[#1096E5]"
                   onClick={() => {
                     setSelectedOption(option);
                     setShowOptions(false);

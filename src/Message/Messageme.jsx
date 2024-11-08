@@ -7,13 +7,13 @@ const Messageme = () => {
       <div className="message">
         <Link to="https://web.facebook.com/v2.12/plugins/customer_chat/bubble">
           <FaFacebookMessenger
-            className="text-4xl"
+            className="text-3xl md:text-4xl" // Adjust icon size for mobile
             style={{
-              lineHeight: " 1.28",
+              lineHeight: "1.28",
               color: "#f8c8dc",
               marginTop: "7px",
             }}
-          ></FaFacebookMessenger>
+          />
         </Link>
       </div>
     </div>
@@ -21,3 +21,4 @@ const Messageme = () => {
 };
 
 export default Messageme;
+  
